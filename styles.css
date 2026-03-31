@@ -38,6 +38,10 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -317,6 +321,7 @@ main {
   align-items: stretch;
   text-align: left;
   cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .app-card-inner:hover,
@@ -408,23 +413,37 @@ main {
   color: #4a4643;
 }
 
+.app-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 18px;
+}
+
 .app-highlight {
   margin-top: 18px;
   color: #3f3a37;
   font-weight: 700;
 }
 
-.button-row,
 .app-open-hint {
-  margin-top: auto;
-}
-
-.app-open-hint {
-  padding-top: 18px;
   color: var(--accent-deep);
   font-family: "Libre Baskerville", "Noto Serif TC", serif;
   font-size: 0.9rem;
   font-weight: 700;
+}
+
+.app-chevron {
+  color: var(--accent-deep);
+  font-size: 1.05rem;
+  transition: transform 0.2s ease;
+}
+
+.app-card-inner:hover .app-chevron,
+.app-card-inner:focus-visible .app-chevron {
+  transform: translateX(4px);
 }
 
 .modal-backdrop {
@@ -466,11 +485,20 @@ main {
 }
 
 .modal-hero {
+  margin-bottom: 28px;
+}
+
+.modal-hero-panel {
   display: grid;
   grid-template-columns: 148px 1fr;
   gap: 24px;
-  align-items: start;
-  margin-bottom: 28px;
+  align-items: center;
+  padding: 22px;
+  border: 1px solid var(--card-edge);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at top right, rgba(212, 180, 231, 0.24), transparent 32%),
+    linear-gradient(180deg, #fffefe 0%, #fdf7f1 100%);
 }
 
 .modal-icon {
@@ -479,10 +507,15 @@ main {
   border-radius: 34px;
   object-fit: cover;
   box-shadow: 0 18px 34px rgba(69, 57, 45, 0.15);
+  background: #fff;
+}
+
+.modal-hero-copy {
+  min-width: 0;
 }
 
 .modal-title {
-  margin: 0 0 10px;
+  margin: 0 0 12px;
   font-family: "Libre Baskerville", "Noto Serif TC", serif;
   font-size: clamp(1.9rem, 4vw, 2.7rem);
   line-height: 1.2;
@@ -499,6 +532,7 @@ main {
 
 .modal-content {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 18px;
 }
 
@@ -576,6 +610,10 @@ main {
   .apps-rail {
     grid-template-columns: 1fr;
   }
+
+  .modal-content {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 760px) {
@@ -640,7 +678,13 @@ main {
   }
 
   .modal-hero {
+    margin-bottom: 18px;
+  }
+
+  .modal-hero-panel {
     grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 18px;
   }
 
   .modal-icon {

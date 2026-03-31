@@ -282,6 +282,7 @@ function renderApps(page) {
 function populateModal(appIndex) {
   const page = getPage();
   const app = APPS[appIndex];
+  if (!app) return;
   const localizedApp = getLocalizedApp(app);
   const appUrl = getAppUrl(app);
 
@@ -308,16 +309,17 @@ function populateModal(appIndex) {
 }
 
 function openModal(appIndex) {
+  if (!Number.isInteger(appIndex) || !APPS[appIndex]) return;
   activeAppIndex = appIndex;
   populateModal(appIndex);
   modalBackdrop.hidden = false;
-  document.body.style.overflow = "hidden";
+  document.body.classList.add("modal-open");
   modalClose.focus();
 }
 
 function closeModal() {
   modalBackdrop.hidden = true;
-  document.body.style.overflow = "";
+  document.body.classList.remove("modal-open");
   if (activeAppIndex !== null) {
     const trigger = rail.querySelector(`[data-app-index="${activeAppIndex}"]`);
     trigger?.focus();
@@ -345,6 +347,15 @@ rail.addEventListener("click", (event) => {
   const trigger = event.target.closest(".app-detail-trigger");
   if (!trigger) return;
   openModal(Number(trigger.dataset.appIndex));
+});
+
+rail.addEventListener("keydown", (event) => {
+  const trigger = event.target.closest(".app-detail-trigger");
+  if (!trigger) return;
+  if (event.key === "Enter" || event.key === " ") {
+    event.preventDefault();
+    openModal(Number(trigger.dataset.appIndex));
+  }
 });
 
 scrollPrev.addEventListener("click", () => {

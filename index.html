@@ -79,7 +79,10 @@
             </div>
           </div>
           <p class="app-summary"></p>
-          <span class="app-open-hint" data-i18n="detailsHint">View details</span>
+          <div class="app-card-footer">
+            <span class="app-open-hint" data-i18n="detailsHint">View details</span>
+            <span class="app-chevron" aria-hidden="true">&#8594;</span>
+          </div>
         </button>
       </article>
     </template>
@@ -88,16 +91,18 @@
       <section class="app-modal" id="appModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
         <button class="modal-close" id="modalClose" type="button" aria-label="Close modal">&times;</button>
         <div class="modal-hero">
-          <img class="modal-icon" id="modalIcon" alt="" />
-          <div class="modal-hero-copy">
-            <div class="status-row">
-              <span class="status-pill" id="modalStatusPill">
-                <span class="status-dot" aria-hidden="true"></span>
-                <span class="status-text" id="modalStatusText"></span>
-              </span>
+          <div class="modal-hero-panel">
+            <img class="modal-icon" id="modalIcon" alt="" />
+            <div class="modal-hero-copy">
+              <div class="status-row">
+                <span class="status-pill" id="modalStatusPill">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  <span class="status-text" id="modalStatusText"></span>
+                </span>
+              </div>
+              <h2 class="modal-title" id="modalTitle"></h2>
+              <p class="modal-meta" id="modalMeta"></p>
             </div>
-            <h2 class="modal-title" id="modalTitle"></h2>
-            <p class="modal-meta" id="modalMeta"></p>
           </div>
         </div>
         <div class="modal-content">
