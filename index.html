@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Victoria Cheng Apps</title>
+    <meta
+      name="description"
+      content="A bilingual app showcase website for Victoria Cheng, featuring independently designed and developed iOS apps."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Serif+TC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <div class="brand" data-i18n="brand">Victoria Cheng Apps</div>
+          <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">
+            EN
+          </button>
+        </nav>
+
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="eyebrow">Independent iOS App Collection</p>
+          <h1 data-i18n="heroTitle">我開發的 App 們</h1>
+          <p class="hero-text" data-i18n="heroBody">
+            這是一個專門收錄 Victoria Cheng 個人開發作品的雙語頁面，集中展示 app 圖示、下載入口與作品亮點。
+          </p>
+        </div>
+      </header>
+
+      <main>
+        <section class="section-heading">
+          <p class="section-kicker" data-i18n="sectionKicker">Featured Apps</p>
+          <h2 data-i18n="sectionTitle">App Portfolio</h2>
+        </section>
+
+        <section class="apps-grid" id="appsGrid"></section>
+      </main>
+    </div>
+
+    <template id="appCardTemplate">
+      <article class="app-card">
+        <div class="app-card-inner">
+          <img class="app-icon" alt="" />
+          <h3 class="app-title"></h3>
+          <p class="app-meta"></p>
+          <p class="app-description"></p>
+          <p class="app-highlight"></p>
+          <div class="button-row">
+            <a class="app-button primary-button" target="_blank" rel="noreferrer"></a>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
