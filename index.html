@@ -17,13 +17,13 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#appsGrid">Skip to apps</a>
+    <a class="skip-link" href="#appsRail">Skip to apps</a>
     <div class="page-shell">
       <header class="site-header">
         <nav class="topbar" aria-label="Primary">
           <a class="brand" href="#top" data-i18n="brand">Victoria Cheng Apps</a>
           <div class="topnav-links">
-            <a href="#appsGrid" data-i18n="navApps">Apps</a>
+            <a href="#appsRail" data-i18n="navApps">Apps</a>
             <a href="https://victoriac1122.github.io/" target="_blank" rel="noreferrer" data-i18n="navMainSite">Main Site</a>
             <a href="https://github.com/VictoriaC1122/apps" target="_blank" rel="noreferrer" data-i18n="navGithub">GitHub</a>
           </div>
@@ -46,34 +46,75 @@
           <div class="hero-stats" id="heroStats" aria-label="App summary"></div>
         </section>
 
-        <section class="apps-grid" id="appsGrid"></section>
+        <section class="showcase-section" aria-labelledby="showcaseTitle">
+          <div class="showcase-header">
+            <div>
+              <p class="section-kicker" data-i18n="carouselKicker">Scrollable Showcase</p>
+              <h2 class="section-title" id="showcaseTitle" data-i18n="carouselTitle">App Lineup</h2>
+            </div>
+            <div class="showcase-controls">
+              <button class="carousel-button" id="scrollPrev" type="button" aria-label="Scroll left">&#8592;</button>
+              <button class="carousel-button" id="scrollNext" type="button" aria-label="Scroll right">&#8594;</button>
+            </div>
+          </div>
+          <div class="apps-rail" id="appsRail"></div>
+        </section>
       </main>
     </div>
 
     <template id="appCardTemplate">
       <article class="app-card">
-        <div class="app-card-inner">
-          <div class="app-card-head">
+        <button class="app-card-inner app-detail-trigger" type="button">
+          <div class="app-card-top">
             <img class="app-icon" alt="" />
-            <div class="app-head-copy">
+            <div class="app-card-copy">
+              <h3 class="app-title"></h3>
               <div class="status-row">
                 <span class="status-pill">
                   <span class="status-dot" aria-hidden="true"></span>
                   <span class="status-text"></span>
                 </span>
               </div>
-              <h3 class="app-title"></h3>
               <p class="app-meta"></p>
             </div>
           </div>
-          <p class="app-description"></p>
-          <p class="app-highlight"></p>
-          <div class="button-row">
-            <a class="app-button primary-button" target="_blank" rel="noreferrer"></a>
-          </div>
-        </div>
+          <p class="app-summary"></p>
+          <span class="app-open-hint" data-i18n="detailsHint">View details</span>
+        </button>
       </article>
     </template>
+
+    <div class="modal-backdrop" id="modalBackdrop" hidden>
+      <section class="app-modal" id="appModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" id="modalClose" type="button" aria-label="Close modal">&times;</button>
+        <div class="modal-hero">
+          <img class="modal-icon" id="modalIcon" alt="" />
+          <div class="modal-hero-copy">
+            <div class="status-row">
+              <span class="status-pill" id="modalStatusPill">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span class="status-text" id="modalStatusText"></span>
+              </span>
+            </div>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <p class="modal-meta" id="modalMeta"></p>
+          </div>
+        </div>
+        <div class="modal-content">
+          <section class="modal-section">
+            <h3 class="modal-section-title" data-i18n="overviewTitle">Overview</h3>
+            <p class="modal-body" id="modalDescription"></p>
+          </section>
+          <section class="modal-section">
+            <h3 class="modal-section-title" data-i18n="highlightTitle">Project Highlight</h3>
+            <p class="modal-body modal-body-strong" id="modalHighlight"></p>
+          </section>
+        </div>
+        <div class="modal-actions">
+          <a class="app-button primary-button" id="modalStoreButton" target="_blank" rel="noreferrer"></a>
+        </div>
+      </section>
+    </div>
 
     <script src="script.js"></script>
   </body>

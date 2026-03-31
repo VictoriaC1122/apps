@@ -8,8 +8,13 @@ const PAGE_CONTENT = {
     heroBody:
       "這是一個專門收錄 Victoria Cheng 個人開發作品的雙語頁面，集中展示 app 圖示、下載入口與作品亮點。",
     sectionKicker: "Featured Apps",
+    carouselKicker: "Scrollable Showcase",
+    carouselTitle: "App 展示列",
     storeLabel: "前往 App Store",
     comingSoon: "下載連結整理中",
+    detailsHint: "查看完整介紹",
+    overviewTitle: "作品介紹",
+    highlightTitle: "作品亮點",
     stats: {
       total: "目前展示 App",
       released: "已可發佈",
@@ -30,8 +35,13 @@ const PAGE_CONTENT = {
     heroBody:
       "This bilingual showcase gathers Victoria Cheng's independently designed and developed apps in one dedicated place, with icons, download links, and project highlights.",
     sectionKicker: "Featured Apps",
+    carouselKicker: "Scrollable Showcase",
+    carouselTitle: "App Lineup",
     storeLabel: "View on App Store",
     comingSoon: "Download link coming soon",
+    detailsHint: "View details",
+    overviewTitle: "Overview",
+    highlightTitle: "Project Highlight",
     stats: {
       total: "Apps featured",
       released: "Ready for sale",
@@ -158,14 +168,27 @@ const APPS = [
 ];
 
 const template = document.querySelector("#appCardTemplate");
-const grid = document.querySelector("#appsGrid");
+const rail = document.querySelector("#appsRail");
 const toggle = document.querySelector("#langToggle");
 const heroStats = document.querySelector("#heroStats");
+const scrollPrev = document.querySelector("#scrollPrev");
+const scrollNext = document.querySelector("#scrollNext");
+const modalBackdrop = document.querySelector("#modalBackdrop");
+const modalClose = document.querySelector("#modalClose");
+const modalIcon = document.querySelector("#modalIcon");
+const modalStatusPill = document.querySelector("#modalStatusPill");
+const modalStatusText = document.querySelector("#modalStatusText");
+const modalTitle = document.querySelector("#modalTitle");
+const modalMeta = document.querySelector("#modalMeta");
+const modalDescription = document.querySelector("#modalDescription");
+const modalHighlight = document.querySelector("#modalHighlight");
+const modalStoreButton = document.querySelector("#modalStoreButton");
 
 const STORAGE_KEY = "victoria_apps_language";
 const DEFAULT_LANGUAGE = "zh";
 
 let language = getInitialLanguage();
+let activeAppIndex = null;
 
 function getInitialLanguage() {
   const savedLanguage = window.localStorage.getItem(STORAGE_KEY);
@@ -228,45 +251,78 @@ function renderStats(page) {
 }
 
 function renderApps(page) {
-  grid.innerHTML = "";
+  rail.innerHTML = "";
 
-  APPS.forEach((app) => {
+  APPS.forEach((app, index) => {
     const localizedApp = getLocalizedApp(app);
     const card = template.content.cloneNode(true);
     const icon = card.querySelector(".app-icon");
     const title = card.querySelector(".app-title");
     const meta = card.querySelector(".app-meta");
-    const description = card.querySelector(".app-description");
-    const highlight = card.querySelector(".app-highlight");
-    const button = card.querySelector(".app-button");
+    const summary = card.querySelector(".app-summary");
     const statusPill = card.querySelector(".status-pill");
     const statusText = card.querySelector(".status-text");
+    const trigger = card.querySelector(".app-detail-trigger");
 
     icon.src = app.icon;
     icon.alt = `${localizedApp.title} icon`;
     title.textContent = localizedApp.title;
     meta.textContent = createMetaText(app, page);
-    description.textContent = localizedApp.description;
-    highlight.textContent = localizedApp.highlight;
+    summary.textContent = localizedApp.description;
 
     statusPill.dataset.status = app.status;
     statusText.textContent = page.statuses[app.status];
+    trigger.dataset.appIndex = String(index);
+    trigger.setAttribute("aria-label", `${localizedApp.title} ${page.detailsHint}`);
 
-    const appUrl = getAppUrl(app);
-    if (appUrl) {
-      button.href = appUrl;
-      button.textContent = page.storeLabel;
-      button.classList.remove("is-disabled");
-      button.removeAttribute("aria-disabled");
-    } else {
-      button.removeAttribute("href");
-      button.textContent = page.comingSoon;
-      button.classList.add("is-disabled");
-      button.setAttribute("aria-disabled", "true");
-    }
-
-    grid.appendChild(card);
+    rail.appendChild(card);
   });
+}
+
+function populateModal(appIndex) {
+  const page = getPage();
+  const app = APPS[appIndex];
+  const localizedApp = getLocalizedApp(app);
+  const appUrl = getAppUrl(app);
+
+  modalIcon.src = app.icon;
+  modalIcon.alt = `${localizedApp.title} icon`;
+  modalStatusPill.dataset.status = app.status;
+  modalStatusText.textContent = page.statuses[app.status];
+  modalTitle.textContent = localizedApp.title;
+  modalMeta.textContent = createMetaText(app, page);
+  modalDescription.textContent = localizedApp.description;
+  modalHighlight.textContent = localizedApp.highlight;
+
+  if (appUrl) {
+    modalStoreButton.href = appUrl;
+    modalStoreButton.textContent = page.storeLabel;
+    modalStoreButton.classList.remove("is-disabled");
+    modalStoreButton.removeAttribute("aria-disabled");
+  } else {
+    modalStoreButton.removeAttribute("href");
+    modalStoreButton.textContent = page.comingSoon;
+    modalStoreButton.classList.add("is-disabled");
+    modalStoreButton.setAttribute("aria-disabled", "true");
+  }
+}
+
+function openModal(appIndex) {
+  activeAppIndex = appIndex;
+  populateModal(appIndex);
+  modalBackdrop.hidden = false;
+  document.body.style.overflow = "hidden";
+  modalClose.focus();
+}
+
+function closeModal() {
+  modalBackdrop.hidden = true;
+  document.body.style.overflow = "";
+  if (activeAppIndex !== null) {
+    const trigger = rail.querySelector(`[data-app-index="${activeAppIndex}"]`);
+    trigger?.focus();
+  }
+  activeAppIndex = null;
 }
 
 function renderPage() {
@@ -274,12 +330,43 @@ function renderPage() {
   renderStaticText(page);
   renderStats(page);
   renderApps(page);
+  if (activeAppIndex !== null) {
+    populateModal(activeAppIndex);
+  }
   window.localStorage.setItem(STORAGE_KEY, language);
 }
 
 toggle.addEventListener("click", () => {
   language = language === "zh" ? "en" : "zh";
   renderPage();
+});
+
+rail.addEventListener("click", (event) => {
+  const trigger = event.target.closest(".app-detail-trigger");
+  if (!trigger) return;
+  openModal(Number(trigger.dataset.appIndex));
+});
+
+scrollPrev.addEventListener("click", () => {
+  rail.scrollBy({ left: -360, behavior: "smooth" });
+});
+
+scrollNext.addEventListener("click", () => {
+  rail.scrollBy({ left: 360, behavior: "smooth" });
+});
+
+modalClose.addEventListener("click", closeModal);
+
+modalBackdrop.addEventListener("click", (event) => {
+  if (event.target === modalBackdrop) {
+    closeModal();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && !modalBackdrop.hidden) {
+    closeModal();
+  }
 });
 
 renderPage();
