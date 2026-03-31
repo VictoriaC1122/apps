@@ -12,9 +12,7 @@ const PAGE_CONTENT = {
     carouselTitle: "App 展示列",
     storeLabel: "前往 App Store",
     comingSoon: "下載連結整理中",
-    detailsHint: "查看完整介紹",
-    overviewTitle: "作品介紹",
-    highlightTitle: "作品亮點",
+    detailsHint: "Featured app",
     stats: {
       total: "目前展示 App",
       released: "已可發佈",
@@ -39,9 +37,7 @@ const PAGE_CONTENT = {
     carouselTitle: "App Lineup",
     storeLabel: "View on App Store",
     comingSoon: "Download link coming soon",
-    detailsHint: "View details",
-    overviewTitle: "Overview",
-    highlightTitle: "Project Highlight",
+    detailsHint: "Featured app",
     stats: {
       total: "Apps featured",
       released: "Ready for sale",
@@ -173,22 +169,11 @@ const toggle = document.querySelector("#langToggle");
 const heroStats = document.querySelector("#heroStats");
 const scrollPrev = document.querySelector("#scrollPrev");
 const scrollNext = document.querySelector("#scrollNext");
-const modalBackdrop = document.querySelector("#modalBackdrop");
-const modalClose = document.querySelector("#modalClose");
-const modalIcon = document.querySelector("#modalIcon");
-const modalStatusPill = document.querySelector("#modalStatusPill");
-const modalStatusText = document.querySelector("#modalStatusText");
-const modalTitle = document.querySelector("#modalTitle");
-const modalMeta = document.querySelector("#modalMeta");
-const modalDescription = document.querySelector("#modalDescription");
-const modalHighlight = document.querySelector("#modalHighlight");
-const modalStoreButton = document.querySelector("#modalStoreButton");
 
 const STORAGE_KEY = "victoria_apps_language";
 const DEFAULT_LANGUAGE = "zh";
 
 let language = getInitialLanguage();
-let activeAppIndex = null;
 
 function getInitialLanguage() {
   const savedLanguage = window.localStorage.getItem(STORAGE_KEY);
@@ -262,7 +247,7 @@ function renderApps(page) {
     const summary = card.querySelector(".app-summary");
     const statusPill = card.querySelector(".status-pill");
     const statusText = card.querySelector(".status-text");
-    const trigger = card.querySelector(".app-detail-trigger");
+    const button = card.querySelector(".app-button");
 
     icon.src = app.icon;
     icon.alt = `${localizedApp.title} icon`;
@@ -272,59 +257,22 @@ function renderApps(page) {
 
     statusPill.dataset.status = app.status;
     statusText.textContent = page.statuses[app.status];
-    trigger.dataset.appIndex = String(index);
-    trigger.setAttribute("aria-label", `${localizedApp.title} ${page.detailsHint}`);
+
+    const appUrl = getAppUrl(app);
+    if (appUrl) {
+      button.href = appUrl;
+      button.textContent = page.storeLabel;
+      button.classList.remove("is-disabled");
+      button.removeAttribute("aria-disabled");
+    } else {
+      button.removeAttribute("href");
+      button.textContent = page.comingSoon;
+      button.classList.add("is-disabled");
+      button.setAttribute("aria-disabled", "true");
+    }
 
     rail.appendChild(card);
   });
-}
-
-function populateModal(appIndex) {
-  const page = getPage();
-  const app = APPS[appIndex];
-  if (!app) return;
-  const localizedApp = getLocalizedApp(app);
-  const appUrl = getAppUrl(app);
-
-  modalIcon.src = app.icon;
-  modalIcon.alt = `${localizedApp.title} icon`;
-  modalStatusPill.dataset.status = app.status;
-  modalStatusText.textContent = page.statuses[app.status];
-  modalTitle.textContent = localizedApp.title;
-  modalMeta.textContent = createMetaText(app, page);
-  modalDescription.textContent = localizedApp.description;
-  modalHighlight.textContent = localizedApp.highlight;
-
-  if (appUrl) {
-    modalStoreButton.href = appUrl;
-    modalStoreButton.textContent = page.storeLabel;
-    modalStoreButton.classList.remove("is-disabled");
-    modalStoreButton.removeAttribute("aria-disabled");
-  } else {
-    modalStoreButton.removeAttribute("href");
-    modalStoreButton.textContent = page.comingSoon;
-    modalStoreButton.classList.add("is-disabled");
-    modalStoreButton.setAttribute("aria-disabled", "true");
-  }
-}
-
-function openModal(appIndex) {
-  if (!Number.isInteger(appIndex) || !APPS[appIndex]) return;
-  activeAppIndex = appIndex;
-  populateModal(appIndex);
-  modalBackdrop.hidden = false;
-  document.body.classList.add("modal-open");
-  modalClose.focus();
-}
-
-function closeModal() {
-  modalBackdrop.hidden = true;
-  document.body.classList.remove("modal-open");
-  if (activeAppIndex !== null) {
-    const trigger = rail.querySelector(`[data-app-index="${activeAppIndex}"]`);
-    trigger?.focus();
-  }
-  activeAppIndex = null;
 }
 
 function renderPage() {
@@ -332,9 +280,6 @@ function renderPage() {
   renderStaticText(page);
   renderStats(page);
   renderApps(page);
-  if (activeAppIndex !== null) {
-    populateModal(activeAppIndex);
-  }
   window.localStorage.setItem(STORAGE_KEY, language);
 }
 
@@ -343,41 +288,12 @@ toggle.addEventListener("click", () => {
   renderPage();
 });
 
-rail.addEventListener("click", (event) => {
-  const trigger = event.target.closest(".app-detail-trigger");
-  if (!trigger) return;
-  openModal(Number(trigger.dataset.appIndex));
-});
-
-rail.addEventListener("keydown", (event) => {
-  const trigger = event.target.closest(".app-detail-trigger");
-  if (!trigger) return;
-  if (event.key === "Enter" || event.key === " ") {
-    event.preventDefault();
-    openModal(Number(trigger.dataset.appIndex));
-  }
-});
-
 scrollPrev.addEventListener("click", () => {
   rail.scrollBy({ left: -360, behavior: "smooth" });
 });
 
 scrollNext.addEventListener("click", () => {
   rail.scrollBy({ left: 360, behavior: "smooth" });
-});
-
-modalClose.addEventListener("click", closeModal);
-
-modalBackdrop.addEventListener("click", (event) => {
-  if (event.target === modalBackdrop) {
-    closeModal();
-  }
-});
-
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && !modalBackdrop.hidden) {
-    closeModal();
-  }
 });
 
 renderPage();

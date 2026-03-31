@@ -64,7 +64,7 @@
 
     <template id="appCardTemplate">
       <article class="app-card">
-        <button class="app-card-inner app-detail-trigger" type="button">
+        <div class="app-card-inner">
           <div class="app-card-top">
             <img class="app-icon" alt="" />
             <div class="app-card-copy">
@@ -80,46 +80,12 @@
           </div>
           <p class="app-summary"></p>
           <div class="app-card-footer">
-            <span class="app-open-hint" data-i18n="detailsHint">View details</span>
-            <span class="app-chevron" aria-hidden="true">&#8594;</span>
+            <span class="app-open-hint" data-i18n="detailsHint">Featured app</span>
+            <a class="app-button primary-button" target="_blank" rel="noreferrer"></a>
           </div>
-        </button>
+        </div>
       </article>
     </template>
-
-    <div class="modal-backdrop" id="modalBackdrop" hidden>
-      <section class="app-modal" id="appModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-        <button class="modal-close" id="modalClose" type="button" aria-label="Close modal">&times;</button>
-        <div class="modal-hero">
-          <div class="modal-hero-panel">
-            <img class="modal-icon" id="modalIcon" alt="" />
-            <div class="modal-hero-copy">
-              <div class="status-row">
-                <span class="status-pill" id="modalStatusPill">
-                  <span class="status-dot" aria-hidden="true"></span>
-                  <span class="status-text" id="modalStatusText"></span>
-                </span>
-              </div>
-              <h2 class="modal-title" id="modalTitle"></h2>
-              <p class="modal-meta" id="modalMeta"></p>
-            </div>
-          </div>
-        </div>
-        <div class="modal-content">
-          <section class="modal-section">
-            <h3 class="modal-section-title" data-i18n="overviewTitle">Overview</h3>
-            <p class="modal-body" id="modalDescription"></p>
-          </section>
-          <section class="modal-section">
-            <h3 class="modal-section-title" data-i18n="highlightTitle">Project Highlight</h3>
-            <p class="modal-body modal-body-strong" id="modalHighlight"></p>
-          </section>
-        </div>
-        <div class="modal-actions">
-          <a class="app-button primary-button" id="modalStoreButton" target="_blank" rel="noreferrer"></a>
-        </div>
-      </section>
-    </div>
 
     <script src="script.js"></script>
   </body>
