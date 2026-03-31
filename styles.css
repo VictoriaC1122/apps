@@ -1,14 +1,22 @@
 :root {
   --page-bg: #dcecff;
+  --page-bg-2: #edf5ff;
   --panel-bg: #fffdfb;
   --panel-edge: #ebe4da;
   --card-bg: #fffdfa;
+  --card-bg-2: #fffcf8;
   --card-edge: #efe8df;
   --text: #2e2c2c;
-  --muted: #aaa29c;
+  --muted: #8f8780;
+  --soft: #a9a097;
   --accent: #d4b4e7;
   --accent-deep: #bc96d8;
+  --success: #3e7f36;
+  --success-bg: #eef8ec;
+  --pending: #c79a1e;
+  --pending-bg: #fff7df;
   --shadow: 0 18px 42px rgba(81, 73, 66, 0.08);
+  --shadow-soft: 0 10px 22px rgba(107, 95, 82, 0.05);
   --max-width: 1260px;
 }
 
@@ -23,7 +31,8 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(180deg, #dff0ff 0%, var(--page-bg) 100%);
+  background:
+    linear-gradient(180deg, var(--page-bg-2) 0%, var(--page-bg) 100%);
   color: var(--text);
   font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
   text-rendering: optimizeLegibility;
@@ -37,6 +46,27 @@ a {
 img {
   display: block;
   max-width: 100%;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -48px;
+  z-index: 20;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--text);
+  box-shadow: var(--shadow-soft);
+}
+
+.skip-link:focus {
+  top: 16px;
 }
 
 .page-shell {
@@ -65,7 +95,10 @@ img {
 .lang-toggle,
 .page-title,
 .app-title,
-.app-meta {
+.app-meta,
+.status-pill,
+.hero-stat-value,
+.hero-stat-label {
   font-family: "Libre Baskerville", "Noto Serif TC", serif;
 }
 
@@ -105,7 +138,8 @@ img {
   background: var(--accent);
 }
 
-.topnav-links a:hover {
+.topnav-links a:hover,
+.topnav-links a:focus-visible {
   color: #4d4742;
 }
 
@@ -119,7 +153,7 @@ img {
   border-radius: 999px;
   background: #fffdfa;
   color: #7f756b;
-  min-width: 86px;
+  min-width: 92px;
   padding: 10px 14px;
   font-size: 0.86rem;
   font-weight: 700;
@@ -127,7 +161,8 @@ img {
   transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
-.lang-toggle:hover {
+.lang-toggle:hover,
+.lang-toggle:focus-visible {
   color: #554f49;
   border-color: var(--accent-deep);
   transform: translateY(-1px);
@@ -172,21 +207,66 @@ main {
   font-weight: 600;
 }
 
-.apps-grid {
+.hero-stats {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 40px;
+  gap: 16px;
+  margin-top: 28px;
+  max-width: 760px;
+}
+
+.hero-stat {
+  padding: 18px 18px 16px;
+  border: 1px solid var(--card-edge);
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fffefd 0%, #fffaf6 100%);
+  box-shadow: var(--shadow-soft);
+}
+
+.hero-stat-value {
+  margin: 0 0 6px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.hero-stat-label {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.app-card {
+  min-width: 0;
 }
 
 .app-card-inner {
   height: 100%;
-  padding: 34px 34px 30px;
+  padding: 28px 28px 26px;
   border: 1px solid var(--card-edge);
   border-radius: 18px;
-  background: linear-gradient(180deg, #fffefd 0%, #fffaf6 100%);
-  box-shadow: 0 8px 24px rgba(107, 95, 82, 0.04);
+  background: linear-gradient(180deg, var(--card-bg) 0%, var(--card-bg-2) 100%);
+  box-shadow: var(--shadow-soft);
   display: flex;
   flex-direction: column;
+}
+
+.app-card-head {
+  display: grid;
+  grid-template-columns: 108px 1fr;
+  gap: 22px;
+  align-items: start;
+  margin-bottom: 22px;
+}
+
+.app-head-copy {
+  min-width: 0;
 }
 
 .app-icon {
@@ -194,20 +274,53 @@ main {
   height: 108px;
   border-radius: 26px;
   object-fit: cover;
-  margin-bottom: 28px;
+  box-shadow: 0 16px 30px rgba(69, 57, 45, 0.12);
+}
+
+.status-row {
+  margin-bottom: 14px;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.status-pill[data-status="released"] {
+  color: var(--success);
+  background: var(--success-bg);
+}
+
+.status-pill[data-status="pending"] {
+  color: #996f05;
+  background: var(--pending-bg);
+}
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: currentColor;
+  flex: 0 0 auto;
 }
 
 .app-title {
-  margin: 0 0 12px;
-  font-size: 1.28rem;
-  line-height: 1.5;
+  margin: 0 0 10px;
+  font-size: 1.36rem;
+  line-height: 1.45;
   font-weight: 700;
 }
 
 .app-meta {
-  margin: 0 0 30px;
-  color: var(--muted);
-  font-size: 0.96rem;
+  margin: 0;
+  color: var(--soft);
+  font-size: 0.95rem;
   line-height: 1.7;
   font-style: italic;
   font-weight: 700;
@@ -217,7 +330,7 @@ main {
 .app-highlight {
   margin: 0;
   font-size: 1rem;
-  line-height: 1.95;
+  line-height: 1.9;
 }
 
 .app-description {
@@ -225,14 +338,14 @@ main {
 }
 
 .app-highlight {
-  margin-top: 24px;
+  margin-top: 18px;
   color: #3f3a37;
   font-weight: 700;
 }
 
 .button-row {
   margin-top: auto;
-  padding-top: 34px;
+  padding-top: 26px;
 }
 
 .app-button {
@@ -240,18 +353,19 @@ main {
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 76px;
+  min-height: 64px;
   border: 1px solid #eadfd4;
   border-radius: 14px;
   background: #fffdfa;
   color: #9f79c7;
   font-family: "Libre Baskerville", "Noto Serif TC", serif;
-  font-size: 1rem;
+  font-size: 0.98rem;
   font-weight: 700;
   transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
 }
 
-.app-button:hover {
+.app-button:hover,
+.app-button:focus-visible {
   transform: translateY(-1px);
   color: #8d62b9;
   box-shadow: 0 12px 30px rgba(183, 153, 216, 0.14);
@@ -275,9 +389,9 @@ main {
     justify-content: center;
   }
 
+  .hero-stats,
   .apps-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -309,15 +423,21 @@ main {
     line-height: 1.8;
   }
 
-  .apps-grid {
+  .app-card-head {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .app-icon {
+    width: 96px;
+    height: 96px;
   }
 
   .app-card-inner {
-    padding: 26px 22px 22px;
+    padding: 24px 20px 20px;
   }
 
   .app-button {
-    min-height: 64px;
+    min-height: 60px;
   }
 }
