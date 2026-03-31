@@ -1,12 +1,13 @@
 const content = {
   zh: {
     brand: "Victoria Cheng Apps",
-    eyebrow: "Independent iOS App Collection",
+    navApps: "Apps",
+    navMainSite: "Main Site",
+    navGithub: "GitHub",
     heroTitle: "我開發的 App 們",
     heroBody:
       "這是一個專門收錄 Victoria Cheng 個人開發作品的雙語頁面，集中展示 app 圖示、下載入口與作品亮點。",
     sectionKicker: "Featured Apps",
-    sectionTitle: "App Portfolio",
     storeLabel: "前往 App Store",
     comingSoon: "下載連結整理中",
     apps: [
@@ -54,12 +55,13 @@ const content = {
   },
   en: {
     brand: "Victoria Cheng Apps",
-    eyebrow: "Independent iOS App Collection",
+    navApps: "Apps",
+    navMainSite: "Main Site",
+    navGithub: "GitHub",
     heroTitle: "Apps I Built",
     heroBody:
       "This bilingual showcase gathers Victoria Cheng's independently designed and developed apps in one dedicated place, with icons, download links, and project highlights.",
     sectionKicker: "Featured Apps",
-    sectionTitle: "App Portfolio",
     storeLabel: "View on App Store",
     comingSoon: "Download link coming soon",
     apps: [

@@ -11,34 +11,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Serif+TC:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Noto+Serif+TC:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="page-shell">
-      <header class="hero">
+      <header class="site-header">
         <nav class="topbar">
-          <div class="brand" data-i18n="brand">Victoria Cheng Apps</div>
-          <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">
-            EN
-          </button>
+          <a class="brand" href="#top" data-i18n="brand">Victoria Cheng Apps</a>
+          <div class="topnav-links">
+            <a href="#appsGrid" data-i18n="navApps">Apps</a>
+            <a href="https://victoriac1122.github.io/" target="_blank" rel="noreferrer" data-i18n="navMainSite">Main Site</a>
+            <a href="https://github.com/VictoriaC1122/apps" target="_blank" rel="noreferrer" data-i18n="navGithub">GitHub</a>
+          </div>
+          <div class="topbar-actions">
+            <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">
+              EN
+            </button>
+          </div>
         </nav>
-
-        <div class="hero-copy">
-          <p class="eyebrow" data-i18n="eyebrow">Independent iOS App Collection</p>
-          <h1 data-i18n="heroTitle">我開發的 App 們</h1>
-          <p class="hero-text" data-i18n="heroBody">
-            這是一個專門收錄 Victoria Cheng 個人開發作品的雙語頁面，集中展示 app 圖示、下載入口與作品亮點。
-          </p>
-        </div>
       </header>
 
       <main>
-        <section class="section-heading">
+        <section class="hero-block" id="top">
           <p class="section-kicker" data-i18n="sectionKicker">Featured Apps</p>
-          <h2 data-i18n="sectionTitle">App Portfolio</h2>
+          <h1 class="page-title" data-i18n="heroTitle">我開發的 App 們</h1>
+          <div class="title-underline"></div>
+          <p class="hero-text" data-i18n="heroBody">
+            這是一個專門收錄 Victoria Cheng 個人開發作品的雙語頁面，集中展示 app 圖示、下載入口與作品亮點。
+          </p>
         </section>
 
         <section class="apps-grid" id="appsGrid"></section>
