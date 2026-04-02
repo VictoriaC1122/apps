@@ -210,6 +210,14 @@ function getPage() {
   return PAGE_CONTENT[language];
 }
 
+function getAppCounts() {
+  return {
+    total: APPS.length,
+    released: APPS.filter((app) => app.status === "released").length,
+    pending: APPS.filter((app) => app.status === "pending").length
+  };
+}
+
 function getLocalizedApp(app) {
   return app[language];
 }
@@ -237,12 +245,11 @@ function renderStaticText(page) {
 }
 
 function renderStats(page) {
-  const releasedCount = APPS.filter((app) => app.status === "released").length;
-  const pendingCount = APPS.filter((app) => app.status === "pending").length;
+  const counts = getAppCounts();
   const stats = [
-    { value: APPS.length, label: page.stats.total },
-    { value: releasedCount, label: page.stats.released },
-    { value: pendingCount, label: page.stats.pending }
+    { value: counts.total, label: page.stats.total },
+    { value: counts.released, label: page.stats.released },
+    { value: counts.pending, label: page.stats.pending }
   ];
 
   heroStats.innerHTML = "";
@@ -260,7 +267,7 @@ function renderStats(page) {
 function renderApps(page) {
   rail.innerHTML = "";
 
-  APPS.forEach((app, index) => {
+  APPS.forEach((app) => {
     const localizedApp = getLocalizedApp(app);
     const card = template.content.cloneNode(true);
     const icon = card.querySelector(".app-icon");
@@ -284,11 +291,15 @@ function renderApps(page) {
     if (appUrl) {
       button.href = appUrl;
       button.textContent = page.storeLabel;
+      button.setAttribute("aria-label", `${page.storeLabel}: ${localizedApp.title}`);
+      button.setAttribute("title", localizedApp.title);
       button.classList.remove("is-disabled");
       button.removeAttribute("aria-disabled");
     } else {
       button.removeAttribute("href");
       button.textContent = page.comingSoon;
+      button.setAttribute("aria-label", `${localizedApp.title}: ${page.comingSoon}`);
+      button.removeAttribute("title");
       button.classList.add("is-disabled");
       button.setAttribute("aria-disabled", "true");
     }
@@ -303,6 +314,25 @@ function renderPage() {
   renderStats(page);
   renderApps(page);
   window.localStorage.setItem(STORAGE_KEY, language);
+  updateCarouselControls();
+}
+
+function getScrollAmount() {
+  return Math.max(Math.floor(rail.clientWidth * 0.82), 260);
+}
+
+function updateCarouselControls() {
+  const maxScrollLeft = rail.scrollWidth - rail.clientWidth;
+  const isScrollable = maxScrollLeft > 8;
+  const nearStart = rail.scrollLeft <= 8;
+  const nearEnd = rail.scrollLeft >= maxScrollLeft - 8;
+
+  scrollPrev.disabled = !isScrollable || nearStart;
+  scrollNext.disabled = !isScrollable || nearEnd;
+}
+
+function scrollRail(direction) {
+  rail.scrollBy({ left: direction * getScrollAmount(), behavior: "smooth" });
 }
 
 toggle.addEventListener("click", () => {
@@ -311,11 +341,14 @@ toggle.addEventListener("click", () => {
 });
 
 scrollPrev.addEventListener("click", () => {
-  rail.scrollBy({ left: -360, behavior: "smooth" });
+  scrollRail(-1);
 });
 
 scrollNext.addEventListener("click", () => {
-  rail.scrollBy({ left: 360, behavior: "smooth" });
+  scrollRail(1);
 });
+
+rail.addEventListener("scroll", updateCarouselControls, { passive: true });
+window.addEventListener("resize", updateCarouselControls);
 
 renderPage();

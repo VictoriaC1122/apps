@@ -284,6 +284,13 @@ main {
   transform: translateY(-1px);
 }
 
+.carousel-button:disabled {
+  opacity: 0.45;
+  cursor: default;
+  transform: none;
+  box-shadow: none;
+}
+
 .apps-rail {
   display: grid;
   grid-auto-flow: column;
@@ -474,6 +481,19 @@ main {
   color: #9d9287;
   background: #fbf7f3;
   pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .app-card-inner,
+  .app-button,
+  .carousel-button,
+  .lang-toggle {
+    transition: none;
+  }
 }
 
 @media (max-width: 1120px) {
