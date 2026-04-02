@@ -13,11 +13,11 @@ const PAGE_CONTENT = {
     detailsHint: "Featured app",
     stats: {
       total: "目前展示 App",
-      released: "已可發佈",
+      released: "已發佈",
       pending: "等待審查中"
     },
     statuses: {
-      released: "已可發佈",
+      released: "已發佈",
       pending: "正在等待審查"
     },
     metaSeparator: "・"
