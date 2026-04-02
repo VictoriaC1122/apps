@@ -1,6 +1,6 @@
 const PAGE_CONTENT = {
   zh: {
-    brand: "Victoria Cheng Apps",
+    brand: "Victoria Cheng's App",
     navApps: "Apps",
     heroTitle: "獨立開發作品集",
     heroBody:
@@ -23,7 +23,7 @@ const PAGE_CONTENT = {
     metaSeparator: "・"
   },
   en: {
-    brand: "Victoria Cheng Apps",
+    brand: "Victoria Cheng's App",
     navApps: "Apps",
     heroTitle: "Selected iOS Works",
     heroBody:
