@@ -49,10 +49,13 @@ const PAGE_CONTENT = {
 
 const APPS = [
   {
-    status: "pending",
+    status: "released",
     version: "1.0",
     icon: "assets/icons/crypto-guide.png",
-    url: null,
+    url: {
+      zh: "https://apps.apple.com/tw/app/%E5%B9%A3%E5%9C%88%E7%A5%9E%E5%99%A8-%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3-%E5%8D%80%E5%A1%8A%E9%8F%88%E5%AD%B8%E7%BF%92%E5%AD%97%E5%85%B8/id6761411130?l=zh-Hant-TW",
+      en: "https://apps.apple.com/tw/app/%E5%B9%A3%E5%9C%88%E7%A5%9E%E5%99%A8-%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3-%E5%8D%80%E5%A1%8A%E9%8F%88%E5%AD%B8%E7%BF%92%E5%AD%97%E5%85%B8/id6761411130?l=en-GB"
+    },
     zh: {
       title: "幣圈神器-加密貨幣&區塊鏈學習字典",
       description:
@@ -135,6 +138,29 @@ const APPS = [
         "An advanced finance utility that combines compound growth, DCA, financial freedom planning, loan analysis, retirement planning, and inflation-aware calculations in one experience.",
       highlight:
         "Project highlight: translates investing, inflation, and long-term planning logic into a visual, approachable, decision-ready interface."
+    }
+  },
+  {
+    status: "released",
+    version: "1.0",
+    icon: "assets/icons/did-you-take-your-vitamins-today.png",
+    url: {
+      zh: "https://apps.apple.com/tw/app/%E4%BD%A0%E4%BB%8A%E5%A4%A9%E7%B6%AD%E4%BB%96%E5%91%BD%E4%BA%86%E5%97%8E/id6761441866?l=zh-Hant-TW",
+      en: "https://apps.apple.com/tw/app/%E4%BD%A0%E4%BB%8A%E5%A4%A9%E7%B6%AD%E4%BB%96%E5%91%BD%E4%BA%86%E5%97%8E/id6761441866?l=en-GB"
+    },
+    zh: {
+      title: "你今天維他命了嗎",
+      description:
+        "一款以每日保健品管理為核心的健康 app，結合服用紀錄、歷史追蹤、知識整理與個人頁面，幫助使用者建立穩定又好維持的補充習慣。",
+      highlight:
+        "作品重點：把日常健康追蹤、資訊整理與個人化紀錄整合成一個溫和清楚的行動介面。"
+    },
+    en: {
+      title: "Did You Take Your Vitamins Today?",
+      description:
+        "A wellness app centered on daily supplement routines, combining intake logs, history tracking, educational content, and a personal profile flow in one gentle experience.",
+      highlight:
+        "Project highlight: turns everyday health tracking into a calm, approachable, habit-friendly mobile product."
     }
   },
   {
