@@ -2,19 +2,19 @@ const PAGE_CONTENT = {
   zh: {
     brand: "Victoria Cheng Apps",
     navApps: "Apps",
-    heroTitle: "我開發的 App 們",
+    heroTitle: "獨立開發作品集",
     heroBody:
-      "這是一個專門收錄 Victoria Cheng 個人開發作品的雙語頁面，集中展示 app 圖示、下載入口與作品亮點。",
-    sectionKicker: "Featured Apps",
-    carouselKicker: "Scrollable Showcase",
-    carouselTitle: "App 展示列",
+      "這個雙語頁面收錄我獨立構思、設計與開發的 iOS 作品。每一個 app 都從一個真實需求或清晰命題出發，並在介面語言、互動節奏與產品定位之間，尋找更完整而耐讀的呈現方式。",
+    sectionKicker: "Selected Works",
+    carouselKicker: "Portfolio Selection",
+    carouselTitle: "作品選輯",
     storeLabel: "前往 App Store",
     comingSoon: "下載連結整理中",
-    detailsHint: "Featured app",
+    detailsHint: "獨立 iOS 作品",
     stats: {
-      total: "目前展示 App",
+      total: "收錄作品",
       released: "已發佈",
-      pending: "等待審查中"
+      pending: "審查中"
     },
     statuses: {
       released: "已發佈",
@@ -25,23 +25,23 @@ const PAGE_CONTENT = {
   en: {
     brand: "Victoria Cheng Apps",
     navApps: "Apps",
-    heroTitle: "Apps I Built",
+    heroTitle: "Selected iOS Works",
     heroBody:
-      "This bilingual showcase gathers Victoria Cheng's independently designed and developed apps in one dedicated place, with icons, download links, and project highlights.",
-    sectionKicker: "Featured Apps",
-    carouselKicker: "Scrollable Showcase",
-    carouselTitle: "App Lineup",
+      "This bilingual portfolio gathers iOS projects I conceived, designed, and built independently. Each app begins with a concrete human need and is shaped into a more deliberate product experience through interface language, interaction rhythm, and editorial clarity.",
+    sectionKicker: "Selected Works",
+    carouselKicker: "Portfolio Selection",
+    carouselTitle: "App Collection",
     storeLabel: "View on App Store",
     comingSoon: "Download link coming soon",
-    detailsHint: "Featured app",
+    detailsHint: "Independent iOS work",
     stats: {
-      total: "Apps featured",
-      released: "Ready for sale",
-      pending: "Awaiting review"
+      total: "Works featured",
+      released: "Published",
+      pending: "In review"
     },
     statuses: {
-      released: "Ready for sale",
-      pending: "Awaiting review"
+      released: "Published",
+      pending: "In review"
     },
     metaSeparator: " · "
   }
@@ -59,16 +59,16 @@ const APPS = [
     zh: {
       title: "幣圈神器-加密貨幣&區塊鏈學習字典",
       description:
-        "一款為加密貨幣與區塊鏈初學者設計的入門學習 app，整合名詞字典、學習地圖、重點收藏與閱讀脈絡，幫助使用者用更有系統的方式建立基礎。",
+        "一款為加密貨幣與區塊鏈初學者設計的入門學習 app，整合名詞字典、學習路徑、重點收藏與閱讀脈絡，協助使用者以更有秩序的方式理解陌生而龐雜的知識領域。",
       highlight:
-        "作品重點：把分散又陌生的幣圈知識整理成可搜尋、可收藏、可循序學習的行動字典。"
+        "作品亮點：將高度碎片化的幣圈資訊整理為可搜尋、可收藏、可循序閱讀的行動知識入口。"
     },
     en: {
       title: "Crypto Guide: Beginner Dictionary for Crypto & Blockchain",
       description:
-        "An onboarding-focused learning app for crypto and blockchain beginners, combining glossary lookup, structured learning paths, bookmarks, and guided reading context in one place.",
+        "An onboarding-focused learning app for crypto and blockchain beginners, bringing together glossary lookup, guided learning paths, saved concepts, and contextual reading support within a single, coherent flow.",
       highlight:
-        "Project highlight: turns scattered and intimidating crypto knowledge into a searchable, saveable, step-by-step mobile learning dictionary."
+        "Highlight: reframes a scattered and intimidating field into a searchable, saveable, and progressively readable mobile reference."
     }
   },
   {
@@ -82,16 +82,16 @@ const APPS = [
     zh: {
       title: "輕鬆抽獎程式",
       description:
-        "一款乾淨、直覺、零廣告的抽獎工具，適合活動、聚會、課堂分組與名單抽選，支援名單整理、重複控制與即時抽選動畫。",
+        "一款乾淨、直覺、零廣告的抽獎工具，適用於活動、課堂、聚會與分組情境，支援名單整理、重複控制與即時抽選動態，讓簡單功能也能擁有完整體驗。",
       highlight:
-        "作品重點：把實用性、視覺質感與即時互動結合，快速完成消費型工具 app 的完整體驗。"
+        "作品亮點：以節制而清楚的視覺語言，為日常工具型 app 建立流暢、可信且愉悅的互動感。"
     },
     en: {
       title: "Easy Lucky Draw",
       description:
-        "A clean, intuitive, zero-ad mobile drawing tool for events, classrooms, parties, and team activities, with list cleanup, repeat control, and lively draw animation.",
+        "A clean, intuitive, zero-ad drawing tool for events, classrooms, parties, and team activities, with list cleanup, repeat control, and real-time draw animation shaped into a frictionless experience.",
       highlight:
-        "Project highlight: turns a simple utility into a polished consumer app through thoughtful visuals and immediate interaction feedback."
+        "Highlight: elevates a lightweight utility through restrained visual design and immediate, satisfying interaction feedback."
     }
   },
   {
@@ -105,16 +105,16 @@ const APPS = [
     zh: {
       title: "AI時間管理",
       description:
-        "一款結合 AI 任務拆解、專注計時與進度回顧的效率工具，幫助使用者把模糊的大目標轉成可執行的專注流程。",
+        "一款結合 AI 任務拆解、專注計時與進度回顧的效率工具，協助使用者把模糊的大目標轉譯為可執行、可持續、可回顧的日常節奏。",
       highlight:
-        "作品重點：結合 AI 建議、穩定計時與真實專注洞察，讓日常規劃更容易落地。"
+        "作品亮點：將 AI 建議、專注管理與行為回饋整合為一個更貼近日常實作的時間設計介面。"
     },
     en: {
       title: "AI Time Management",
       description:
-        "A productivity app that combines AI task breakdown, focus timing, and progress review to help users turn vague goals into structured, actionable sessions.",
+        "A productivity app that combines AI task breakdown, focus timing, and progress review to help users translate vague ambitions into structured, sustainable working rhythms.",
       highlight:
-        "Project highlight: blends AI guidance, reliable timers, and practical focus insights into a workflow people can actually use every day."
+        "Highlight: brings AI guidance, focus structure, and behavioral reflection into a workflow designed for everyday use rather than abstract planning."
     }
   },
   {
@@ -128,16 +128,16 @@ const APPS = [
     zh: {
       title: "複利計算器-能計算通膨的進階工具",
       description:
-        "一款進階財務試算工具，整合複利、定期定額、財務自由、貸款與退休規劃，並將通膨因素一起納入，幫助使用者做出更貼近真實情境的判斷。",
+        "一款進階財務試算工具，整合複利、定期定額、財務自由、貸款與退休規劃，並將通膨因素一併納入，協助使用者以更貼近現實條件的方式思考長期決策。",
       highlight:
-        "作品重點：把投資、通膨與退休規劃等金融邏輯，翻譯成直覺、可視化且容易操作的介面。"
+        "作品亮點：將投資、通膨與退休規劃等複雜金融邏輯，轉譯為清晰、可視化且易於操作的介面。"
     },
     en: {
       title: "Compound Interest Calculator",
       description:
-        "An advanced finance utility that combines compound growth, DCA, financial freedom planning, loan analysis, retirement planning, and inflation-aware calculations in one experience.",
+        "An advanced finance utility that combines compound growth, DCA, financial freedom planning, loan analysis, retirement planning, and inflation-aware calculations within a single decision-making interface.",
       highlight:
-        "Project highlight: translates investing, inflation, and long-term planning logic into a visual, approachable, decision-ready interface."
+        "Highlight: translates investing, inflation, and long-horizon planning into a visual interface that feels approachable without sacrificing analytical depth."
     }
   },
   {
@@ -151,16 +151,16 @@ const APPS = [
     zh: {
       title: "你今天維他命了嗎",
       description:
-        "一款以每日保健品管理為核心的健康 app，結合服用紀錄、歷史追蹤、知識整理與個人頁面，幫助使用者建立穩定又好維持的補充習慣。",
+        "一款以每日保健品管理為核心的健康 app，結合服用紀錄、歷史追蹤、知識整理與個人頁面，幫助使用者把零散的提醒轉化為更穩定、溫和且可持續的日常習慣。",
       highlight:
-        "作品重點：把日常健康追蹤、資訊整理與個人化紀錄整合成一個溫和清楚的行動介面。"
+        "作品亮點：以柔和而清晰的互動語氣，承接日常健康追蹤、資訊整理與個人化紀錄。"
     },
     en: {
       title: "Did You Take Your Vitamins Today?",
       description:
-        "A wellness app centered on daily supplement routines, combining intake logs, history tracking, educational content, and a personal profile flow in one gentle experience.",
+        "A wellness app centered on daily supplement routines, combining intake logs, history tracking, educational content, and a personal profile flow into a calm, habit-supportive experience.",
       highlight:
-        "Project highlight: turns everyday health tracking into a calm, approachable, habit-friendly mobile product."
+        "Highlight: turns everyday health tracking into a gentle mobile ritual with clarity, warmth, and continuity."
     }
   },
   {
@@ -171,16 +171,16 @@ const APPS = [
     zh: {
       title: "賴瑞的調酒研究室",
       description:
-        "一款以調酒研究室為世界觀的互動遊戲作品，結合角色敘事、場景氛圍與主題式探索，打造帶有故事感與個性風格的遊玩體驗。",
+        "一款以調酒研究室為世界觀的互動遊戲作品，結合角色敘事、場景氛圍與主題式探索，試圖建立一個更具角色感、空間感與記憶點的遊玩世界。",
       highlight:
-        "作品重點：把角色設定、視覺敘事與遊戲互動整合成一個完整而有記憶點的主題 app。"
+        "作品亮點：將角色設定、視覺敘事與遊戲互動收束為一個具有主題性與氣氛密度的作品。"
     },
     en: {
       title: "Larry's Mixology Lab",
       description:
-        "A character-driven interactive game set inside a mixology lab, combining story atmosphere, themed exploration, and a distinct visual identity into a playful mobile experience.",
+        "A character-driven interactive game set inside a mixology lab, weaving narrative atmosphere, themed exploration, and a distinct visual identity into a more theatrical mobile experience.",
       highlight:
-        "Project highlight: brings character design, narrative framing, and game interaction together into a memorable concept-driven app."
+        "Highlight: brings character design, narrative framing, and playful interaction into a concept-driven work with a strong sense of mood."
     }
   }
 ];
@@ -274,6 +274,7 @@ function renderApps(page) {
     const title = card.querySelector(".app-title");
     const meta = card.querySelector(".app-meta");
     const summary = card.querySelector(".app-summary");
+    const highlight = card.querySelector(".app-highlight");
     const statusPill = card.querySelector(".status-pill");
     const statusText = card.querySelector(".status-text");
     const button = card.querySelector(".app-button");
@@ -283,6 +284,7 @@ function renderApps(page) {
     title.textContent = localizedApp.title;
     meta.textContent = createMetaText(app, page);
     summary.textContent = localizedApp.description;
+    highlight.textContent = localizedApp.highlight;
 
     statusPill.dataset.status = app.status;
     statusText.textContent = page.statuses[app.status];
