@@ -171,16 +171,16 @@ const APPS = [
     zh: {
       title: "賴瑞的調酒研究室",
       description:
-        "一款以調酒研究室為世界觀的互動遊戲作品，結合角色敘事、場景氛圍與主題式探索，試圖建立一個更具角色感、空間感與記憶點的遊玩世界。",
+        "一款以調酒研究室為背景的 18 禁戀愛遊戲，結合角色互動、情感敘事、場景氛圍與分支式推進，營造更鮮明、成人向且具沉浸感的遊玩體驗。",
       highlight:
-        "作品亮點：將角色設定、視覺敘事與遊戲互動收束為一個具有主題性與氣氛密度的作品。"
+        "作品亮點：以成人向戀愛遊戲為定位，整合角色魅力、敘事張力與場景氣氛，建立更明確且具記憶點的作品個性。"
     },
     en: {
       title: "Larry's Mixology Lab",
       description:
-        "A character-driven interactive game set inside a mixology lab, weaving narrative atmosphere, themed exploration, and a distinct visual identity into a more theatrical mobile experience.",
+        "An adults-only romance game set in a mixology lab, combining character-driven interaction, emotional storytelling, atmospheric scene design, and branching progression into a more immersive experience.",
       highlight:
-        "Highlight: brings character design, narrative framing, and playful interaction into a concept-driven work with a strong sense of mood."
+        "Highlight: positions itself as an 18+ romance title, bringing together character appeal, narrative tension, and a distinctive sense of mood into a memorable concept-driven work."
     }
   }
 ];
