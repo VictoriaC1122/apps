@@ -143,7 +143,7 @@ const APPS = [
   {
     status: "released",
     version: "1.0",
-    icon: "assets/icons/did-you-take-your-vitamins-today.png",
+    icon: "assets/icons/did-you-take-your-vitamins-today.svg",
     url: {
       zh: "https://apps.apple.com/tw/app/%E4%BD%A0%E4%BB%8A%E5%A4%A9%E7%B6%AD%E4%BB%96%E5%91%BD%E4%BA%86%E5%97%8E/id6761441866?l=zh-Hant-TW",
       en: "https://apps.apple.com/tw/app/%E4%BD%A0%E4%BB%8A%E5%A4%A9%E7%B6%AD%E4%BB%96%E5%91%BD%E4%BA%86%E5%97%8E/id6761441866?l=en-GB"
