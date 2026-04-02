@@ -497,55 +497,191 @@ main {
 
 @media (max-width: 760px) {
   .page-shell {
-    width: min(calc(100% - 20px), var(--max-width));
-    margin: 10px auto;
+    width: min(calc(100% - 16px), var(--max-width));
+    margin: 8px auto;
     border-radius: 24px;
   }
 
   .topnav-links {
-    flex-wrap: wrap;
-    gap: 14px 22px;
+    gap: 0;
   }
 
   .topnav-links a {
-    padding: 8px 0 10px;
+    padding: 6px 0 10px;
+    font-size: 0.88rem;
   }
 
   .topnav-links a:first-child::after {
     bottom: -2px;
   }
 
+  .topbar {
+    grid-template-columns: 1fr auto;
+    justify-items: stretch;
+    align-items: center;
+    min-height: auto;
+    padding: 14px 16px 12px;
+    gap: 10px 12px;
+  }
+
+  .brand {
+    font-size: 0.95rem;
+  }
+
+  .topbar-actions {
+    justify-content: flex-end;
+  }
+
+  .lang-toggle {
+    min-width: 72px;
+    padding: 9px 12px;
+    font-size: 0.8rem;
+  }
+
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(8px);
+  }
+
   main {
-    padding: 40px 22px 36px;
+    padding: 34px 16px 28px;
   }
 
   .hero-text {
-    font-size: 1rem;
-    line-height: 1.8;
+    font-size: 0.98rem;
+    line-height: 1.92;
+  }
+
+  .hero-block {
+    margin-bottom: 34px;
+  }
+
+  .section-kicker {
+    margin-bottom: 12px;
+    font-size: 0.88rem;
+  }
+
+  .page-title {
+    font-size: clamp(2rem, 10vw, 2.65rem);
+    line-height: 1.08;
+  }
+
+  .title-underline {
+    width: 68px;
+    margin: 22px 0 22px;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 22px;
+    max-width: none;
+  }
+
+  .hero-stat {
+    padding: 14px 14px 13px;
+    border-radius: 16px;
+  }
+
+  .hero-stat-value {
+    font-size: 1.22rem;
+  }
+
+  .hero-stat-label {
+    font-size: 0.8rem;
   }
 
   .showcase-header {
     align-items: start;
     flex-direction: column;
+    margin-bottom: 18px;
+  }
+
+  .showcase-controls {
+    display: none;
+  }
+
+  .section-title {
+    font-size: clamp(1.45rem, 7vw, 1.85rem);
+  }
+
+  .apps-rail {
+    grid-auto-columns: calc(100vw - 56px);
+    gap: 14px;
+    padding: 4px 2px 12px;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 4px;
+  }
+
+  .apps-rail::-webkit-scrollbar {
+    display: none;
   }
 
   .app-card-top {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: 84px 1fr;
+    gap: 14px;
+    margin-bottom: 14px;
   }
 
   .app-icon {
-    width: 96px;
-    height: 96px;
+    width: 84px;
+    height: 84px;
+    border-radius: 22px;
+  }
+
+  .status-row {
+    margin-bottom: 10px;
+  }
+
+  .status-pill {
+    min-height: 30px;
+    padding: 6px 10px;
+    font-size: 0.76rem;
+  }
+
+  .app-title {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+    line-height: 1.45;
+  }
+
+  .app-meta {
+    font-size: 0.84rem;
+    line-height: 1.55;
+  }
+
+  .app-summary {
+    font-size: 0.93rem;
+    line-height: 1.72;
+    -webkit-line-clamp: 4;
   }
 
   .app-card-inner {
-    padding: 24px 20px 20px;
-    min-height: 320px;
+    padding: 18px;
+    min-height: 0;
+    border-radius: 20px;
+  }
+
+  .app-card-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding-top: 16px;
+  }
+
+  .app-open-hint {
+    font-size: 0.82rem;
   }
 
   .app-button {
-    min-height: 60px;
+    min-height: 52px;
+    font-size: 0.92rem;
+    border-radius: 12px;
   }
 
+  .skip-link {
+    display: none;
+  }
 }
