@@ -164,6 +164,52 @@ const APPS = [
     }
   },
   {
+    status: "released",
+    version: "1.0",
+    icon: "assets/icons/leave-your-dream-behind.png",
+    url: {
+      zh: "https://apps.apple.com/us/app/%E6%8A%8A%E5%A4%A2%E9%81%BA%E7%95%99%E4%B8%8B%E4%BE%86/id6761692228?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/%E6%8A%8A%E5%A4%A2%E9%81%BA%E7%95%99%E4%B8%8B%E4%BE%86/id6761692228"
+    },
+    zh: {
+      title: "把夢遺留下來",
+      description:
+        "一款圍繞夢境記錄而設計的療癒系 app，支援快速記夢、語音輸入、情緒整理、收藏回顧與提醒功能，幫助使用者在清醒與遺忘之間，把稍縱即逝的片段安穩留住。",
+      highlight:
+        "作品亮點：以溫柔而有秩序的介面語氣，將夢境書寫、情緒辨識與個人回顧整理成一個更可持續的日常儀式。"
+    },
+    en: {
+      title: "Leave Your Dream Behind",
+      description:
+        "A gentle dream-journaling app designed for capturing fleeting memories after waking, with quick entry, voice input, mood reflection, favorites, and reminder features woven into a calm daily flow.",
+      highlight:
+        "Highlight: frames dream capture, emotional reflection, and personal recall as a soft yet structured ritual for everyday use."
+    }
+  },
+  {
+    status: "released",
+    version: "1.0",
+    icon: "assets/icons/pr-diary.png",
+    url: {
+      zh: "https://apps.apple.com/us/app/%E5%85%AC%E9%97%9C%E6%97%A5%E8%A8%98/id6761694656?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/%E5%85%AC%E9%97%9C%E6%97%A5%E8%A8%98/id6761694656"
+    },
+    zh: {
+      title: "公關日記",
+      description:
+        "一款結合產業介紹與個人紀錄的主題型 app，從台灣酒店文化的術語、店型與消費觀念出發，延伸到客人、小姐／男模與經紀等多角色日記，讓資訊理解與日常管理能在同一個介面中完成。",
+      highlight:
+        "作品亮點：把敏感而少見的產業知識、角色視角與日記管理需求，整理成一個兼具資訊性與實用性的行動工具。"
+    },
+    en: {
+      title: "PR Diary",
+      description:
+        "A themed app that combines industry guidance with personal record-keeping, introducing Taiwan's nightlife PR culture while supporting diary flows for customers, hostesses or male hosts, and brokers within one structured experience.",
+      highlight:
+        "Highlight: brings together niche cultural knowledge, multi-role journaling, and practical information management in a product with a highly specific point of view."
+    }
+  },
+  {
     status: "pending",
     version: "1.0",
     icon: "assets/icons/larrys-mixology-lab.png",
