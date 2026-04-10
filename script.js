@@ -210,10 +210,13 @@ const APPS = [
     }
   },
   {
-    status: "pending",
+    status: "released",
     version: "1.0",
     icon: "assets/icons/larrys-mixology-lab.png",
-    url: null,
+    url: {
+      zh: "https://apps.apple.com/us/app/%E8%B3%B4%E7%91%9E%E7%9A%84%E8%AA%BF%E9%85%92%E7%A0%94%E7%A9%B6%E5%AE%A4/id6761377948?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/%E8%B3%B4%E7%91%9E%E7%9A%84%E8%AA%BF%E9%85%92%E7%A0%94%E7%A9%B6%E5%AE%A4/id6761377948"
+    },
     zh: {
       title: "賴瑞的調酒研究室",
       description:
