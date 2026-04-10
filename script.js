@@ -4,7 +4,7 @@ const PAGE_CONTENT = {
     navApps: "Apps",
     heroTitle: "獨立開發作品集",
     heroBody:
-      "這個雙語頁面收錄我獨立構思、設計與開發的 iOS 作品。它們有的源自真實生活裡細微卻反覆出現的需求，有的來自我對情感、秩序與想像力的執著；我希望每一個 app 都不只好用，也能留下語氣、溫度與記憶點。",
+      "這裡收錄我獨立構思、設計與開發的 iOS 作品。每一個 app 都從真實需求出發，也試著留下自己的語氣、溫度與記憶點。",
     sectionKicker: "Selected Works",
     carouselKicker: "Portfolio Selection",
     carouselTitle: "作品選輯",
@@ -27,7 +27,7 @@ const PAGE_CONTENT = {
     navApps: "Apps",
     heroTitle: "Selected iOS Works",
     heroBody:
-      "This bilingual portfolio gathers iOS projects I conceived, designed, and built independently. Some begin with intimate, recurring needs from everyday life; others grow out of my fascination with emotion, order, and imagination. I want each app to feel not only useful, but memorable in tone, atmosphere, and desire.",
+      "A bilingual portfolio of iOS apps I conceived, designed, and built independently. Each work begins with a real need, then becomes a product with its own tone, warmth, and atmosphere.",
     sectionKicker: "Selected Works",
     carouselKicker: "Portfolio Selection",
     carouselTitle: "App Collection",
@@ -59,16 +59,16 @@ const APPS = [
     zh: {
       title: "幣圈神器-加密貨幣&區塊鏈學習字典",
       description:
-        "一款為加密貨幣與區塊鏈初學者打造的入門學習 app，把原本艱澀又分散的概念，整理成更清楚、更友善也更願意讓人持續探索的知識旅程。",
+        "為加密貨幣與區塊鏈初學者打造的學習字典，把艱澀分散的概念整理成清楚、友善、可持續探索的知識旅程。",
       highlight:
-        "作品亮點：讓冰冷而陌生的金融新世界，長成一個可搜尋、可收藏、也更有閱讀慾望的行動知識入口。"
+        "亮點：可搜尋、可收藏，也更有閱讀慾望的幣圈入門入口。"
     },
     en: {
       title: "Crypto Guide: Beginner Dictionary for Crypto & Blockchain",
       description:
-        "An onboarding app for crypto and blockchain beginners, turning a field that often feels cold, fragmented, and intimidating into a clearer learning journey users actually want to stay with.",
+        "A beginner-friendly crypto and blockchain dictionary that turns scattered concepts into a clearer, more inviting learning journey.",
       highlight:
-        "Highlight: transforms a scattered financial frontier into a searchable, saveable, and unexpectedly inviting mobile reference."
+        "Highlight: a searchable, saveable, unexpectedly inviting reference."
     }
   },
   {
@@ -82,16 +82,16 @@ const APPS = [
     zh: {
       title: "輕鬆抽獎程式",
       description:
-        "一款乾淨、直覺、零廣告的抽獎工具，適用於活動、課堂、聚會與分組情境，讓原本只是幾秒鐘的抽選過程，也能帶著節奏感、期待感與漂亮的完成度。",
+        "乾淨、直覺、零廣告的抽獎工具，適用於活動、課堂與聚會，讓幾秒鐘的抽選也能有節奏、期待感與完成度。",
       highlight:
-        "作品亮點：把日常小工具做得輕盈、俐落又討喜，讓實用性也能帶著一點舞台感。"
+        "亮點：把日常小工具做得輕盈俐落，帶一點舞台感。"
     },
     en: {
       title: "Easy Lucky Draw",
       description:
-        "A clean, intuitive, zero-ad drawing tool for events, classrooms, parties, and team activities, designed to turn a fleeting moment of selection into something smoother, livelier, and more delightful.",
+        "A clean, zero-ad drawing tool for events, classrooms, and parties, turning a quick selection into a smoother, livelier moment.",
       highlight:
-        "Highlight: gives an ordinary utility a touch of ceremony through restrained visuals and satisfying motion."
+        "Highlight: a simple utility with a small sense of ceremony."
     }
   },
   {
@@ -105,16 +105,16 @@ const APPS = [
     zh: {
       title: "AI時間管理",
       description:
-        "一款結合 AI 任務拆解、專注計時與進度回顧的效率工具，幫助使用者把巨大而模糊的壓力，慢慢整理成可以開始、可以持續、也可以完成的日常節奏。",
+        "結合 AI 任務拆解、專注計時與進度回顧，幫助使用者把巨大而模糊的壓力，整理成可以開始的日常節奏。",
       highlight:
-        "作品亮點：讓時間管理不再只是冰冷規劃，而更像是一種被理解、被陪伴的前進方式。"
+        "亮點：讓時間管理更像被理解、被陪伴的前進方式。"
     },
     en: {
       title: "AI Time Management",
       description:
-        "A productivity app that combines AI task breakdown, focus timing, and progress review, helping users soften overwhelming goals into rhythms that feel achievable, sustainable, and human.",
+        "A productivity app with AI task breakdown, focus timing, and progress review, turning overwhelming goals into achievable rhythms.",
       highlight:
-        "Highlight: turns productivity from a rigid system into a gentler, more companion-like experience of moving forward."
+        "Highlight: productivity made gentler and more companion-like."
     }
   },
   {
@@ -128,16 +128,16 @@ const APPS = [
     zh: {
       title: "複利計算器-能計算通膨的進階工具",
       description:
-        "一款進階財務試算工具，整合複利、定期定額、財務自由、貸款與退休規劃，並把通膨一起納入，讓長期金錢決策不再只是冰冷公式，而更像對未來生活的細緻想像。",
+        "進階財務試算工具，整合複利、定期定額、貸款、退休與通膨情境，讓長期金錢決策更清楚、更貼近生活。",
       highlight:
-        "作品亮點：把複雜的財務邏輯翻譯成更清楚、更優雅，也更願意讓人反覆打開的決策介面。"
+        "亮點：把複雜財務邏輯翻譯成清楚優雅的決策介面。"
     },
     en: {
       title: "Compound Interest Calculator",
       description:
-        "An advanced finance utility that brings together compound growth, DCA, financial freedom planning, loan analysis, retirement planning, and inflation-aware thinking in one elegant decision space.",
+        "An advanced finance utility for compound growth, DCA, loans, retirement planning, and inflation-aware decisions.",
       highlight:
-        "Highlight: turns intimidating financial logic into a visual interface that feels lucid, refined, and surprisingly approachable."
+        "Highlight: complex finance made lucid, visual, and approachable."
     }
   },
   {
@@ -151,16 +151,16 @@ const APPS = [
     zh: {
       title: "你今天維他命了嗎",
       description:
-        "一款以每日保健品管理為核心的健康 app，結合服用紀錄、歷史追蹤、知識整理與個人頁面，讓照顧自己這件事，不必再靠混亂提醒，而能慢慢長成穩定而溫柔的生活習慣。",
+        "以每日保健品管理為核心，結合服用紀錄、歷史追蹤與知識整理，讓照顧自己慢慢長成穩定溫柔的習慣。",
       highlight:
-        "作品亮點：把日常保健變得更輕柔、更可愛，也更容易讓人真心想持續下去。"
+        "亮點：把日常保健變得輕柔、可愛，也更容易持續。"
     },
     en: {
       title: "Did You Take Your Vitamins Today?",
       description:
-        "A wellness app centered on daily supplement routines, blending intake logs, history tracking, educational content, and a personal profile flow into a calmer and kinder way of caring for yourself.",
+        "A wellness app for daily supplement routines, blending intake logs, history tracking, and educational content into a kinder self-care flow.",
       highlight:
-        "Highlight: turns everyday self-care into a ritual that feels soft, charming, and easy to return to."
+        "Highlight: self-care made soft, charming, and easy to return to."
     }
   },
   {
@@ -174,16 +174,16 @@ const APPS = [
     zh: {
       title: "把夢遺留下來",
       description:
-        "一款圍繞夢境記錄而設計的療癒系 app，支援快速記夢、語音輸入、情緒整理、收藏回顧與提醒功能，讓那些醒來後差點消散的畫面，還有機會被溫柔地留下來。",
+        "療癒系夢境記錄 app，支援快速記夢、語音輸入、情緒整理與收藏回顧，讓醒來後快消散的畫面被溫柔留下。",
       highlight:
-        "作品亮點：把夢、情緒與回憶收納進一個安靜而浪漫的介面，讓記錄本身也帶著餘韻。"
+        "亮點：把夢、情緒與回憶收進安靜浪漫的介面。"
     },
     en: {
       title: "Leave Your Dream Behind",
       description:
-        "A gentle dream-journaling app for capturing the fragile images that almost disappear after waking, with quick entry, voice input, mood reflection, favorites, and reminders woven into a calm ritual.",
+        "A gentle dream-journaling app for capturing fragile images after waking, with quick entry, voice input, mood reflection, and favorites.",
       highlight:
-        "Highlight: wraps dream, memory, and emotion in an interface that feels quiet, intimate, and faintly romantic."
+        "Highlight: dream, memory, and emotion in a quiet, romantic interface."
     }
   },
   {
@@ -197,16 +197,16 @@ const APPS = [
     zh: {
       title: "公關日記",
       description:
-        "一款結合產業介紹與個人紀錄的主題型 app，從台灣酒店文化的術語、店型與消費觀念出發，延伸到客人、小姐／男模與經紀等多角色日記，讓一個原本隱晦而複雜的世界，有了更清晰也更迷人的閱讀入口。",
+        "結合產業介紹與個人紀錄的主題型 app，從台灣酒店文化出發，延伸到客人、小姐／男模與經紀的多角色日記。",
       highlight:
-        "作品亮點：把少見而帶著距離感的產業題材，整理成兼具故事感、資訊性與實用性的行動作品。"
+        "亮點：把少見題材整理成有故事感、資訊性與實用性的作品。"
     },
     en: {
       title: "PR Diary",
       description:
-        "A themed app that combines industry guidance with personal record-keeping, opening a clearer, more compelling window into Taiwan's nightlife PR culture through multi-role diary experiences.",
+        "A themed app combining industry guidance with multi-role diaries for Taiwan's nightlife PR culture.",
       highlight:
-        "Highlight: turns a niche and often misunderstood world into a product that feels informative, atmospheric, and sharply distinctive."
+        "Highlight: niche culture made informative, atmospheric, and distinctive."
     }
   },
   {
@@ -217,16 +217,16 @@ const APPS = [
     zh: {
       title: "賴瑞的調酒研究室",
       description:
-        "一款以調酒研究室為背景的 18 禁戀愛遊戲，結合角色互動、情感敘事、場景氛圍與分支式推進，讓曖昧、慾望與想像力在遊戲裡慢慢發酵。",
+        "以調酒研究室為背景的 18 禁戀愛遊戲，結合角色互動、情感敘事與分支推進，讓曖昧與想像力慢慢發酵。",
       highlight:
-        "作品亮點：把角色魅力、敘事張力與成人向氛圍收束成一場更濃烈、更有誘惑力的互動體驗。"
+        "亮點：角色魅力、敘事張力與成人向氛圍的互動體驗。"
     },
     en: {
       title: "Larry's Mixology Lab",
       description:
-        "An 18+ romance game set inside a mixology lab, where character chemistry, emotional tension, atmospheric scenes, and branching progression slowly ferment into desire.",
+        "An 18+ romance game set inside a mixology lab, blending character chemistry, emotional tension, and branching progression.",
       highlight:
-        "Highlight: blends sensual mood, narrative tension, and character allure into a concept piece designed to linger in memory."
+        "Highlight: sensual mood, narrative tension, and character allure."
     }
   }
 ];
