@@ -4,7 +4,7 @@ const PAGE_CONTENT = {
     navApps: "Apps",
     heroTitle: "獨立開發作品集",
     heroBody:
-      "這裡收錄我獨立構思、設計與開發的 iOS 作品。每一個 app 都從真實需求出發，也試著留下自己的語氣、溫度與記憶點。",
+      "這裡收錄我獨立構思、設計與開發的 iOS 作品。每一個 app 都從真實需求出發，並在功能、視覺語言與使用情境之間，建立清楚而有記憶點的產品表達。",
     sectionKicker: "Selected Works",
     carouselKicker: "Portfolio Selection",
     carouselTitle: "作品選輯",
@@ -27,7 +27,7 @@ const PAGE_CONTENT = {
     navApps: "Apps",
     heroTitle: "Selected iOS Works",
     heroBody:
-      "A bilingual portfolio of iOS apps I conceived, designed, and built independently. Each work begins with a real need, then becomes a product with its own tone, warmth, and atmosphere.",
+      "A bilingual portfolio of iOS apps I conceived, designed, and built independently. Each work begins with a real user need and evolves into a product with clear utility, visual intent, and a memorable point of view.",
     sectionKicker: "Selected Works",
     carouselKicker: "Portfolio Selection",
     carouselTitle: "App Collection",
@@ -59,16 +59,16 @@ const APPS = [
     zh: {
       title: "幣圈神器-加密貨幣&區塊鏈學習字典",
       description:
-        "為加密貨幣與區塊鏈初學者打造的學習字典，把艱澀分散的概念整理成清楚、友善、可持續探索的知識旅程。",
+        "為加密貨幣與區塊鏈初學者打造的學習字典，整合名詞查詢、學習脈絡與收藏功能，把艱澀分散的概念整理成清楚、友善、可持續探索的知識入口。",
       highlight:
-        "亮點：可搜尋、可收藏，也更有閱讀慾望的幣圈入門入口。"
+        "亮點：將陌生的金融新知轉譯為可搜尋、可收藏、也更容易持續閱讀的行動學習工具。"
     },
     en: {
       title: "Crypto Guide: Beginner Dictionary for Crypto & Blockchain",
       description:
-        "A beginner-friendly crypto and blockchain dictionary that turns scattered concepts into a clearer, more inviting learning journey.",
+        "A beginner-friendly crypto and blockchain dictionary that combines glossary lookup, learning context, and saved concepts into a clearer, more inviting knowledge entry point.",
       highlight:
-        "Highlight: a searchable, saveable, unexpectedly inviting reference."
+        "Highlight: translates a complex financial frontier into a searchable, saveable, and approachable mobile reference."
     }
   },
   {
@@ -82,16 +82,16 @@ const APPS = [
     zh: {
       title: "輕鬆抽獎程式",
       description:
-        "乾淨、直覺、零廣告的抽獎工具，適用於活動、課堂與聚會，讓幾秒鐘的抽選也能有節奏、期待感與完成度。",
+        "乾淨、直覺、零廣告的抽獎工具，適用於活動、課堂、聚會與名單抽選情境，支援名單整理與即時抽選，讓短暫流程也能有節奏與完成度。",
       highlight:
-        "亮點：把日常小工具做得輕盈俐落，帶一點舞台感。"
+        "亮點：以輕盈俐落的互動節奏，讓工具型 app 兼具實用性、可信度與一點舞台感。"
     },
     en: {
       title: "Easy Lucky Draw",
       description:
-        "A clean, zero-ad drawing tool for events, classrooms, and parties, turning a quick selection into a smoother, livelier moment.",
+        "A clean, zero-ad drawing tool for events, classrooms, parties, and list-based selections, with a simple flow that makes quick decisions feel smoother and more polished.",
       highlight:
-        "Highlight: a simple utility with a small sense of ceremony."
+        "Highlight: brings clarity, trust, and a small sense of ceremony to an everyday utility."
     }
   },
   {
@@ -105,16 +105,16 @@ const APPS = [
     zh: {
       title: "AI時間管理",
       description:
-        "結合 AI 任務拆解、專注計時與進度回顧，幫助使用者把巨大而模糊的壓力，整理成可以開始的日常節奏。",
+        "結合 AI 任務拆解、專注計時與進度回顧，協助使用者把巨大而模糊的目標整理成可開始、可追蹤、可持續執行的日常節奏。",
       highlight:
-        "亮點：讓時間管理更像被理解、被陪伴的前進方式。"
+        "亮點：把 AI 建議、行為回饋與專注流程整合成更貼近日常使用的效率體驗。"
     },
     en: {
       title: "AI Time Management",
       description:
-        "A productivity app with AI task breakdown, focus timing, and progress review, turning overwhelming goals into achievable rhythms.",
+        "A productivity app with AI task breakdown, focus timing, and progress review, helping users turn overwhelming goals into trackable and sustainable daily rhythms.",
       highlight:
-        "Highlight: productivity made gentler and more companion-like."
+        "Highlight: integrates AI guidance, behavioral feedback, and focus structure into a practical everyday workflow."
     }
   },
   {
@@ -128,16 +128,16 @@ const APPS = [
     zh: {
       title: "複利計算器-能計算通膨的進階工具",
       description:
-        "進階財務試算工具，整合複利、定期定額、貸款、退休與通膨情境，讓長期金錢決策更清楚、更貼近生活。",
+        "進階財務試算工具，整合複利、定期定額、貸款、退休與通膨情境，幫助使用者以更清楚、更貼近現實條件的方式思考長期金錢決策。",
       highlight:
-        "亮點：把複雜財務邏輯翻譯成清楚優雅的決策介面。"
+        "亮點：將複雜財務邏輯轉譯為清楚、視覺化且更容易反覆使用的決策介面。"
     },
     en: {
       title: "Compound Interest Calculator",
       description:
-        "An advanced finance utility for compound growth, DCA, loans, retirement planning, and inflation-aware decisions.",
+        "An advanced finance utility for compound growth, DCA, loans, retirement planning, and inflation-aware decisions, designed to make long-term planning easier to compare.",
       highlight:
-        "Highlight: complex finance made lucid, visual, and approachable."
+        "Highlight: makes complex financial logic more visual, lucid, and approachable without losing decision depth."
     }
   },
   {
@@ -151,16 +151,16 @@ const APPS = [
     zh: {
       title: "你今天維他命了嗎",
       description:
-        "以每日保健品管理為核心，結合服用紀錄、歷史追蹤與知識整理，讓照顧自己慢慢長成穩定溫柔的習慣。",
+        "以每日保健品管理為核心，結合服用紀錄、歷史追蹤、知識整理與個人頁面，協助使用者把健康提醒整理成更穩定、更溫柔的生活習慣。",
       highlight:
-        "亮點：把日常保健變得輕柔、可愛，也更容易持續。"
+        "亮點：以柔和清楚的互動語氣，讓日常保健追蹤更容易被理解、記住與持續。"
     },
     en: {
       title: "Did You Take Your Vitamins Today?",
       description:
-        "A wellness app for daily supplement routines, blending intake logs, history tracking, and educational content into a kinder self-care flow.",
+        "A wellness app for daily supplement routines, blending intake logs, history tracking, educational content, and profile flows into a kinder self-care experience.",
       highlight:
-        "Highlight: self-care made soft, charming, and easy to return to."
+        "Highlight: makes everyday health tracking softer, clearer, and easier to return to."
     }
   },
   {
@@ -174,16 +174,16 @@ const APPS = [
     zh: {
       title: "把夢遺留下來",
       description:
-        "療癒系夢境記錄 app，支援快速記夢、語音輸入、情緒整理與收藏回顧，讓醒來後快消散的畫面被溫柔留下。",
+        "療癒系夢境記錄 app，支援快速記夢、語音輸入、情緒整理、收藏回顧與提醒功能，讓醒來後快消散的畫面被更安靜、更有秩序地留下。",
       highlight:
-        "亮點：把夢、情緒與回憶收進安靜浪漫的介面。"
+        "亮點：將夢境書寫、情緒辨識與個人回顧整理成溫柔而可持續的日常儀式。"
     },
     en: {
       title: "Leave Your Dream Behind",
       description:
-        "A gentle dream-journaling app for capturing fragile images after waking, with quick entry, voice input, mood reflection, and favorites.",
+        "A gentle dream-journaling app for capturing fragile images after waking, with quick entry, voice input, mood reflection, favorites, and reminders.",
       highlight:
-        "Highlight: dream, memory, and emotion in a quiet, romantic interface."
+        "Highlight: organizes dream writing, emotional reflection, and recall into a quiet and sustainable ritual."
     }
   },
   {
@@ -197,16 +197,16 @@ const APPS = [
     zh: {
       title: "公關日記",
       description:
-        "結合產業介紹與個人紀錄的主題型 app，從台灣酒店文化出發，延伸到客人、小姐／男模與經紀的多角色日記。",
+        "結合產業介紹與個人紀錄的主題型 app，從台灣酒店文化出發，延伸到客人、小姐／男模與經紀的多角色日記，兼具知識整理與日常管理用途。",
       highlight:
-        "亮點：把少見題材整理成有故事感、資訊性與實用性的作品。"
+        "亮點：將少見產業題材轉化為有故事感、資訊性與實用價值的行動作品。"
     },
     en: {
       title: "PR Diary",
       description:
-        "A themed app combining industry guidance with multi-role diaries for Taiwan's nightlife PR culture.",
+        "A themed app combining industry guidance with multi-role diaries for Taiwan's nightlife PR culture, supporting both cultural understanding and personal record-keeping.",
       highlight:
-        "Highlight: niche culture made informative, atmospheric, and distinctive."
+        "Highlight: turns a niche subject into an informative, atmospheric, and practical mobile product."
     }
   },
   {
@@ -217,16 +217,16 @@ const APPS = [
     zh: {
       title: "賴瑞的調酒研究室",
       description:
-        "以調酒研究室為背景的 18 禁戀愛遊戲，結合角色互動、情感敘事與分支推進，讓曖昧與想像力慢慢發酵。",
+        "以調酒研究室為背景的 18 禁戀愛遊戲，結合角色互動、情感敘事、場景氛圍與分支推進，讓曖昧、張力與想像力慢慢發酵。",
       highlight:
-        "亮點：角色魅力、敘事張力與成人向氛圍的互動體驗。"
+        "亮點：以成人向戀愛遊戲為定位，整合角色魅力、敘事張力與更鮮明的情境氛圍。"
     },
     en: {
       title: "Larry's Mixology Lab",
       description:
-        "An 18+ romance game set inside a mixology lab, blending character chemistry, emotional tension, and branching progression.",
+        "An 18+ romance game set inside a mixology lab, blending character chemistry, emotional tension, atmospheric scenes, and branching progression.",
       highlight:
-        "Highlight: sensual mood, narrative tension, and character allure."
+        "Highlight: brings character allure, narrative tension, and adult romantic mood into a memorable interactive experience."
     }
   }
 ];
