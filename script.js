@@ -8,6 +8,7 @@ const PAGE_CONTENT = {
     sectionKicker: "Selected Works",
     carouselKicker: "Portfolio Selection",
     carouselTitle: "作品選輯",
+    sortNote: "依照目前下載受歡迎程度排序。",
     storeLabel: "前往 App Store",
     comingSoon: "下載連結整理中",
     detailsHint: "獨立 iOS 作品",
@@ -31,6 +32,7 @@ const PAGE_CONTENT = {
     sectionKicker: "Selected Works",
     carouselKicker: "Portfolio Selection",
     carouselTitle: "App Collection",
+    sortNote: "Sorted by current download popularity.",
     storeLabel: "View on App Store",
     comingSoon: "Download link coming soon",
     detailsHint: "Independent iOS work",
@@ -50,25 +52,25 @@ const PAGE_CONTENT = {
 const APPS = [
   {
     status: "released",
-    version: "1.0",
-    icon: "assets/icons/crypto-guide.png",
+    version: "1.5",
+    icon: "assets/icons/compound-interest-calculator.png",
     url: {
-      zh: "https://apps.apple.com/tw/app/%E5%B9%A3%E5%9C%88%E7%A5%9E%E5%99%A8-%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3-%E5%8D%80%E5%A1%8A%E9%8F%88%E5%AD%B8%E7%BF%92%E5%AD%97%E5%85%B8/id6761411130?l=zh-Hant-TW",
-      en: "https://apps.apple.com/tw/app/%E5%B9%A3%E5%9C%88%E7%A5%9E%E5%99%A8-%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3-%E5%8D%80%E5%A1%8A%E9%8F%88%E5%AD%B8%E7%BF%92%E5%AD%97%E5%85%B8/id6761411130?l=en-GB"
+      zh: "https://apps.apple.com/tw/app/%E8%A4%87%E5%88%A9%E8%A8%88%E7%AE%97%E5%99%A8-%E8%83%BD%E8%A8%88%E7%AE%97%E9%80%9A%E8%86%A8%E7%9A%84%E9%80%B2%E9%9A%8E%E5%B7%A5%E5%85%B7/id6756014104?l=zh-Hant-TW",
+      en: "https://apps.apple.com/tw/app/%E8%A4%87%E5%88%A9%E8%A8%88%E7%AE%97%E5%99%A8-%E8%83%BD%E8%A8%88%E7%AE%97%E9%80%9A%E8%86%A8%E7%9A%84%E9%80%B2%E9%9A%8E%E5%B7%A5%E5%85%B7/id6756014104?l=en-GB"
     },
     zh: {
-      title: "幣圈神器-加密貨幣&區塊鏈學習字典",
+      title: "複利計算器-能計算通膨的進階工具",
       description:
-        "為加密貨幣與區塊鏈初學者打造的學習字典，整合名詞查詢、學習脈絡與收藏功能，把艱澀分散的概念整理成清楚、友善、可持續探索的知識入口。",
+        "進階財務試算工具，整合複利、定期定額、貸款、退休與通膨情境，幫助使用者以更清楚、更貼近現實條件的方式思考長期金錢決策。",
       highlight:
-        "亮點：將陌生的金融新知轉譯為可搜尋、可收藏、也更容易持續閱讀的行動學習工具。"
+        "亮點：將複雜財務邏輯轉譯為清楚、視覺化且更容易反覆使用的決策介面。"
     },
     en: {
-      title: "Crypto Guide: Beginner Dictionary for Crypto & Blockchain",
+      title: "Compound Interest Calculator",
       description:
-        "A beginner-friendly crypto and blockchain dictionary that combines glossary lookup, learning context, and saved concepts into a clearer, more inviting knowledge entry point.",
+        "An advanced finance utility for compound growth, DCA, loans, retirement planning, and inflation-aware decisions, designed to make long-term planning easier to compare.",
       highlight:
-        "Highlight: translates a complex financial frontier into a searchable, saveable, and approachable mobile reference."
+        "Highlight: makes complex financial logic more visual, lucid, and approachable without losing decision depth."
     }
   },
   {
@@ -96,48 +98,25 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.4",
-    icon: "assets/icons/ai-time-management.png",
+    version: "1.0",
+    icon: "assets/icons/crypto-guide.png",
     url: {
-      zh: "https://apps.apple.com/us/app/ai%E6%99%82%E9%96%93%E7%AE%A1%E7%90%86/id6754973616?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/ai%E6%99%82%E9%96%93%E7%AE%A1%E7%90%86/id6754973616"
+      zh: "https://apps.apple.com/tw/app/%E5%B9%A3%E5%9C%88%E7%A5%9E%E5%99%A8-%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3-%E5%8D%80%E5%A1%8A%E9%8F%88%E5%AD%B8%E7%BF%92%E5%AD%97%E5%85%B8/id6761411130?l=zh-Hant-TW",
+      en: "https://apps.apple.com/tw/app/%E5%B9%A3%E5%9C%88%E7%A5%9E%E5%99%A8-%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3-%E5%8D%80%E5%A1%8A%E9%8F%88%E5%AD%B8%E7%BF%92%E5%AD%97%E5%85%B8/id6761411130?l=en-GB"
     },
     zh: {
-      title: "AI時間管理",
+      title: "幣圈神器-加密貨幣&區塊鏈學習字典",
       description:
-        "結合 AI 任務拆解、專注計時與進度回顧，協助使用者把巨大而模糊的目標整理成可開始、可追蹤、可持續執行的日常節奏。",
+        "為加密貨幣與區塊鏈初學者打造的學習字典，整合名詞查詢、學習脈絡與收藏功能，把艱澀分散的概念整理成清楚、友善、可持續探索的知識入口。",
       highlight:
-        "亮點：把 AI 建議、行為回饋與專注流程整合成更貼近日常使用的效率體驗。"
+        "亮點：將陌生的金融新知轉譯為可搜尋、可收藏、也更容易持續閱讀的行動學習工具。"
     },
     en: {
-      title: "AI Time Management",
+      title: "Crypto Guide: Beginner Dictionary for Crypto & Blockchain",
       description:
-        "A productivity app with AI task breakdown, focus timing, and progress review, helping users turn overwhelming goals into trackable and sustainable daily rhythms.",
+        "A beginner-friendly crypto and blockchain dictionary that combines glossary lookup, learning context, and saved concepts into a clearer, more inviting knowledge entry point.",
       highlight:
-        "Highlight: integrates AI guidance, behavioral feedback, and focus structure into a practical everyday workflow."
-    }
-  },
-  {
-    status: "released",
-    version: "1.5",
-    icon: "assets/icons/compound-interest-calculator.png",
-    url: {
-      zh: "https://apps.apple.com/tw/app/%E8%A4%87%E5%88%A9%E8%A8%88%E7%AE%97%E5%99%A8-%E8%83%BD%E8%A8%88%E7%AE%97%E9%80%9A%E8%86%A8%E7%9A%84%E9%80%B2%E9%9A%8E%E5%B7%A5%E5%85%B7/id6756014104?l=zh-Hant-TW",
-      en: "https://apps.apple.com/tw/app/%E8%A4%87%E5%88%A9%E8%A8%88%E7%AE%97%E5%99%A8-%E8%83%BD%E8%A8%88%E7%AE%97%E9%80%9A%E8%86%A8%E7%9A%84%E9%80%B2%E9%9A%8E%E5%B7%A5%E5%85%B7/id6756014104?l=en-GB"
-    },
-    zh: {
-      title: "複利計算器-能計算通膨的進階工具",
-      description:
-        "進階財務試算工具，整合複利、定期定額、貸款、退休與通膨情境，幫助使用者以更清楚、更貼近現實條件的方式思考長期金錢決策。",
-      highlight:
-        "亮點：將複雜財務邏輯轉譯為清楚、視覺化且更容易反覆使用的決策介面。"
-    },
-    en: {
-      title: "Compound Interest Calculator",
-      description:
-        "An advanced finance utility for compound growth, DCA, loans, retirement planning, and inflation-aware decisions, designed to make long-term planning easier to compare.",
-      highlight:
-        "Highlight: makes complex financial logic more visual, lucid, and approachable without losing decision depth."
+        "Highlight: translates a complex financial frontier into a searchable, saveable, and approachable mobile reference."
     }
   },
   {
@@ -166,6 +145,29 @@ const APPS = [
   {
     status: "released",
     version: "1.0",
+    icon: "assets/icons/larrys-mixology-lab.png",
+    url: {
+      zh: "https://apps.apple.com/us/app/%E8%B3%B4%E7%91%9E%E7%9A%84%E8%AA%BF%E9%85%92%E7%A0%94%E7%A9%B6%E5%AE%A4/id6761377948?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/%E8%B3%B4%E7%91%9E%E7%9A%84%E8%AA%BF%E9%85%92%E7%A0%94%E7%A9%B6%E5%AE%A4/id6761377948"
+    },
+    zh: {
+      title: "賴瑞的調酒研究室",
+      description:
+        "以調酒研究室為背景的 18 禁戀愛遊戲，結合角色互動、情感敘事、場景氛圍與分支推進，讓曖昧、張力與想像力慢慢發酵。",
+      highlight:
+        "亮點：以成人向戀愛遊戲為定位，整合角色魅力、敘事張力與更鮮明的情境氛圍。"
+    },
+    en: {
+      title: "Larry's Mixology Lab",
+      description:
+        "An 18+ romance game set inside a mixology lab, blending character chemistry, emotional tension, atmospheric scenes, and branching progression.",
+      highlight:
+        "Highlight: brings character allure, narrative tension, and adult romantic mood into a memorable interactive experience."
+    }
+  },
+  {
+    status: "released",
+    version: "1.0",
     icon: "assets/icons/leave-your-dream-behind.png",
     url: {
       zh: "https://apps.apple.com/us/app/%E6%8A%8A%E5%A4%A2%E9%81%BA%E7%95%99%E4%B8%8B%E4%BE%86/id6761692228?l=zh-Hant-TW",
@@ -184,6 +186,29 @@ const APPS = [
         "A gentle dream-journaling app for capturing fragile images after waking, with quick entry, voice input, mood reflection, favorites, and reminders.",
       highlight:
         "Highlight: organizes dream writing, emotional reflection, and recall into a quiet and sustainable ritual."
+    }
+  },
+  {
+    status: "released",
+    version: "1.4",
+    icon: "assets/icons/ai-time-management.png",
+    url: {
+      zh: "https://apps.apple.com/us/app/ai%E6%99%82%E9%96%93%E7%AE%A1%E7%90%86/id6754973616?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/ai%E6%99%82%E9%96%93%E7%AE%A1%E7%90%86/id6754973616"
+    },
+    zh: {
+      title: "AI時間管理",
+      description:
+        "結合 AI 任務拆解、專注計時與進度回顧，協助使用者把巨大而模糊的目標整理成可開始、可追蹤、可持續執行的日常節奏。",
+      highlight:
+        "亮點：把 AI 建議、行為回饋與專注流程整合成更貼近日常使用的效率體驗。"
+    },
+    en: {
+      title: "AI Time Management",
+      description:
+        "A productivity app with AI task breakdown, focus timing, and progress review, helping users turn overwhelming goals into trackable and sustainable daily rhythms.",
+      highlight:
+        "Highlight: integrates AI guidance, behavioral feedback, and focus structure into a practical everyday workflow."
     }
   },
   {
@@ -207,29 +232,6 @@ const APPS = [
         "A themed app combining industry guidance with multi-role diaries for Taiwan's nightlife PR culture, supporting both cultural understanding and personal record-keeping.",
       highlight:
         "Highlight: turns a niche subject into an informative, atmospheric, and practical mobile product."
-    }
-  },
-  {
-    status: "released",
-    version: "1.0",
-    icon: "assets/icons/larrys-mixology-lab.png",
-    url: {
-      zh: "https://apps.apple.com/us/app/%E8%B3%B4%E7%91%9E%E7%9A%84%E8%AA%BF%E9%85%92%E7%A0%94%E7%A9%B6%E5%AE%A4/id6761377948?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/%E8%B3%B4%E7%91%9E%E7%9A%84%E8%AA%BF%E9%85%92%E7%A0%94%E7%A9%B6%E5%AE%A4/id6761377948"
-    },
-    zh: {
-      title: "賴瑞的調酒研究室",
-      description:
-        "以調酒研究室為背景的 18 禁戀愛遊戲，結合角色互動、情感敘事、場景氛圍與分支推進，讓曖昧、張力與想像力慢慢發酵。",
-      highlight:
-        "亮點：以成人向戀愛遊戲為定位，整合角色魅力、敘事張力與更鮮明的情境氛圍。"
-    },
-    en: {
-      title: "Larry's Mixology Lab",
-      description:
-        "An 18+ romance game set inside a mixology lab, blending character chemistry, emotional tension, atmospheric scenes, and branching progression.",
-      highlight:
-        "Highlight: brings character allure, narrative tension, and adult romantic mood into a memorable interactive experience."
     }
   }
 ];
