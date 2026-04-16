@@ -52,7 +52,7 @@ const PAGE_CONTENT = {
 const APPS = [
   {
     status: "released",
-    version: "1.5",
+    version: "2.0",
     icon: "assets/icons/compound-interest-calculator.png",
     url: {
       zh: "https://apps.apple.com/tw/app/%E8%A4%87%E5%88%A9%E8%A8%88%E7%AE%97%E5%99%A8-%E8%83%BD%E8%A8%88%E7%AE%97%E9%80%9A%E8%86%A8%E7%9A%84%E9%80%B2%E9%9A%8E%E5%B7%A5%E5%85%B7/id6756014104?l=zh-Hant-TW",
@@ -75,7 +75,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.1",
+    version: "1.2",
     icon: "assets/icons/easy-lucky-draw.png",
     url: {
       zh: "https://apps.apple.com/us/app/%E8%BC%95%E9%AC%86%E6%8A%BD%E7%8D%8E%E7%A8%8B%E5%BC%8F/id6755403297?l=zh-Hant-TW",
@@ -98,7 +98,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.0",
+    version: "1.3",
     icon: "assets/icons/crypto-guide.png",
     url: {
       zh: "https://apps.apple.com/tw/app/%E5%B9%A3%E5%9C%88%E7%A5%9E%E5%99%A8-%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3-%E5%8D%80%E5%A1%8A%E9%8F%88%E5%AD%B8%E7%BF%92%E5%AD%97%E5%85%B8/id6761411130?l=zh-Hant-TW",
@@ -121,7 +121,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.0",
+    version: "1.2",
     icon: "assets/icons/did-you-take-your-vitamins-today.svg",
     url: {
       zh: "https://apps.apple.com/tw/app/%E4%BD%A0%E4%BB%8A%E5%A4%A9%E7%B6%AD%E4%BB%96%E5%91%BD%E4%BA%86%E5%97%8E/id6761441866?l=zh-Hant-TW",
@@ -144,7 +144,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.0",
+    version: "1.1",
     icon: "assets/icons/larrys-mixology-lab.png",
     url: {
       zh: "https://apps.apple.com/us/app/%E8%B3%B4%E7%91%9E%E7%9A%84%E8%AA%BF%E9%85%92%E7%A0%94%E7%A9%B6%E5%AE%A4/id6761377948?l=zh-Hant-TW",
@@ -167,7 +167,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.0",
+    version: "1.2",
     icon: "assets/icons/leave-your-dream-behind.png",
     url: {
       zh: "https://apps.apple.com/us/app/%E6%8A%8A%E5%A4%A2%E9%81%BA%E7%95%99%E4%B8%8B%E4%BE%86/id6761692228?l=zh-Hant-TW",
@@ -190,7 +190,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.4",
+    version: "1.7",
     icon: "assets/icons/ai-time-management.png",
     url: {
       zh: "https://apps.apple.com/us/app/ai%E6%99%82%E9%96%93%E7%AE%A1%E7%90%86/id6754973616?l=zh-Hant-TW",
@@ -213,7 +213,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.0",
+    version: "1.3",
     icon: "assets/icons/pr-diary.png",
     url: {
       zh: "https://apps.apple.com/us/app/%E5%85%AC%E9%97%9C%E6%97%A5%E8%A8%98/id6761694656?l=zh-Hant-TW",
