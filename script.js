@@ -52,7 +52,7 @@ const PAGE_CONTENT = {
 const APPS = [
   {
     status: "released",
-    version: "2.0",
+    version: "2.1",
     icon: "assets/icons/compound-interest-calculator.png",
     url: {
       zh: "https://apps.apple.com/tw/app/%E8%A4%87%E5%88%A9%E8%A8%88%E7%AE%97%E5%99%A8-%E8%83%BD%E8%A8%88%E7%AE%97%E9%80%9A%E8%86%A8%E7%9A%84%E9%80%B2%E9%9A%8E%E5%B7%A5%E5%85%B7/id6756014104?l=zh-Hant-TW",
@@ -71,75 +71,6 @@ const APPS = [
         "An advanced finance utility for compound growth, DCA, loans, retirement planning, and inflation-aware decisions, designed to make long-term planning easier to compare.",
       highlight:
         "Highlight: makes complex financial logic more visual, lucid, and approachable without losing decision depth."
-    }
-  },
-  {
-    status: "released",
-    version: "1.2",
-    icon: "assets/icons/easy-lucky-draw.png",
-    url: {
-      zh: "https://apps.apple.com/us/app/%E8%BC%95%E9%AC%86%E6%8A%BD%E7%8D%8E%E7%A8%8B%E5%BC%8F/id6755403297?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/%E8%BC%95%E9%AC%86%E6%8A%BD%E7%8D%8E%E7%A8%8B%E5%BC%8F/id6755403297"
-    },
-    zh: {
-      title: "輕鬆抽獎程式",
-      description:
-        "乾淨、直覺、零廣告的抽獎工具，適用於活動、課堂、聚會與名單抽選情境，支援名單整理與即時抽選，讓短暫流程也能有節奏與完成度。",
-      highlight:
-        "亮點：以輕盈俐落的互動節奏，讓工具型 app 兼具實用性、可信度與一點舞台感。"
-    },
-    en: {
-      title: "Easy Lucky Draw",
-      description:
-        "A clean, zero-ad drawing tool for events, classrooms, parties, and list-based selections, with a simple flow that makes quick decisions feel smoother and more polished.",
-      highlight:
-        "Highlight: brings clarity, trust, and a small sense of ceremony to an everyday utility."
-    }
-  },
-  {
-    status: "released",
-    version: "1.3",
-    icon: "assets/icons/crypto-guide.png",
-    url: {
-      zh: "https://apps.apple.com/tw/app/%E5%B9%A3%E5%9C%88%E7%A5%9E%E5%99%A8-%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3-%E5%8D%80%E5%A1%8A%E9%8F%88%E5%AD%B8%E7%BF%92%E5%AD%97%E5%85%B8/id6761411130?l=zh-Hant-TW",
-      en: "https://apps.apple.com/tw/app/%E5%B9%A3%E5%9C%88%E7%A5%9E%E5%99%A8-%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3-%E5%8D%80%E5%A1%8A%E9%8F%88%E5%AD%B8%E7%BF%92%E5%AD%97%E5%85%B8/id6761411130?l=en-GB"
-    },
-    zh: {
-      title: "幣圈神器-加密貨幣&區塊鏈學習字典",
-      description:
-        "為加密貨幣與區塊鏈初學者打造的學習字典，整合名詞查詢、學習脈絡與收藏功能，把艱澀分散的概念整理成清楚、友善、可持續探索的知識入口。",
-      highlight:
-        "亮點：將陌生的金融新知轉譯為可搜尋、可收藏、也更容易持續閱讀的行動學習工具。"
-    },
-    en: {
-      title: "Crypto Guide: Beginner Dictionary for Crypto & Blockchain",
-      description:
-        "A beginner-friendly crypto and blockchain dictionary that combines glossary lookup, learning context, and saved concepts into a clearer, more inviting knowledge entry point.",
-      highlight:
-        "Highlight: translates a complex financial frontier into a searchable, saveable, and approachable mobile reference."
-    }
-  },
-  {
-    status: "released",
-    version: "1.2",
-    icon: "assets/icons/did-you-take-your-vitamins-today.svg",
-    url: {
-      zh: "https://apps.apple.com/tw/app/%E4%BD%A0%E4%BB%8A%E5%A4%A9%E7%B6%AD%E4%BB%96%E5%91%BD%E4%BA%86%E5%97%8E/id6761441866?l=zh-Hant-TW",
-      en: "https://apps.apple.com/tw/app/%E4%BD%A0%E4%BB%8A%E5%A4%A9%E7%B6%AD%E4%BB%96%E5%91%BD%E4%BA%86%E5%97%8E/id6761441866?l=en-GB"
-    },
-    zh: {
-      title: "你今天維他命了嗎",
-      description:
-        "以每日保健品管理為核心，結合服用紀錄、歷史追蹤、知識整理與個人頁面，協助使用者把健康提醒整理成更穩定、更溫柔的生活習慣。",
-      highlight:
-        "亮點：以柔和清楚的互動語氣，讓日常保健追蹤更容易被理解、記住與持續。"
-    },
-    en: {
-      title: "Did You Take Your Vitamins Today?",
-      description:
-        "A wellness app for daily supplement routines, blending intake logs, history tracking, educational content, and profile flows into a kinder self-care experience.",
-      highlight:
-        "Highlight: makes everyday health tracking softer, clearer, and easier to return to."
     }
   },
   {
@@ -167,7 +98,76 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.2",
+    version: "1.4",
+    icon: "assets/icons/easy-lucky-draw.png",
+    url: {
+      zh: "https://apps.apple.com/us/app/%E8%BC%95%E9%AC%86%E6%8A%BD%E7%8D%8E%E7%A8%8B%E5%BC%8F/id6755403297?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/%E8%BC%95%E9%AC%86%E6%8A%BD%E7%8D%8E%E7%A8%8B%E5%BC%8F/id6755403297"
+    },
+    zh: {
+      title: "輕鬆抽獎程式",
+      description:
+        "乾淨、直覺、零廣告的抽獎工具，適用於活動、課堂、聚會與名單抽選情境，支援名單整理與即時抽選，讓短暫流程也能有節奏與完成度。",
+      highlight:
+        "亮點：以輕盈俐落的互動節奏，讓工具型 app 兼具實用性、可信度與一點舞台感。"
+    },
+    en: {
+      title: "Easy Lucky Draw",
+      description:
+        "A clean, zero-ad drawing tool for events, classrooms, parties, and list-based selections, with a simple flow that makes quick decisions feel smoother and more polished.",
+      highlight:
+        "Highlight: brings clarity, trust, and a small sense of ceremony to an everyday utility."
+    }
+  },
+  {
+    status: "released",
+    version: "1.5",
+    icon: "assets/icons/crypto-guide.png",
+    url: {
+      zh: "https://apps.apple.com/tw/app/%E5%B9%A3%E5%9C%88%E7%A5%9E%E5%99%A8-%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3-%E5%8D%80%E5%A1%8A%E9%8F%88%E5%AD%B8%E7%BF%92%E5%AD%97%E5%85%B8/id6761411130?l=zh-Hant-TW",
+      en: "https://apps.apple.com/tw/app/%E5%B9%A3%E5%9C%88%E7%A5%9E%E5%99%A8-%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3-%E5%8D%80%E5%A1%8A%E9%8F%88%E5%AD%B8%E7%BF%92%E5%AD%97%E5%85%B8/id6761411130?l=en-GB"
+    },
+    zh: {
+      title: "幣圈神器-加密貨幣&區塊鏈學習字典",
+      description:
+        "為加密貨幣與區塊鏈初學者打造的學習字典，整合名詞查詢、學習脈絡與收藏功能，把艱澀分散的概念整理成清楚、友善、可持續探索的知識入口。",
+      highlight:
+        "亮點：將陌生的金融新知轉譯為可搜尋、可收藏、也更容易持續閱讀的行動學習工具。"
+    },
+    en: {
+      title: "Crypto Guide: Beginner Dictionary for Crypto & Blockchain",
+      description:
+        "A beginner-friendly crypto and blockchain dictionary that combines glossary lookup, learning context, and saved concepts into a clearer, more inviting knowledge entry point.",
+      highlight:
+        "Highlight: translates a complex financial frontier into a searchable, saveable, and approachable mobile reference."
+    }
+  },
+  {
+    status: "released",
+    version: "1.4",
+    icon: "assets/icons/did-you-take-your-vitamins-today.svg",
+    url: {
+      zh: "https://apps.apple.com/tw/app/%E4%BD%A0%E4%BB%8A%E5%A4%A9%E7%B6%AD%E4%BB%96%E5%91%BD%E4%BA%86%E5%97%8E/id6761441866?l=zh-Hant-TW",
+      en: "https://apps.apple.com/tw/app/%E4%BD%A0%E4%BB%8A%E5%A4%A9%E7%B6%AD%E4%BB%96%E5%91%BD%E4%BA%86%E5%97%8E/id6761441866?l=en-GB"
+    },
+    zh: {
+      title: "你今天維他命了嗎",
+      description:
+        "以每日保健品管理為核心，結合服用紀錄、歷史追蹤、知識整理與個人頁面，協助使用者把健康提醒整理成更穩定、更溫柔的生活習慣。",
+      highlight:
+        "亮點：以柔和清楚的互動語氣，讓日常保健追蹤更容易被理解、記住與持續。"
+    },
+    en: {
+      title: "Did You Take Your Vitamins Today?",
+      description:
+        "A wellness app for daily supplement routines, blending intake logs, history tracking, educational content, and profile flows into a kinder self-care experience.",
+      highlight:
+        "Highlight: makes everyday health tracking softer, clearer, and easier to return to."
+    }
+  },
+  {
+    status: "released",
+    version: "1.4",
     icon: "assets/icons/leave-your-dream-behind.png",
     url: {
       zh: "https://apps.apple.com/us/app/%E6%8A%8A%E5%A4%A2%E9%81%BA%E7%95%99%E4%B8%8B%E4%BE%86/id6761692228?l=zh-Hant-TW",
@@ -190,7 +190,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.7",
+    version: "1.8",
     icon: "assets/icons/ai-time-management.png",
     url: {
       zh: "https://apps.apple.com/us/app/ai%E6%99%82%E9%96%93%E7%AE%A1%E7%90%86/id6754973616?l=zh-Hant-TW",
@@ -213,7 +213,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.3",
+    version: "1.7",
     icon: "assets/icons/pr-diary.png",
     url: {
       zh: "https://apps.apple.com/us/app/%E5%85%AC%E9%97%9C%E6%97%A5%E8%A8%98/id6761694656?l=zh-Hant-TW",
