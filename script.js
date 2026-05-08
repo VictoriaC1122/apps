@@ -52,21 +52,21 @@ const PAGE_CONTENT = {
 const APPS = [
   {
     status: "released",
-    version: "2.1",
+    version: "2.2",
     icon: "assets/icons/compound-interest-calculator.png",
     url: {
-      zh: "https://apps.apple.com/tw/app/%E8%A4%87%E5%88%A9%E8%A8%88%E7%AE%97%E5%99%A8-%E8%83%BD%E8%A8%88%E7%AE%97%E9%80%9A%E8%86%A8%E7%9A%84%E9%80%B2%E9%9A%8E%E5%B7%A5%E5%85%B7/id6756014104?l=zh-Hant-TW",
-      en: "https://apps.apple.com/tw/app/%E8%A4%87%E5%88%A9%E8%A8%88%E7%AE%97%E5%99%A8-%E8%83%BD%E8%A8%88%E7%AE%97%E9%80%9A%E8%86%A8%E7%9A%84%E9%80%B2%E9%9A%8E%E5%B7%A5%E5%85%B7/id6756014104?l=en-GB"
+      zh: "https://apps.apple.com/tw/app/%E8%A4%87%E5%88%A9%E8%A8%88%E7%AE%97%E5%99%A8-%E8%B2%A1%E5%8B%99%E8%87%AA%E7%94%B1%E5%AF%A6%E7%8F%BE%E5%B7%A5%E5%85%B7/id6756014104?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/investment-growth/id6756014104"
     },
     zh: {
-      title: "複利計算器-能計算通膨的進階工具",
+      title: "複利計算器-財務自由實現工具",
       description:
         "進階財務試算工具，整合複利、定期定額、貸款、退休與通膨情境，幫助使用者以更清楚、更貼近現實條件的方式思考長期金錢決策。",
       highlight:
         "亮點：將複雜財務邏輯轉譯為清楚、視覺化且更容易反覆使用的決策介面。"
     },
     en: {
-      title: "Compound Interest Calculator",
+      title: "Investment Growth",
       description:
         "An advanced finance utility for compound growth, DCA, loans, retirement planning, and inflation-aware decisions, designed to make long-term planning easier to compare.",
       highlight:
