@@ -11,5 +11,7 @@ Standalone bilingual app showcase site for Victoria Cheng.
 
 ## Notes
 
-- Confirmed App Store links are included for `AI Time Management` and `Easy Lucky Draw`.
-- `Compound Interest Calculator` and `Did You Take Your Vitamins Today?` are currently marked as coming soon until their public download links are confirmed.
+- All eight featured apps are published and have confirmed App Store links, with Taiwan links for Chinese and US links for English.
+- Versions and renamed store titles were checked on 2026-10-02 using Apple's Lookup API for developer `1851202446` (Yung Wen Cheng), in both Taiwan and the US.
+- Both storefronts and the public Taiwan developer page list the same eight apps; no additional published apps were found.
+- Sources: [Taiwan catalog](https://itunes.apple.com/lookup?id=1851202446&entity=software&country=tw&limit=200), [US catalog](https://itunes.apple.com/lookup?id=1851202446&entity=software&country=us&limit=200), [developer page](https://apps.apple.com/tw/developer/yung-wen-cheng/id1851202446).

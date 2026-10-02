@@ -52,11 +52,11 @@ const PAGE_CONTENT = {
 const APPS = [
   {
     status: "released",
-    version: "2.2",
+    version: "2.4",
     icon: "assets/icons/compound-interest-calculator.png",
     url: {
-      zh: "https://apps.apple.com/tw/app/%E8%A4%87%E5%88%A9%E8%A8%88%E7%AE%97%E5%99%A8-%E8%B2%A1%E5%8B%99%E8%87%AA%E7%94%B1%E5%AF%A6%E7%8F%BE%E5%B7%A5%E5%85%B7/id6756014104?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/investment-growth/id6756014104"
+      zh: "https://apps.apple.com/tw/app/id6756014104?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/id6756014104?l=en-US"
     },
     zh: {
       title: "複利計算器-財務自由實現工具",
@@ -78,8 +78,8 @@ const APPS = [
     version: "1.1",
     icon: "assets/icons/larrys-mixology-lab.png",
     url: {
-      zh: "https://apps.apple.com/us/app/%E8%B3%B4%E7%91%9E%E7%9A%84%E8%AA%BF%E9%85%92%E7%A0%94%E7%A9%B6%E5%AE%A4/id6761377948?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/%E8%B3%B4%E7%91%9E%E7%9A%84%E8%AA%BF%E9%85%92%E7%A0%94%E7%A9%B6%E5%AE%A4/id6761377948"
+      zh: "https://apps.apple.com/tw/app/id6761377948?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/id6761377948?l=en-US"
     },
     zh: {
       title: "賴瑞的調酒研究室",
@@ -98,14 +98,14 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.4",
+    version: "1.6",
     icon: "assets/icons/easy-lucky-draw.png",
     url: {
-      zh: "https://apps.apple.com/us/app/%E8%BC%95%E9%AC%86%E6%8A%BD%E7%8D%8E%E7%A8%8B%E5%BC%8F/id6755403297?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/%E8%BC%95%E9%AC%86%E6%8A%BD%E7%8D%8E%E7%A8%8B%E5%BC%8F/id6755403297"
+      zh: "https://apps.apple.com/tw/app/id6755403297?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/id6755403297?l=en-US"
     },
     zh: {
-      title: "輕鬆抽獎程式",
+      title: "輕鬆抽獎",
       description:
         "乾淨、直覺、零廣告的抽獎工具，適用於活動、課堂、聚會與名單抽選情境，支援名單整理與即時抽選，讓短暫流程也能有節奏與完成度。",
       highlight:
@@ -121,11 +121,11 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.5",
+    version: "1.7",
     icon: "assets/icons/crypto-guide.png",
     url: {
-      zh: "https://apps.apple.com/tw/app/%E5%B9%A3%E5%9C%88%E7%A5%9E%E5%99%A8-%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3-%E5%8D%80%E5%A1%8A%E9%8F%88%E5%AD%B8%E7%BF%92%E5%AD%97%E5%85%B8/id6761411130?l=zh-Hant-TW",
-      en: "https://apps.apple.com/tw/app/%E5%B9%A3%E5%9C%88%E7%A5%9E%E5%99%A8-%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3-%E5%8D%80%E5%A1%8A%E9%8F%88%E5%AD%B8%E7%BF%92%E5%AD%97%E5%85%B8/id6761411130?l=en-GB"
+      zh: "https://apps.apple.com/tw/app/id6761411130?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/id6761411130?l=en-US"
     },
     zh: {
       title: "幣圈神器-加密貨幣&區塊鏈學習字典",
@@ -135,7 +135,7 @@ const APPS = [
         "亮點：將陌生的金融新知轉譯為可搜尋、可收藏、也更容易持續閱讀的行動學習工具。"
     },
     en: {
-      title: "Crypto Guide: Beginner Dictionary for Crypto & Blockchain",
+      title: "Crypto Guide: Bitcoin & Web3",
       description:
         "A beginner-friendly crypto and blockchain dictionary that combines glossary lookup, learning context, and saved concepts into a clearer, more inviting knowledge entry point.",
       highlight:
@@ -144,11 +144,11 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.4",
+    version: "1.7",
     icon: "assets/icons/did-you-take-your-vitamins-today.svg",
     url: {
-      zh: "https://apps.apple.com/tw/app/%E4%BD%A0%E4%BB%8A%E5%A4%A9%E7%B6%AD%E4%BB%96%E5%91%BD%E4%BA%86%E5%97%8E/id6761441866?l=zh-Hant-TW",
-      en: "https://apps.apple.com/tw/app/%E4%BD%A0%E4%BB%8A%E5%A4%A9%E7%B6%AD%E4%BB%96%E5%91%BD%E4%BA%86%E5%97%8E/id6761441866?l=en-GB"
+      zh: "https://apps.apple.com/tw/app/id6761441866?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/id6761441866?l=en-US"
     },
     zh: {
       title: "你今天維他命了嗎",
@@ -158,7 +158,7 @@ const APPS = [
         "亮點：以柔和清楚的互動語氣，讓日常保健追蹤更容易被理解、記住與持續。"
     },
     en: {
-      title: "Did You Take Your Vitamins Today?",
+      title: "Vitamin Today",
       description:
         "A wellness app for daily supplement routines, blending intake logs, history tracking, educational content, and profile flows into a kinder self-care experience.",
       highlight:
@@ -170,8 +170,8 @@ const APPS = [
     version: "1.4",
     icon: "assets/icons/leave-your-dream-behind.png",
     url: {
-      zh: "https://apps.apple.com/us/app/%E6%8A%8A%E5%A4%A2%E9%81%BA%E7%95%99%E4%B8%8B%E4%BE%86/id6761692228?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/%E6%8A%8A%E5%A4%A2%E9%81%BA%E7%95%99%E4%B8%8B%E4%BE%86/id6761692228"
+      zh: "https://apps.apple.com/tw/app/id6761692228?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/id6761692228?l=en-US"
     },
     zh: {
       title: "把夢遺留下來",
@@ -190,11 +190,11 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.8",
+    version: "2.0",
     icon: "assets/icons/ai-time-management.png",
     url: {
-      zh: "https://apps.apple.com/us/app/ai%E6%99%82%E9%96%93%E7%AE%A1%E7%90%86/id6754973616?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/ai%E6%99%82%E9%96%93%E7%AE%A1%E7%90%86/id6754973616"
+      zh: "https://apps.apple.com/tw/app/id6754973616?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/id6754973616?l=en-US"
     },
     zh: {
       title: "AI時間管理",
@@ -213,11 +213,11 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.7",
+    version: "2.0",
     icon: "assets/icons/pr-diary.png",
     url: {
-      zh: "https://apps.apple.com/us/app/%E5%85%AC%E9%97%9C%E6%97%A5%E8%A8%98/id6761694656?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/%E5%85%AC%E9%97%9C%E6%97%A5%E8%A8%98/id6761694656"
+      zh: "https://apps.apple.com/tw/app/id6761694656?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/id6761694656?l=en-US"
     },
     zh: {
       title: "公關日記",
