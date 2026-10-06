@@ -52,7 +52,7 @@ const PAGE_CONTENT = {
 const APPS = [
   {
     status: "released",
-    version: "2.4",
+    version: "2.5",
     icon: "assets/icons/compound-interest-calculator.png",
     url: {
       zh: "https://apps.apple.com/tw/app/id6756014104?l=zh-Hant-TW",
@@ -167,7 +167,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.4",
+    version: "1.6.1",
     icon: "assets/icons/leave-your-dream-behind.png",
     url: {
       zh: "https://apps.apple.com/tw/app/id6761692228?l=zh-Hant-TW",
@@ -181,7 +181,7 @@ const APPS = [
         "亮點：將夢境書寫、情緒辨識與個人回顧整理成溫柔而可持續的日常儀式。"
     },
     en: {
-      title: "Leave Your Dream Behind",
+      title: "Dream Keepsake",
       description:
         "A gentle dream-journaling app for capturing fragile images after waking, with quick entry, voice input, mood reflection, favorites, and reminders.",
       highlight:
@@ -213,7 +213,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "2.0",
+    version: "2.1",
     icon: "assets/icons/pr-diary.png",
     url: {
       zh: "https://apps.apple.com/tw/app/id6761694656?l=zh-Hant-TW",
@@ -232,6 +232,44 @@ const APPS = [
         "A themed app combining industry guidance with multi-role diaries for Taiwan's nightlife PR culture, supporting both cultural understanding and personal record-keeping.",
       highlight:
         "Highlight: turns a niche subject into an informative, atmospheric, and practical mobile product."
+    }
+  },
+  {
+    "status": "released",
+    "version": "1.0.2",
+    "icon": "assets/icons/build-it-yourself.jpg",
+    "url": {
+      "zh": "https://apps.apple.com/tw/app/id6818286088?l=zh-Hant-TW",
+      "en": "https://apps.apple.com/us/app/id6818286088?l=en-US"
+    },
+    "zh": {
+      "title": "自己來設計",
+      "description": "把空間預覽、材料選擇與預算整理放在一起，從客廳、臥室或工作區模板開始，調整地板、牆面、家具與燈光，整理能和家人或設計師討論的初步方案。",
+      "highlight": "亮點：結合空間搭配與預算明細，支援離線規劃，讓居家設計想法更容易具體呈現。"
+    },
+    "en": {
+      "title": "Build It Yourself: Room Design",
+      "description": "Plan a room with visual previews, material choices, and itemized budget estimates. Start from room templates and explore floors, walls, furniture, and lighting for early design discussions.",
+      "highlight": "Highlight: brings room styling and budget planning together, with offline tools that make home design ideas easier to explore."
+    }
+  },
+  {
+    "status": "released",
+    "version": "2.2.0",
+    "icon": "assets/icons/stock-mastery.jpg",
+    "url": {
+      "zh": "https://apps.apple.com/tw/app/id6815299678?l=zh-Hant-TW",
+      "en": "https://apps.apple.com/us/app/id6815299678?l=en-US"
+    },
+    "zh": {
+      "title": "股神養成：台美股模擬交易",
+      "description": "用虛擬資金練習台美股交易，結合台股盤後資料、美股自訂價格模擬、下單筆記與持倉回顧，並提供金融名詞及風險觀念，協助新手循序學習。",
+      "highlight": "亮點：把模擬下單、交易理由與結果回顧放在同一個工作台，台幣與美元帳戶分開管理。"
+    },
+    "en": {
+      "title": "Stock Mastery: Paper Trading",
+      "description": "Practice with virtual cash using Taiwan end-of-day data and U.S. custom-price simulations. Keep order notes, review holdings, and explore finance terms and risk concepts without placing real trades.",
+      "highlight": "Highlight: connects paper orders, trading notes, and portfolio reviews in one workspace, with separate TWD and USD accounts."
     }
   }
 ];
