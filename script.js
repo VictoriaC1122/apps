@@ -167,7 +167,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.6.1",
+    version: "1.7",
     icon: "assets/icons/leave-your-dream-behind.png",
     url: {
       zh: "https://apps.apple.com/tw/app/id6761692228?l=zh-Hant-TW",
@@ -190,7 +190,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "2.0",
+    version: "2.1",
     icon: "assets/icons/ai-time-management.png",
     url: {
       zh: "https://apps.apple.com/tw/app/id6754973616?l=zh-Hant-TW",
@@ -236,7 +236,7 @@ const APPS = [
   },
   {
     "status": "released",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "icon": "assets/icons/build-it-yourself.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6818286088?l=zh-Hant-TW",
@@ -255,7 +255,7 @@ const APPS = [
   },
   {
     "status": "released",
-    "version": "2.2.0",
+    "version": "2.2.1",
     "icon": "assets/icons/stock-mastery.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6815299678?l=zh-Hant-TW",
@@ -270,6 +270,29 @@ const APPS = [
       "title": "Stock Mastery: Paper Trading",
       "description": "Practice with virtual cash using Taiwan end-of-day data and U.S. custom-price simulations. Keep order notes, review holdings, and explore finance terms and risk concepts without placing real trades.",
       "highlight": "Highlight: connects paper orders, trading notes, and portfolio reviews in one workspace, with separate TWD and USD accounts."
+    }
+  },
+  {
+    status: "released",
+    version: "1.0.1",
+    icon: "assets/icons/perfect-pig.jpg",
+    url: {
+      zh: "https://apps.apple.com/tw/app/id6811446129?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/id6811446129?l=en-US"
+    },
+    zh: {
+      title: "完美養豬",
+      description:
+        "以七天為一代的療癒養成遊戲，透過餵食、散步、聊天與打工，慢慢塑造小豬的個性，並在每一代結束時揭曉你們的故事。",
+      highlight:
+        "亮點：探索五種個性路線，透過遊戲條件收集 100 張小豬卡，收藏、重讀與分享不同的陪伴結局。"
+    },
+    en: {
+      title: "Perfect Pig",
+      description:
+        "A cozy pet-raising game built around seven-day generations. Feed, walk, chat, and work together to shape your pig's personality and discover a new story ending.",
+      highlight:
+        "Highlight: explore five personality paths, unlock 100 pig cards through gameplay, and revisit or share the endings you collect."
     }
   }
 ];

@@ -11,7 +11,7 @@ Standalone bilingual app showcase site for Victoria Cheng.
 
 ## Notes
 
-- All ten featured apps are published and have confirmed App Store links, with Taiwan links for Chinese and US links for English.
-- Versions and renamed store titles were checked on 2026-10-06 using Apple's Lookup API for developer `1851202446` (Yung Wen Cheng), in both Taiwan and the US.
-- Both storefronts and the public Taiwan developer page list the same ten apps. Added `Build It Yourself: Room Design` (6818286088) and `Stock Mastery: Paper Trading` (6815299678), including official icons and bilingual descriptions.
+- All eleven featured apps are published and have confirmed App Store links, with Taiwan links for Chinese and US links for English.
+- Versions and store titles were checked on 2026-10-08 using Apple's Lookup API for developer `1851202446` (Yung Wen Cheng), in both Taiwan and the US.
+- Both storefronts and the public Taiwan developer page list the same eleven apps. Added `Perfect Pig` (6811446129), including its official icon and bilingual description.
 - Sources: [Taiwan catalog](https://itunes.apple.com/lookup?id=1851202446&entity=software&country=tw&limit=200), [US catalog](https://itunes.apple.com/lookup?id=1851202446&entity=software&country=us&limit=200), [developer page](https://apps.apple.com/tw/developer/yung-wen-cheng/id1851202446).
