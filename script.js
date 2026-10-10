@@ -255,7 +255,7 @@ const APPS = [
   },
   {
     "status": "released",
-    "version": "2.2.1",
+    "version": "2.2.2",
     "icon": "assets/icons/stock-mastery.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6815299678?l=zh-Hant-TW",
@@ -274,7 +274,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.0.1",
+    version: "1.1.0",
     icon: "assets/icons/perfect-pig.jpg",
     url: {
       zh: "https://apps.apple.com/tw/app/id6811446129?l=zh-Hant-TW",
