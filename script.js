@@ -255,7 +255,7 @@ const APPS = [
   },
   {
     "status": "released",
-    "version": "2.2.2",
+    "version": "2.4.0",
     "icon": "assets/icons/stock-mastery.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6815299678?l=zh-Hant-TW",
@@ -274,7 +274,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.1.0",
+    version: "1.1.1",
     icon: "assets/icons/perfect-pig.jpg",
     url: {
       zh: "https://apps.apple.com/tw/app/id6811446129?l=zh-Hant-TW",
@@ -293,6 +293,29 @@ const APPS = [
         "A cozy pet-raising game built around seven-day generations. Feed, walk, chat, and work together to shape your pig's personality and discover a new story ending.",
       highlight:
         "Highlight: explore five personality paths, unlock 100 pig cards through gameplay, and revisit or share the endings you collect."
+    }
+  },
+  {
+    status: "released",
+    version: "1.0",
+    icon: "assets/icons/coffee-chat-note.jpg",
+    url: {
+      zh: "https://apps.apple.com/tw/app/id6820863958?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/id6820863958?l=en-US"
+    },
+    zh: {
+      title: "Coffee Chat 筆記",
+      description:
+        "為求職與職場交流打造的私人手帳，整合會前準備、聯絡人整理、對話筆記與後續提醒，把每次交流的重點與下一步清楚留下。",
+      highlight:
+        "亮點：串起人脈背景、對話洞見與跟進行動，資料儲存在裝置上，支援備份還原與 12 種語言。"
+    },
+    en: {
+      title: "Coffee Chat Note",
+      description:
+        "A private notebook for career conversations, bringing together meeting preparation, contacts, conversation notes, and follow-up reminders to keep insights and next steps organized.",
+      highlight:
+        "Highlight: connects relationship context, conversation insights, and follow-up actions, with on-device storage, backup and restore, and support for 12 languages."
     }
   }
 ];
