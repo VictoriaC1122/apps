@@ -98,7 +98,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.6",
+    version: "1.7",
     icon: "assets/icons/easy-lucky-draw.png",
     url: {
       zh: "https://apps.apple.com/tw/app/id6755403297?l=zh-Hant-TW",
@@ -121,7 +121,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.7",
+    version: "2.0",
     icon: "assets/icons/crypto-guide.png",
     url: {
       zh: "https://apps.apple.com/tw/app/id6761411130?l=zh-Hant-TW",
@@ -130,14 +130,14 @@ const APPS = [
     zh: {
       title: "幣圈神器-加密貨幣&區塊鏈學習字典",
       description:
-        "為加密貨幣與區塊鏈初學者打造的學習字典，整合名詞查詢、學習脈絡與收藏功能，把艱澀分散的概念整理成清楚、友善、可持續探索的知識入口。",
+        "涵蓋區塊鏈入門與加密投資研究的雙語學習工具，結合名詞查詢、課程文章、測驗與學習路線，幫助使用者從基礎概念逐步建立研究能力。",
       highlight:
         "亮點：將陌生的金融新知轉譯為可搜尋、可收藏、也更容易持續閱讀的行動學習工具。"
     },
     en: {
       title: "Crypto Guide: Bitcoin & Web3",
       description:
-        "A beginner-friendly crypto and blockchain dictionary that combines glossary lookup, learning context, and saved concepts into a clearer, more inviting knowledge entry point.",
+        "A bilingual learning app for blockchain basics and crypto investment research, combining glossary lookup, lessons, quizzes, and learning paths to build understanding step by step.",
       highlight:
         "Highlight: translates a complex financial frontier into a searchable, saveable, and approachable mobile reference."
     }
@@ -236,7 +236,7 @@ const APPS = [
   },
   {
     "status": "released",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "icon": "assets/icons/build-it-yourself.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6818286088?l=zh-Hant-TW",
@@ -255,7 +255,7 @@ const APPS = [
   },
   {
     "status": "released",
-    "version": "2.4.0",
+    "version": "2.6.0",
     "icon": "assets/icons/stock-mastery.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6815299678?l=zh-Hant-TW",
@@ -263,18 +263,18 @@ const APPS = [
     },
     "zh": {
       "title": "股神養成：台美股模擬交易",
-      "description": "用虛擬資金練習台美股交易，結合台股盤後資料、美股自訂價格模擬、下單筆記與持倉回顧，並提供金融名詞及風險觀念，協助新手循序學習。",
+      "description": "用虛擬資金練習台美股交易，結合台股盤後資料、美股每日收盤價與自訂價格模擬、下單筆記與持倉回顧，並提供金融名詞及風險觀念，協助新手循序學習。",
       "highlight": "亮點：把模擬下單、交易理由與結果回顧放在同一個工作台，台幣與美元帳戶分開管理。"
     },
     "en": {
       "title": "Stock Mastery: Paper Trading",
-      "description": "Practice with virtual cash using Taiwan end-of-day data and U.S. custom-price simulations. Keep order notes, review holdings, and explore finance terms and risk concepts without placing real trades.",
+      "description": "Practice with virtual cash using Taiwan end-of-day data and U.S. closing-price and custom-price simulations. Keep order notes, review holdings, and explore finance terms and risk concepts without placing real trades.",
       "highlight": "Highlight: connects paper orders, trading notes, and portfolio reviews in one workspace, with separate TWD and USD accounts."
     }
   },
   {
     status: "released",
-    version: "1.1.1",
+    version: "1.2.0",
     icon: "assets/icons/perfect-pig.jpg",
     url: {
       zh: "https://apps.apple.com/tw/app/id6811446129?l=zh-Hant-TW",
@@ -297,7 +297,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.0",
+    version: "1.1.1",
     icon: "assets/icons/coffee-chat-note.jpg",
     url: {
       zh: "https://apps.apple.com/tw/app/id6820863958?l=zh-Hant-TW",
@@ -316,6 +316,29 @@ const APPS = [
         "A private notebook for career conversations, bringing together meeting preparation, contacts, conversation notes, and follow-up reminders to keep insights and next steps organized.",
       highlight:
         "Highlight: connects relationship context, conversation insights, and follow-up actions, with on-device storage, backup and restore, and support for 12 languages."
+    }
+  },
+  {
+    status: "released",
+    version: "1.0",
+    icon: "assets/icons/semiconductors-illustrated.jpg",
+    url: {
+      zh: "https://apps.apple.com/tw/app/id6822188590?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/id6822188590?l=en-US"
+    },
+    zh: {
+      title: "圖解半導體",
+      description:
+        "為半導體初學者打造的圖解學習工具，結合 24 堂入門課、互動製程示意、公司檔案、術語字典與小測驗，逐步理解晶片原理與產業分工。",
+      highlight:
+        "亮點：以互動圖解連結技術概念與產業脈絡，支援 20 種語言、離線教材，以及學習筆記與錯題複習。"
+    },
+    en: {
+      title: "Semiconductors Illustrated",
+      description:
+        "A visual learning guide for semiconductor beginners, combining 24 introductory lessons, interactive process diagrams, company profiles, a glossary, and quizzes to explain chips and the industry behind them.",
+      highlight:
+        "Highlight: connects technical concepts with industry roles through interactive diagrams, with 20 languages, offline lessons, study notes, and quiz review."
     }
   }
 ];
