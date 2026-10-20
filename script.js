@@ -297,7 +297,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.1.1",
+    version: "1.2",
     icon: "assets/icons/coffee-chat-note.jpg",
     url: {
       zh: "https://apps.apple.com/tw/app/id6820863958?l=zh-Hant-TW",
@@ -339,6 +339,52 @@ const APPS = [
         "A visual learning guide for semiconductor beginners, combining 24 introductory lessons, interactive process diagrams, company profiles, a glossary, and quizzes to explain chips and the industry behind them.",
       highlight:
         "Highlight: connects technical concepts with industry roles through interactive diagrams, with 20 languages, offline lessons, study notes, and quiz review."
+    }
+  },
+  {
+    status: "released",
+    version: "1.0",
+    icon: "assets/icons/milebutler.jpg",
+    url: {
+      zh: "https://apps.apple.com/tw/app/id6823824323?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/id6823824323?l=en-US"
+    },
+    zh: {
+      title: "哩程管家：信用卡換機票試算",
+      description:
+        "整合航空獎勵機票票表、買哩程成本與台灣信用卡轉點條件，依航線、艙等及現有哩程，比較兌換所需的點數、消費金額與累積時間。",
+      highlight:
+        "亮點：把航空哩程與銀行點數放在一起試算，支援多方案並排比較與 20 種語言，協助規劃換票目標。"
+    },
+    en: {
+      title: "MileButler: Miles & Card Plans",
+      description:
+        "Compare published award charts, mile-purchase costs, and Taiwan credit-card transfer terms. Factor in your route, cabin, and existing balances to estimate the points, spending, and time needed for a redemption.",
+      highlight:
+        "Highlight: brings airline miles and bank points into one planning tool, with side-by-side comparisons and 20 languages to help track redemption goals."
+    }
+  },
+  {
+    status: "released",
+    version: "1.0.2",
+    icon: "assets/icons/future-major-guide.jpg",
+    url: {
+      zh: "https://apps.apple.com/tw/app/id6824004640?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/id6824004640?l=en-US"
+    },
+    zh: {
+      title: "我決定自己的未來-大學選系指南",
+      description:
+        "陪伴學生與家長探索台灣及美國的大學與科系，整合興趣測驗、校系學習地圖、收藏筆記與並排比較，把選校選系整理成清楚的下一步。",
+      highlight:
+        "亮點：將學習方向、修課內容與職涯資訊連結起來，資料標示年度與來源，支援 20 種介面語言。"
+    },
+    en: {
+      title: "Future Major Guide",
+      description:
+        "Explore universities and majors in Taiwan and the United States with interest quizzes, program learning maps, saved notes, and side-by-side comparisons that help students and families plan their next steps.",
+      highlight:
+        "Highlight: connects fields of study, coursework, and career paths using dated source information, with support for 20 interface languages."
     }
   }
 ];
