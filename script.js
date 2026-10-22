@@ -52,7 +52,7 @@ const PAGE_CONTENT = {
 const APPS = [
   {
     status: "released",
-    version: "2.5",
+    version: "2.6",
     icon: "assets/icons/compound-interest-calculator.png",
     url: {
       zh: "https://apps.apple.com/tw/app/id6756014104?l=zh-Hant-TW",
@@ -274,7 +274,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.2.0",
+    version: "1.3.0",
     icon: "assets/icons/perfect-pig.jpg",
     url: {
       zh: "https://apps.apple.com/tw/app/id6811446129?l=zh-Hant-TW",
@@ -320,7 +320,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.0",
+    version: "1.1",
     icon: "assets/icons/semiconductors-illustrated.jpg",
     url: {
       zh: "https://apps.apple.com/tw/app/id6822188590?l=zh-Hant-TW",

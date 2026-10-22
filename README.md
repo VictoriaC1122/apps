@@ -12,8 +12,8 @@ Standalone bilingual app showcase site for Victoria Cheng.
 ## Notes
 
 - All fifteen featured apps are published and have confirmed App Store links, with Taiwan links for Chinese and US links for English.
-- Versions and store titles were checked on 2026-10-21 using Apple's Lookup API for developer `1851202446` (Yung Wen Cheng), in both Taiwan and the US.
-- Both Lookup catalogs list the same fifteen apps. Added `MileButler: Miles & Card Plans` (6823824323) at 1.0 and `Future Major Guide` (6824004640) at 1.0.2, including official icons and bilingual descriptions.
-- Updated `Coffee Chat Note` to 1.2; all other existing app versions remain current.
+- Versions and store titles were checked on 2026-10-23 using Apple's Lookup API for developer `1851202446` (Yung Wen Cheng), in both Taiwan and the US.
+- Both Lookup catalogs list the same fifteen apps; no additional published apps were found.
+- Updated `Investment Growth` to 2.6, `Perfect Pig` to 1.3.0, and `圖解半導體` to 1.1; all other existing app versions remain current.
 - `Semiconductors Illustrated` is the translated English portfolio title of `圖解半導體`; both storefronts currently use the Chinese name.
 - Sources: [Taiwan catalog](https://itunes.apple.com/lookup?id=1851202446&entity=software&country=tw&limit=200), [US catalog](https://itunes.apple.com/lookup?id=1851202446&entity=software&country=us&limit=200), [developer page](https://apps.apple.com/tw/developer/yung-wen-cheng/id1851202446).
