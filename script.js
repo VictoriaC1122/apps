@@ -274,7 +274,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.3.0",
+    version: "1.3.1",
     icon: "assets/icons/perfect-pig.jpg",
     url: {
       zh: "https://apps.apple.com/tw/app/id6811446129?l=zh-Hant-TW",
@@ -297,7 +297,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.2",
+    version: "1.2.1",
     icon: "assets/icons/coffee-chat-note.jpg",
     url: {
       zh: "https://apps.apple.com/tw/app/id6820863958?l=zh-Hant-TW",
@@ -320,7 +320,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.1",
+    version: "1.2",
     icon: "assets/icons/semiconductors-illustrated.jpg",
     url: {
       zh: "https://apps.apple.com/tw/app/id6822188590?l=zh-Hant-TW",
@@ -343,7 +343,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.0",
+    version: "1.0.1",
     icon: "assets/icons/milebutler.jpg",
     url: {
       zh: "https://apps.apple.com/tw/app/id6823824323?l=zh-Hant-TW",
@@ -366,7 +366,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.0.2",
+    version: "1.1.0",
     icon: "assets/icons/future-major-guide.jpg",
     url: {
       zh: "https://apps.apple.com/tw/app/id6824004640?l=zh-Hant-TW",
@@ -385,6 +385,29 @@ const APPS = [
         "Explore universities and majors in Taiwan and the United States with interest quizzes, program learning maps, saved notes, and side-by-side comparisons that help students and families plan their next steps.",
       highlight:
         "Highlight: connects fields of study, coursework, and career paths using dated source information, with support for 20 interface languages."
+    }
+  },
+  {
+    status: "released",
+    version: "1.0",
+    icon: "assets/icons/paper-reading-desk.jpg",
+    url: {
+      zh: "https://apps.apple.com/tw/app/id6818310524?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/id6818310524?l=en-US"
+    },
+    zh: {
+      title: "研究生讀 Paper 神器",
+      description:
+        "匯入 PDF、圖片與掃描文件，建立保存在裝置上的個人文獻庫，結合文字擷取、閱讀拆解與研究筆記，並在支援的系統上提供逐段翻譯，協助整理論文與研究想法。",
+      highlight:
+        "亮點：在 iPad 並排閱讀原文與筆記，支援擷取文字搜尋、引用格式複製與完整文獻備份，讓閱讀紀錄更容易整理與回查。"
+    },
+    en: {
+      title: "Paper Reading Desk",
+      description:
+        "Build a personal research library from PDFs, images, and scans. Keep originals and notes on your device, with local text extraction, rule-based reading breakdowns, and paragraph translation on supported systems.",
+      highlight:
+        "Highlight: read documents beside your notes on iPad, search extracted text, copy citation formats, and export complete library backups for easier research review."
     }
   }
 ];
