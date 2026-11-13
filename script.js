@@ -52,7 +52,7 @@ const PAGE_CONTENT = {
 const APPS = [
   {
     status: "released",
-    version: "2.6",
+    version: "2.6.1",
     icon: "assets/icons/compound-interest-calculator.png",
     url: {
       zh: "https://apps.apple.com/tw/app/id6756014104?l=zh-Hant-TW",
@@ -98,7 +98,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.7",
+    version: "1.7.1",
     icon: "assets/icons/easy-lucky-draw.png",
     url: {
       zh: "https://apps.apple.com/tw/app/id6755403297?l=zh-Hant-TW",
@@ -121,7 +121,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "2.0",
+    version: "2.0.1",
     icon: "assets/icons/crypto-guide.png",
     url: {
       zh: "https://apps.apple.com/tw/app/id6761411130?l=zh-Hant-TW",
@@ -144,7 +144,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.7",
+    version: "1.7.1",
     icon: "assets/icons/did-you-take-your-vitamins-today.svg",
     url: {
       zh: "https://apps.apple.com/tw/app/id6761441866?l=zh-Hant-TW",
@@ -167,7 +167,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.7",
+    version: "1.7.1",
     icon: "assets/icons/leave-your-dream-behind.png",
     url: {
       zh: "https://apps.apple.com/tw/app/id6761692228?l=zh-Hant-TW",
@@ -190,7 +190,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "2.1",
+    version: "2.1.1",
     icon: "assets/icons/ai-time-management.png",
     url: {
       zh: "https://apps.apple.com/tw/app/id6754973616?l=zh-Hant-TW",
@@ -199,21 +199,21 @@ const APPS = [
     zh: {
       title: "AI時間管理",
       description:
-        "結合 AI 任務拆解、專注計時與進度回顧，協助使用者把巨大而模糊的目標整理成可開始、可追蹤、可持續執行的日常節奏。",
+        "整合任務庫、每日排程、專注計時與進度回顧，透過裝置內的關鍵字規則與範本提供可編輯的任務拆解，協助把目標整理成可開始、可追蹤的日常行動。",
       highlight:
-        "亮點：把 AI 建議、行為回饋與專注流程整合成更貼近日常使用的效率體驗。"
+        "亮點：串起每日規劃、專注與回顧，資料保存在裝置上，支援常用流程與完整備份。"
     },
     en: {
       title: "AI Time Management",
       description:
-        "A productivity app with AI task breakdown, focus timing, and progress review, helping users turn overwhelming goals into trackable and sustainable daily rhythms.",
+        "Bring tasks, daily schedules, focus timing, and progress review together. Editable task breakdowns use on-device keyword rules and templates to turn goals into practical daily actions.",
       highlight:
-        "Highlight: integrates AI guidance, behavioral feedback, and focus structure into a practical everyday workflow."
+        "Highlight: connects planning, focus, and reflection with on-device storage, reusable workflows, and complete backups."
     }
   },
   {
     status: "released",
-    version: "2.1",
+    version: "2.1.1",
     icon: "assets/icons/pr-diary.png",
     url: {
       zh: "https://apps.apple.com/tw/app/id6761694656?l=zh-Hant-TW",
@@ -236,7 +236,7 @@ const APPS = [
   },
   {
     "status": "released",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "icon": "assets/icons/build-it-yourself.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6818286088?l=zh-Hant-TW",
@@ -255,7 +255,7 @@ const APPS = [
   },
   {
     "status": "released",
-    "version": "2.6.0",
+    "version": "2.7.1",
     "icon": "assets/icons/stock-mastery.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6815299678?l=zh-Hant-TW",
@@ -274,7 +274,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.3.1",
+    version: "1.5.1",
     icon: "assets/icons/perfect-pig.jpg",
     url: {
       zh: "https://apps.apple.com/tw/app/id6811446129?l=zh-Hant-TW",
@@ -283,21 +283,21 @@ const APPS = [
     zh: {
       title: "完美養豬",
       description:
-        "以七天為一代的療癒養成遊戲，透過餵食、散步、聊天與打工，慢慢塑造小豬的個性，並在每一代結束時揭曉你們的故事。",
+        "透過餵食、散步、聊天與打工，慢慢塑造小豬個性的療癒養成遊戲。完成七天成長後，可以自行選擇結算或繼續陪伴，迎接下一代時保留收藏與資源。",
       highlight:
         "亮點：探索五種個性路線，透過遊戲條件收集 100 張小豬卡，收藏、重讀與分享不同的陪伴結局。"
     },
     en: {
       title: "Perfect Pig",
       description:
-        "A cozy pet-raising game built around seven-day generations. Feed, walk, chat, and work together to shape your pig's personality and discover a new story ending.",
+        "A cozy pet-raising game where feeding, walks, chats, and work shape your pig's personality. After seven days of growth, choose to finish the generation or keep spending time together; collections and resources carry over.",
       highlight:
         "Highlight: explore five personality paths, unlock 100 pig cards through gameplay, and revisit or share the endings you collect."
     }
   },
   {
     status: "released",
-    version: "1.2.1",
+    version: "1.2.2",
     icon: "assets/icons/coffee-chat-note.jpg",
     url: {
       zh: "https://apps.apple.com/tw/app/id6820863958?l=zh-Hant-TW",
@@ -308,19 +308,19 @@ const APPS = [
       description:
         "為求職與職場交流打造的私人手帳，整合會前準備、聯絡人整理、對話筆記與後續提醒，把每次交流的重點與下一步清楚留下。",
       highlight:
-        "亮點：串起人脈背景、對話洞見與跟進行動，資料儲存在裝置上，支援備份還原與 12 種語言。"
+        "亮點：串起人脈背景、對話洞見與跟進行動，資料儲存在裝置上，支援備份還原與 20 種語言。"
     },
     en: {
       title: "Coffee Chat Note",
       description:
         "A private notebook for career conversations, bringing together meeting preparation, contacts, conversation notes, and follow-up reminders to keep insights and next steps organized.",
       highlight:
-        "Highlight: connects relationship context, conversation insights, and follow-up actions, with on-device storage, backup and restore, and support for 12 languages."
+        "Highlight: connects relationship context, conversation insights, and follow-up actions, with on-device storage, backup and restore, and support for 20 languages."
     }
   },
   {
     status: "released",
-    version: "1.2",
+    version: "1.2.1",
     icon: "assets/icons/semiconductors-illustrated.jpg",
     url: {
       zh: "https://apps.apple.com/tw/app/id6822188590?l=zh-Hant-TW",
@@ -334,7 +334,7 @@ const APPS = [
         "亮點：以互動圖解連結技術概念與產業脈絡，支援 20 種語言、離線教材，以及學習筆記與錯題複習。"
     },
     en: {
-      title: "Semiconductors Illustrated",
+      title: "SemiVerse: Chips Illustrated",
       description:
         "A visual learning guide for semiconductor beginners, combining 24 introductory lessons, interactive process diagrams, company profiles, a glossary, and quizzes to explain chips and the industry behind them.",
       highlight:
@@ -343,7 +343,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.0.1",
+    version: "1.0.2",
     icon: "assets/icons/milebutler.jpg",
     url: {
       zh: "https://apps.apple.com/tw/app/id6823824323?l=zh-Hant-TW",
@@ -366,7 +366,7 @@ const APPS = [
   },
   {
     status: "released",
-    version: "1.1.0",
+    version: "1.1.1",
     icon: "assets/icons/future-major-guide.jpg",
     url: {
       zh: "https://apps.apple.com/tw/app/id6824004640?l=zh-Hant-TW",
@@ -377,19 +377,19 @@ const APPS = [
       description:
         "陪伴學生與家長探索台灣及美國的大學與科系，整合興趣測驗、校系學習地圖、收藏筆記與並排比較，把選校選系整理成清楚的下一步。",
       highlight:
-        "亮點：將學習方向、修課內容與職涯資訊連結起來，資料標示年度與來源，支援 20 種介面語言。"
+        "亮點：將學習方向、修課內容與職涯資訊連結起來，資料標示年度與來源，支援 25 種介面語言。"
     },
     en: {
       title: "Future Major Guide",
       description:
         "Explore universities and majors in Taiwan and the United States with interest quizzes, program learning maps, saved notes, and side-by-side comparisons that help students and families plan their next steps.",
       highlight:
-        "Highlight: connects fields of study, coursework, and career paths using dated source information, with support for 20 interface languages."
+        "Highlight: connects fields of study, coursework, and career paths using dated source information, with support for 25 interface languages."
     }
   },
   {
     status: "released",
-    version: "1.0",
+    version: "1.1.1",
     icon: "assets/icons/paper-reading-desk.jpg",
     url: {
       zh: "https://apps.apple.com/tw/app/id6818310524?l=zh-Hant-TW",
@@ -408,6 +408,29 @@ const APPS = [
         "Build a personal research library from PDFs, images, and scans. Keep originals and notes on your device, with local text extraction, rule-based reading breakdowns, and paragraph translation on supported systems.",
       highlight:
         "Highlight: read documents beside your notes on iPad, search extracted text, copy citation formats, and export complete library backups for easier research review."
+    }
+  },
+  {
+    status: "released",
+    version: "1.0",
+    icon: "assets/icons/finatlas.jpg",
+    url: {
+      zh: "https://apps.apple.com/tw/app/id6830943408?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/id6830943408?l=en-US"
+    },
+    zh: {
+      title: "FinAtlas 金融產業與職涯",
+      description:
+        "金融產業與職涯學習指南，整合繁中與英文入門課程、測驗、台灣金融機構名錄及職務與證照資訊，協助探索金融工作的內容與所需技能。",
+      highlight:
+        "亮點：依機構類型查詢與比較附來源的資料，保存筆記、收藏與學習進度；選用 Pro 可透過虛構案例練習企業授信決策。"
+    },
+    en: {
+      title: "FinAtlas: Finance & Careers",
+      description:
+        "Explore the financial industry through introductory lessons in Traditional Chinese and English, quizzes, a Taiwan institution directory, and information on roles, skills, and qualifications.",
+      highlight:
+        "Highlight: compare institutions using dated sources and keep notes, bookmarks, and learning progress; optional Pro adds corporate credit practice with fictional cases."
     }
   }
 ];
