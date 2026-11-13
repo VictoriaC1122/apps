@@ -27,8 +27,10 @@ Each language contains 32 interface messages and all 18 app titles, descriptions
 
 ## Notes
 
+- The 2026-11-14 refresh rechecked all 18 app IDs and the developer catalogs in Taiwan and the US, plus author search and standalone Mac listings. There are no new releases, version changes or material metadata changes since the complete 2026-11-13 21:53 catalog. The per-app results and source URLs are saved in `data/catalog-verification-2026-11-14.json`.
+
 - All eighteen featured apps are published and have confirmed App Store links, with Taiwan links for Chinese and US links for other website languages.
-- Versions and store titles were checked on 2026-11-13 using Apple's Lookup API for developer `1851202446` (Yung Wen Cheng), in both Taiwan and the US.
+- Versions and store titles were checked on 2026-11-14 using Apple's Lookup API for developer `1851202446` (Yung Wen Cheng), in both Taiwan and the US.
 - Both Lookup catalogs list the same eighteen apps. The latest refresh adds `Luxury Guide` / `名牌指南` (6830889178) at 1.0, including its official icon and bilingual description. Its App Store categories are Education and Lifestyle.
 - All eighteen versions match both storefronts. The existing seventeen versions, store titles, descriptions, release notes, artwork URLs and categories are unchanged from the earlier 2026-11-13 refresh, which added `FinAtlas: Finance & Careers` / `FinAtlas 金融產業與職涯` (6830943408).
 - `圖解半導體` now uses its official US App Store title, `SemiVerse: Chips Illustrated`, in English. `Larry's Mixology Lab` and `Easy Lucky Draw` remain translated portfolio titles because their US listings use Chinese names.
