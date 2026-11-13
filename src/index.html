@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr" data-script="cjk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Victoria Cheng Apps</title>
+    <meta
+      name="description"
+      content="Explore Victoria Cheng’s independently designed and developed iOS apps. This portfolio is available in 50 languages."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Noto+Serif+TC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-24EDR39P1M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-24EDR39P1M");
+    </script>
+    <link rel="stylesheet" href="styles.css?v={{STYLE_VERSION}}" />
+  </head>
+  <body>
+    <a class="skip-link" href="#appsRail" data-i18n="skipLink">跳到作品</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <nav class="topbar" aria-label="主要導覽" data-i18n-label="navLabel">
+          <a class="brand" href="#top" dir="ltr" data-i18n="brand">Victoria Cheng Apps</a>
+          <div class="topnav-links">
+            <a href="#appsRail" data-i18n="navApps">作品</a>
+          </div>
+          <div class="topbar-actions">
+            <button class="lang-toggle" id="langToggle" type="button" aria-haspopup="dialog" aria-controls="language-dialog" aria-label="語言 / Language" hidden>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg>
+              <span data-current-language>繁中</span>
+            </button>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div id="language-notice" class="language-notice" role="status" hidden><span data-i18n="loadError">暫時無法載入這個語言，請再試一次。</span> <button type="button" data-i18n="retry">再試一次</button></div>
+        <section class="hero-block" id="top">
+          <p class="section-kicker" data-i18n="sectionKicker">精選作品</p>
+          <h1 class="page-title" data-i18n="heroTitle">獨立開發作品集</h1>
+          <div class="title-underline"></div>
+          <p class="hero-text" data-i18n="heroBody">
+            這裡收錄我獨立構思、設計與開發的 iOS 作品。每一個 app 都從真實需求出發，並在功能、視覺語言與使用情境之間，建立清楚而有記憶點的產品表達。
+          </p>
+          <div class="hero-stats" id="heroStats" aria-label="作品概覽" data-i18n-label="statsLabel"></div>
+        </section>
+
+        <section class="showcase-section" aria-labelledby="showcaseTitle">
+          <div class="showcase-header">
+            <div>
+              <p class="section-kicker" data-i18n="carouselKicker">作品集</p>
+              <h2 class="section-title" id="showcaseTitle" data-i18n="carouselTitle">作品選輯</h2>
+              <p class="sort-note" data-i18n="sortNote">依照目前下載受歡迎程度排序。</p>
+            </div>
+            <div class="showcase-controls">
+              <button class="carousel-button" id="scrollPrev" type="button" aria-label="上一組作品" data-i18n-label="previous">&#8592;</button>
+              <button class="carousel-button" id="scrollNext" type="button" aria-label="下一組作品" data-i18n-label="next">&#8594;</button>
+            </div>
+          </div>
+          <div class="apps-rail" id="appsRail" aria-label="作品展示" data-i18n-label="railLabel"></div>
+        </section>
+      </main>
+    </div>
+
+    <template id="appCardTemplate">
+      <article class="app-card">
+        <div class="app-card-inner">
+          <div class="app-card-top">
+            <img class="app-icon" alt="" />
+            <div class="app-card-copy">
+              <h3 class="app-title"></h3>
+              <div class="status-row">
+                <span class="status-pill">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  <span class="status-text"></span>
+                </span>
+              </div>
+              <p class="app-meta"></p>
+            </div>
+          </div>
+          <p class="app-summary"></p>
+          <p class="app-highlight"></p>
+          <div class="app-card-footer">
+            <span class="app-open-hint" data-i18n="detailsHint">獨立 iOS 作品</span>
+            <a class="app-button primary-button" target="_blank" rel="noreferrer"></a>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <dialog id="language-dialog" class="language-dialog" aria-labelledby="language-title">
+      <div class="language-dialog-head">
+        <div><p class="section-kicker" dir="ltr">Victoria Cheng Apps</p><h2 id="language-title" data-i18n="chooseLanguage">選擇語言</h2></div>
+        <button type="button" class="language-close" data-language-close aria-label="關閉" data-i18n-label="close">×</button>
+      </div>
+      <label class="language-search-label" for="language-search" data-i18n="searchLanguages">搜尋語言</label>
+      <input id="language-search" type="search" autocomplete="off" spellcheck="false" dir="auto" placeholder="搜尋語言">
+      <p class="language-load-status" role="status" aria-live="polite"></p>
+      <div class="language-options"></div>
+      <p data-no-languages data-i18n="noLanguages" hidden>找不到符合的語言，請試試其他名稱。</p>
+      <p class="language-help" data-i18n="languageHelp">這裡切換的是網站語言；App 或遊戲支援的語言，請以 App Store 說明為準。</p>
+    </dialog>
+    <script src="i18n-config.js?v={{CONFIG_VERSION}}"></script>
+    <script src="script.js?v={{SCRIPT_VERSION}}"></script>
+  </body>
+</html>

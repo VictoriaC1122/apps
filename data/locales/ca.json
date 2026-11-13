@@ -1,0 +1,128 @@
+{
+  "ui": {
+    "brand": "Victoria Cheng's App",
+    "navApps": "Aplicacions",
+    "metaSeparator": " · ",
+    "language": "Idioma",
+    "chooseLanguage": "Tria un idioma",
+    "searchLanguages": "Cerca idiomes",
+    "close": "Tanca",
+    "noLanguages": "No s’han trobat idiomes coincidents. Prova un altre nom.",
+    "languageHelp": "La selecció només canvia aquest web. Consulta a l’App Store els idiomes disponibles en cada aplicació o joc.",
+    "loading": "Canviant l’idioma…",
+    "loadError": "No s’ha pogut carregar aquest idioma. Torna-ho a provar.",
+    "heroTitle": "Obres seleccionades per a iOS",
+    "heroBody": "Un portafolis d'aplicacions per a iOS que he ideat, dissenyat i desenvolupat de manera independent. Cada obra parteix d'una necessitat real i es converteix en un producte d'utilitat clara, amb una intenció visual definida i una mirada memorable.",
+    "sectionKicker": "Obres seleccionades",
+    "carouselKicker": "Selecció del portafolis",
+    "carouselTitle": "Col·lecció d'aplicacions",
+    "sortNote": "Ordenades segons la popularitat actual de descàrregues.",
+    "storeLabel": "Veure a l'App Store",
+    "comingSoon": "L'enllaç de descàrrega estarà disponible aviat",
+    "detailsHint": "Obra independent per a iOS",
+    "stats.total": "Obres presentades",
+    "stats.released": "Publicades",
+    "stats.pending": "En revisió",
+    "statuses.released": "Publicada",
+    "statuses.pending": "En revisió",
+    "skipLink": "Ves a les aplicacions",
+    "navLabel": "Navegació principal",
+    "statsLabel": "Resum d'aplicacions",
+    "railLabel": "Mostra d'aplicacions",
+    "previous": "Aplicacions anteriors",
+    "next": "Aplicacions següents",
+    "retry": "Torna-ho a provar"
+  },
+  "apps": {
+    "6756014104": {
+      "title": "Investment Growth",
+      "description": "Una eina financera avançada per al creixement compost, la inversió periòdica d'imports fixos, els préstecs, la jubilació i les decisions que tenen en compte la inflació, pensada per facilitar la comparació de plans a llarg termini.",
+      "highlight": "Punt destacat: Fa que la lògica financera complexa sigui més visual, clara i accessible sense perdre profunditat en les decisions."
+    },
+    "6761377948": {
+      "title": "Larry's Mixology Lab",
+      "description": "Un joc romàntic per a majors de 18 anys ambientat en un laboratori de cocteleria, que combina la química entre personatges, la tensió emocional, escenes amb atmosfera i una progressió ramificada.",
+      "highlight": "Punt destacat: Uneix l'encant dels personatges, la tensió narrativa i el romanticisme adult en una experiència interactiva memorable."
+    },
+    "6755403297": {
+      "title": "Easy Lucky Draw",
+      "description": "Una eina de sorteig clara i sense anuncis per a actes, aules, festes i seleccions a partir de llistes, amb un procés senzill que fa que les decisions ràpides siguin més fluides i cuidades.",
+      "highlight": "Punt destacat: Aporta claredat, confiança i un petit toc de cerimònia a una eina quotidiana."
+    },
+    "6761411130": {
+      "title": "Crypto Guide: Bitcoin & Web3",
+      "description": "Una aplicació bilingüe per aprendre els fonaments de la cadena de blocs i investigar inversions en criptomonedes, amb consulta de termes, lliçons, qüestionaris i itineraris per avançar pas a pas.",
+      "highlight": "Punt destacat: Converteix una frontera financera complexa en una referència mòbil accessible que es pot cercar i desar."
+    },
+    "6761441866": {
+      "title": "Vitamin Today",
+      "description": "Una aplicació de benestar per a les rutines diàries de suplements, que uneix registres de preses, seguiment de l'historial, contingut educatiu i gestió del perfil en una experiència d'autocura més amable.",
+      "highlight": "Punt destacat: Fa que el seguiment quotidià de la salut sigui més suau, clar i fàcil de reprendre."
+    },
+    "6761692228": {
+      "title": "Dream Keepsake",
+      "description": "Un diari de somnis delicat per capturar imatges fugisseres en despertar, amb entrada ràpida, dictat, reflexió sobre l'estat d'ànim, preferits i recordatoris.",
+      "highlight": "Punt destacat: Organitza l'escriptura dels somnis, la reflexió emocional i el record en un ritual tranquil i sostenible."
+    },
+    "6754973616": {
+      "title": "AI Time Management",
+      "description": "Reuneix tasques, horaris diaris, temporització de la concentració i revisió del progrés. La descomposició editable de tasques utilitza regles de paraules clau i plantilles al dispositiu per convertir objectius en accions diàries pràctiques.",
+      "highlight": "Punt destacat: Connecta planificació, concentració i reflexió amb emmagatzematge al dispositiu, fluxos reutilitzables i còpies de seguretat completes."
+    },
+    "6761694656": {
+      "title": "PR Diary",
+      "description": "Una aplicació temàtica que combina informació del sector amb diaris per a diversos rols de la cultura de relacions públiques de l'oci nocturn de Taiwan, per comprendre-la i mantenir registres personals.",
+      "highlight": "Punt destacat: Converteix un tema de nínxol en un producte mòbil informatiu, amb atmosfera i utilitat pràctica."
+    },
+    "6818286088": {
+      "title": "Build It Yourself: Room Design",
+      "description": "Planifica una habitació amb previsualitzacions, elecció de materials i estimacions pressupostàries detallades. Parteix de plantilles d'espais i explora terres, parets, mobles i il·luminació per a les primeres converses de disseny.",
+      "highlight": "Punt destacat: Uneix l'estil de l'espai i la planificació del pressupost amb eines fora de línia que faciliten explorar idees per a la llar."
+    },
+    "6815299678": {
+      "title": "Stock Mastery: Paper Trading",
+      "description": "Practica amb diners virtuals mitjançant dades de final de jornada de Taiwan i simulacions amb preus de tancament dels EUA o preus propis. Anota ordres, revisa posicions i explora termes financers i riscos sense fer operacions reals.",
+      "highlight": "Punt destacat: Connecta ordres simulades, notes d'operacions i revisions de cartera en un sol espai, amb comptes separats en TWD i USD."
+    },
+    "6811446129": {
+      "title": "Perfect Pig",
+      "description": "Un joc acollidor de criança on alimentar, passejar, conversar i treballar donen forma a la personalitat del porquet. Després de set dies de creixement, tria acabar la generació o continuar junts; les col·leccions i els recursos es conserven.",
+      "highlight": "Punt destacat: Explora cinc camins de personalitat, desbloqueja 100 cartes de porquets jugant i torna a veure o comparteix els finals que reculls."
+    },
+    "6820863958": {
+      "title": "Coffee Chat Note",
+      "description": "Una llibreta privada per a converses professionals que reuneix preparació de reunions, contactes, notes de conversa i recordatoris de seguiment per ordenar idees i passos següents.",
+      "highlight": "Punt destacat: Connecta el context de les relacions, els aprenentatges de les converses i les accions de seguiment, amb dades al dispositiu, còpia i restauració, i 20 idiomes."
+    },
+    "6822188590": {
+      "title": "SemiVerse: Chips Illustrated",
+      "description": "Una guia visual per a principiants en semiconductors amb 24 lliçons introductòries, diagrames de processos interactius, perfils d'empreses, glossari i qüestionaris per entendre els xips i la seva indústria.",
+      "highlight": "Punt destacat: Connecta conceptes tècnics i rols del sector amb diagrames interactius, 20 idiomes, lliçons fora de línia, notes d'estudi i revisió de qüestionaris."
+    },
+    "6823824323": {
+      "title": "MileButler: Miles & Card Plans",
+      "description": "Compara taules publicades de bitllets de premi, costos de compra de milles i condicions de transferència de targetes de crèdit de Taiwan. Considera ruta, classe i saldos disponibles per estimar els punts, la despesa i el temps necessaris per al bescanvi.",
+      "highlight": "Punt destacat: Uneix milles aèries i punts bancaris en una eina de planificació amb comparacions en paral·lel i 20 idiomes per seguir objectius de bescanvi."
+    },
+    "6824004640": {
+      "title": "Future Major Guide",
+      "description": "Explora universitats i titulacions de Taiwan i els Estats Units amb qüestionaris d'interessos, mapes d'aprenentatge, notes desades i comparacions en paral·lel que ajuden estudiants i famílies a planificar els passos següents.",
+      "highlight": "Punt destacat: Connecta camps d'estudi, continguts de les assignatures i itineraris professionals amb fonts datades i suport per a 25 idiomes d'interfície."
+    },
+    "6818310524": {
+      "title": "Paper Reading Desk",
+      "description": "Crea una biblioteca personal de recerca a partir de PDF, imatges i escaneigs. Conserva originals i notes al dispositiu, amb extracció local de text, desglossaments de lectura basats en regles i traducció de paràgrafs en sistemes compatibles.",
+      "highlight": "Punt destacat: Llegeix documents al costat de les notes a l'iPad, cerca text extret, copia formats de citació i exporta còpies completes de la biblioteca per revisar millor la recerca."
+    },
+    "6830943408": {
+      "title": "FinAtlas: Finance & Careers",
+      "description": "Explora el sector financer amb lliçons introductòries en xinès tradicional i anglès, qüestionaris, un directori d'institucions de Taiwan i informació sobre rols, competències i qualificacions.",
+      "highlight": "Punt destacat: Compara institucions amb fonts datades i conserva notes, marcadors i progrés; el Pro opcional afegeix pràctiques de crèdit empresarial amb casos ficticis."
+    },
+    "6830889178": {
+      "title": "Luxury Guide",
+      "description": "Explora històries de marques i fundadors, dissenys clàssics, materials i artesania amb 50 perfils de marques, 30 famílies de productes clàssics, 15 lliçons introductòries, glossari i qüestionaris.",
+      "highlight": "Punt destacat: Connecta referències amb fonts, comparacions en paral·lel, notes desades i revisió de qüestionaris en 10 idiomes, amb registres d'aprenentatge al dispositiu i sense necessitat de compte."
+    }
+  }
+}

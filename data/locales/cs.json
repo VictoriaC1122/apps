@@ -1,0 +1,128 @@
+{
+  "ui": {
+    "brand": "Victoria Cheng's App",
+    "navApps": "Aplikace",
+    "metaSeparator": " · ",
+    "language": "Jazyk",
+    "chooseLanguage": "Vyberte jazyk",
+    "searchLanguages": "Hledat jazyky",
+    "close": "Zavřít",
+    "noLanguages": "Žádný odpovídající jazyk. Zkuste jiný název.",
+    "languageHelp": "Výběr mění pouze tento web. Dostupné jazyky jednotlivých aplikací a her najdete v App Store.",
+    "loading": "Změna jazyka…",
+    "loadError": "Tento jazyk se nepodařilo načíst. Zkuste to znovu.",
+    "heroTitle": "Vybrané práce pro iOS",
+    "heroBody": "Portfolio aplikací pro iOS, jejichž nápad, návrh i vývoj jsou mou samostatnou prací. Každé dílo vychází ze skutečné potřeby uživatele a rozvíjí se v produkt s jasným užitkem, promyšlenou vizuální podobou a zapamatovatelným pohledem.",
+    "sectionKicker": "Vybrané práce",
+    "carouselKicker": "Výběr z portfolia",
+    "carouselTitle": "Kolekce aplikací",
+    "sortNote": "Seřazeno podle aktuální oblíbenosti stahování.",
+    "storeLabel": "Zobrazit v App Store",
+    "comingSoon": "Odkaz ke stažení již brzy",
+    "detailsHint": "Nezávislá práce pro iOS",
+    "stats.total": "Představené práce",
+    "stats.released": "Publikováno",
+    "stats.pending": "V posuzování",
+    "statuses.released": "Publikováno",
+    "statuses.pending": "V posuzování",
+    "skipLink": "Přejít na aplikace",
+    "navLabel": "Hlavní navigace",
+    "statsLabel": "Přehled aplikací",
+    "railLabel": "Prezentace aplikací",
+    "previous": "Předchozí aplikace",
+    "next": "Další aplikace",
+    "retry": "Zkusit znovu"
+  },
+  "apps": {
+    "6756014104": {
+      "title": "Investment Growth",
+      "description": "Pokročilý finanční nástroj pro složené zhodnocení, pravidelné investování pevné částky, úvěry, důchodové plánování a rozhodování s ohledem na inflaci, který usnadňuje porovnání dlouhodobých plánů.",
+      "highlight": "Přednost: podává složitou finanční logiku názorněji, jasněji a přístupněji, aniž by ztrácela hloubku pro rozhodování."
+    },
+    "6761377948": {
+      "title": "Larry's Mixology Lab",
+      "description": "Romantická hra pro dospělé od 18 let zasazená do koktejlové laboratoře, spojující chemii mezi postavami, emocionální napětí, působivé scény a větvený postup příběhem.",
+      "highlight": "Přednost: propojuje přitažlivost postav, příběhové napětí a dospělou romantickou atmosféru v zapamatovatelný interaktivní zážitek."
+    },
+    "6755403297": {
+      "title": "Easy Lucky Draw",
+      "description": "Přehledný nástroj na losování bez reklam pro akce, výuku, večírky a výběr ze seznamů; jednoduchý postup dodává rychlému rozhodování plynulost a propracovanost.",
+      "highlight": "Přednost: vnáší do běžného nástroje přehlednost, důvěru a drobný pocit slavnostní chvíle."
+    },
+    "6761411130": {
+      "title": "Crypto Guide: Bitcoin & Web3",
+      "description": "Dvojjazyčná vzdělávací aplikace pro základy blockchainu a výzkum kryptoinvestic, která spojuje vyhledávání pojmů, lekce, kvízy a učební cesty k postupnému porozumění.",
+      "highlight": "Přednost: mění složitou novou oblast financí v přístupnou mobilní příručku s vyhledáváním a ukládáním."
+    },
+    "6761441866": {
+      "title": "Vitamin Today",
+      "description": "Aplikace pro každodenní užívání doplňků stravy, která propojuje záznamy užívání, historii, vzdělávací obsah a osobní profil v laskavější péči o sebe.",
+      "highlight": "Přednost: činí každodenní sledování zdraví jemnějším, přehlednějším a snadnějším k pravidelnému návratu."
+    },
+    "6761692228": {
+      "title": "Dream Keepsake",
+      "description": "Klidný snový deník pro zachycení prchavých obrazů po probuzení, s rychlým zápisem, hlasovým vstupem, reflexí emocí, oblíbenými položkami a připomínkami.",
+      "highlight": "Přednost: propojuje psaní snů, emoční reflexi a vzpomínání v tichý a udržitelný rituál."
+    },
+    "6754973616": {
+      "title": "AI Time Management",
+      "description": "Spojte úkoly, denní rozvrhy, měření soustředění a hodnocení pokroku. Upravitelný rozklad úkolů používá pravidla klíčových slov a šablony přímo v zařízení, aby cíle měnil v praktické každodenní kroky.",
+      "highlight": "Přednost: propojuje plánování, soustředění a reflexi s místním ukládáním, opakovaně použitelnými postupy a úplnými zálohami."
+    },
+    "6761694656": {
+      "title": "PR Diary",
+      "description": "Tematická aplikace spojující oborového průvodce s deníky různých rolí v tchajwanské kultuře péče o hosty nočních podniků, pro kulturní porozumění i osobní záznamy.",
+      "highlight": "Přednost: mění úzce zaměřené téma v informativní, atmosférický a praktický mobilní produkt."
+    },
+    "6818286088": {
+      "title": "Build It Yourself: Room Design",
+      "description": "Plánujte pokoj pomocí vizuálních náhledů, výběru materiálů a položkového rozpočtu. Začněte šablonou místnosti a zkoumejte podlahy, stěny, nábytek a osvětlení pro úvodní diskuze o návrhu.",
+      "highlight": "Přednost: spojuje styl místnosti s rozpočtem a offline nástroji, které usnadňují zkoumání nápadů na bydlení."
+    },
+    "6815299678": {
+      "title": "Stock Mastery: Paper Trading",
+      "description": "Procvičujte s virtuálními penězi, tchajwanskými daty po uzavření trhu a americkými simulacemi závěrečných či vlastních cen. Zapisujte důvody pokynů, kontrolujte portfolio a poznávejte finanční pojmy i rizika bez skutečných obchodů.",
+      "highlight": "Přednost: spojuje simulované pokyny, obchodní poznámky a přehled portfolia v jednom prostoru s oddělenými účty TWD a USD."
+    },
+    "6811446129": {
+      "title": "Perfect Pig",
+      "description": "Útulná chovatelská hra, kde krmení, procházky, rozhovory a práce formují osobnost prasátka. Po sedmi dnech růstu ukončete generaci, nebo pokračujte ve společném čase; sbírky a zdroje se přenášejí dál.",
+      "highlight": "Přednost: objevte pět osobnostních cest, hraním odemkněte 100 karet prasátek a vraťte se k nasbíraným koncům nebo je sdílejte."
+    },
+    "6820863958": {
+      "title": "Coffee Chat Note",
+      "description": "Soukromý zápisník pro kariérní rozhovory, spojující přípravu schůzek, kontakty, poznámky a připomínky následných kroků, aby postřehy i další postup zůstaly uspořádané.",
+      "highlight": "Přednost: propojuje kontext vztahů, postřehy z rozhovorů a navazující kroky s ukládáním v zařízení, zálohou a obnovou i podporou 20 jazyků."
+    },
+    "6822188590": {
+      "title": "SemiVerse: Chips Illustrated",
+      "description": "Vizuální průvodce polovodiči pro začátečníky: 24 úvodních lekcí, interaktivní schémata výroby, profily společností, slovník a kvízy vysvětlují čipy i související průmysl.",
+      "highlight": "Přednost: propojuje technické pojmy s rolemi v průmyslu prostřednictvím interaktivních schémat; 20 jazyků, offline lekce, studijní poznámky a opakování kvízů."
+    },
+    "6823824323": {
+      "title": "MileButler: Miles & Card Plans",
+      "description": "Porovnávejte zveřejněné tabulky odměnových letenek, náklady na nákup mil a podmínky převodu bodů tchajwanských kreditních karet. Zohledněte trasu, třídu a současné zůstatky pro odhad bodů, útraty a času do výměny.",
+      "highlight": "Přednost: spojuje letecké míle a bankovní body v jednom plánovači s porovnáním vedle sebe a 20 jazyky pro sledování cílů výměny."
+    },
+    "6824004640": {
+      "title": "Future Major Guide",
+      "description": "Prozkoumejte univerzity a obory na Tchaj-wanu a v USA pomocí zájmových kvízů, studijních map, uložených poznámek a souběžných porovnání, která studentům a rodinám pomáhají plánovat další kroky.",
+      "highlight": "Přednost: propojuje studijní obory, výuku a kariérní cesty na základě datovaných zdrojů; podporuje 25 jazyků rozhraní."
+    },
+    "6818310524": {
+      "title": "Paper Reading Desk",
+      "description": "Vytvořte osobní výzkumnou knihovnu z PDF, obrázků a skenů. Uchovávejte originály a poznámky v zařízení s místním získáváním textu, rozbory podle pravidel a překladem odstavců v podporovaných systémech.",
+      "highlight": "Přednost: čtěte na iPadu dokumenty vedle poznámek, prohledávejte získaný text, kopírujte citační formáty a exportujte úplné zálohy knihovny pro snadnější návrat k výzkumu."
+    },
+    "6830943408": {
+      "title": "FinAtlas: Finance & Careers",
+      "description": "Poznávejte finanční sektor pomocí úvodních lekcí v tradiční čínštině a angličtině, kvízů, adresáře tchajwanských institucí a informací o rolích, dovednostech a kvalifikacích.",
+      "highlight": "Přednost: porovnávejte instituce podle datovaných zdrojů a ukládejte poznámky, záložky i studijní pokrok; volitelný Pro přidává nácvik firemního úvěrování na smyšlených případech."
+    },
+    "6830889178": {
+      "title": "Luxury Guide",
+      "description": "Objevujte příběhy značek a zakladatelů, klasické designy, materiály a řemeslo prostřednictvím 50 profilů značek, 30 klasických produktových rodin, 15 úvodních lekcí, slovníku a kvízů.",
+      "highlight": "Přednost: propojuje podklady se zdroji, souběžné porovnání, uložené poznámky a opakování kvízů v 10 jazycích; studijní záznamy zůstávají v zařízení a účet není nutný."
+    }
+  }
+}

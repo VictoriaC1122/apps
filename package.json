@@ -1,0 +1,10 @@
+{
+  "name": "victoria-apps-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --check script.js && node scripts/check.mjs",
+    "preview": "python3 -m http.server 4174 --bind 127.0.0.1"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "ui": {
+    "brand": "Victoria Cheng's App",
+    "navApps": "Lietotnes",
+    "metaSeparator": " · ",
+    "language": "Valoda",
+    "chooseLanguage": "Izvēlieties valodu",
+    "searchLanguages": "Meklēt valodas",
+    "close": "Aizvērt",
+    "noLanguages": "Atbilstošas valodas nav atrastas. Izmēģiniet citu nosaukumu.",
+    "languageHelp": "Izvēle maina tikai šo vietni. Katras lietotnes vai spēles pieejamās valodas pārbaudiet App Store.",
+    "loading": "Valoda tiek mainīta…",
+    "loadError": "Šo valodu neizdevās ielādēt. Mēģiniet vēlreiz.",
+    "heroTitle": "Atlasīti iOS darbi",
+    "heroBody": "iOS lietotņu portfelis, kuras esmu patstāvīgi izdomājusi, izstrādājusi to dizainu un programmējusi. Katrs darbs sākas ar īstu lietotāja vajadzību un attīstās par produktu ar skaidru lietderību, pārdomātu vizuālo ieceri un atmiņā paliekošu skatījumu.",
+    "sectionKicker": "Atlasīti darbi",
+    "carouselKicker": "Portfeļa izlase",
+    "carouselTitle": "Lietotņu kolekcija",
+    "sortNote": "Sakārtots pēc pašreizējās lejupielāžu popularitātes.",
+    "storeLabel": "Skatīt App Store",
+    "comingSoon": "Lejupielādes saite drīzumā",
+    "detailsHint": "Patstāvīgi izstrādāts iOS darbs",
+    "stats.total": "Piedāvātie darbi",
+    "stats.released": "Publicēts",
+    "stats.pending": "Tiek pārskatīts",
+    "statuses.released": "Publicēts",
+    "statuses.pending": "Tiek pārskatīts",
+    "skipLink": "Pāriet pie lietotnēm",
+    "navLabel": "Galvenā navigācija",
+    "statsLabel": "Lietotņu kopsavilkums",
+    "railLabel": "Lietotņu demonstrācija",
+    "previous": "Iepriekšējās lietotnes",
+    "next": "Nākamās lietotnes",
+    "retry": "Mēģināt vēlreiz"
+  },
+  "apps": {
+    "6756014104": {
+      "title": "Investment Growth",
+      "description": "Pilnveidots finanšu rīks saliktajam pieaugumam, regulāriem vienādu summu ieguldījumiem, aizdevumiem, pensijas plānošanai un inflāciju ievērojošiem lēmumiem, kas atvieglo ilgtermiņa plānu salīdzināšanu.",
+      "highlight": "Izcēlums: Sarežģītu finanšu loģiku padara vizuālāku, skaidrāku un pieejamāku, nezaudējot lēmumu dziļumu."
+    },
+    "6761377948": {
+      "title": "Larry's Mixology Lab",
+      "description": "Romantiska spēle pieaugušajiem no 18 gadiem kokteiļu laboratorijā, apvienojot tēlu savstarpējo pievilcību, emocionālo spriedzi, noskaņas ainas un sazarotu stāsta attīstību.",
+      "highlight": "Izcēlums: Apvieno tēlu šarmu, sižeta spriedzi un pieaugušo romantiku atmiņā paliekošā interaktīvā pieredzē."
+    },
+    "6755403297": {
+      "title": "Easy Lucky Draw",
+      "description": "Pārskatāms izložu rīks bez reklāmām pasākumiem, klasēm, ballītēm un izvēlei no sarakstiem, ar vienkāršu procesu, kas ātrus lēmumus padara plūstošākus un noslīpētākus.",
+      "highlight": "Izcēlums: Ikdienas rīkam piešķir skaidrību, uzticamību un nelielu svinīguma sajūtu."
+    },
+    "6761411130": {
+      "title": "Crypto Guide: Bitcoin & Web3",
+      "description": "Divvalodu mācību lietotne blokķēdes pamatiem un kriptoieguldījumu izpētei, apvienojot terminu meklēšanu, nodarbības, testus un mācību ceļus pakāpeniskai izpratnei.",
+      "highlight": "Izcēlums: Sarežģītu jaunu finanšu jomu pārvērš pieejamā mobilā uzziņu avotā ar meklēšanu un saglabāšanu."
+    },
+    "6761441866": {
+      "title": "Vitamin Today",
+      "description": "Labsajūtas lietotne ikdienas uztura bagātinātāju lietošanai, apvienojot uzņemšanas pierakstus, vēstures pārskatu, izglītojošu saturu un personīgo profilu saudzīgākai pašaprūpei.",
+      "highlight": "Izcēlums: Ikdienas veselības ieradumu uzraudzību padara saudzīgāku, skaidrāku un vieglāk turpināmu."
+    },
+    "6761692228": {
+      "title": "Dream Keepsake",
+      "description": "Maiga sapņu dienasgrāmata gaistošu tēlu piefiksēšanai pēc pamošanās, ar ātru ievadi, balss ievadi, noskaņojuma pārdomām, izlasi un atgādinājumiem.",
+      "highlight": "Izcēlums: Sapņu rakstīšanu, emocionālās pārdomas un atcerēšanos apvieno mierīgā, ilgtspējīgā rituālā."
+    },
+    "6754973616": {
+      "title": "AI Time Management",
+      "description": "Apvienojiet uzdevumus, dienas grafikus, koncentrēšanās laika mērīšanu un progresa pārskatu. Rediģējama uzdevumu sadalīšana izmanto ierīces atslēgvārdu noteikumus un veidnes, lai mērķus pārvērstu praktiskās ikdienas darbībās.",
+      "highlight": "Izcēlums: Saista plānošanu, koncentrēšanos un pārdomas ar glabāšanu ierīcē, atkārtoti izmantojamiem procesiem un pilnām rezerves kopijām."
+    },
+    "6761694656": {
+      "title": "PR Diary",
+      "description": "Tematiska lietotne, kas apvieno nozares ceļvedi un dienasgrāmatas dažādām lomām Taivānas naktsdzīves PR kultūrā, palīdzot gan izprast kultūru, gan uzturēt personīgus pierakstus.",
+      "highlight": "Izcēlums: Nišas tēmu pārvērš informatīvā, atmosfēriskā un praktiskā mobilā produktā."
+    },
+    "6818286088": {
+      "title": "Build It Yourself: Room Design",
+      "description": "Plānojiet telpu ar vizuāliem priekšskatījumiem, materiālu izvēli un detalizētām budžeta aplēsēm. Sāciet ar telpu veidnēm un izpētiet grīdas, sienas, mēbeles un apgaismojumu sākotnējām dizaina apspriedēm.",
+      "highlight": "Izcēlums: Apvieno telpas stilu un budžeta plānošanu ar bezsaistes rīkiem, kas atvieglo mājokļa ideju izpēti."
+    },
+    "6815299678": {
+      "title": "Stock Mastery: Paper Trading",
+      "description": "Trenējieties ar virtuālu naudu, izmantojot Taivānas dienas beigu datus un ASV slēgšanas vai paša norādītu cenu simulācijas. Pierakstiet rīkojumus, pārskatiet pozīcijas un iepazīstiet finanšu terminus un riskus bez īstiem darījumiem.",
+      "highlight": "Izcēlums: Apvieno simulētus rīkojumus, tirdzniecības piezīmes un portfeļa pārskatus vienuviet, ar atsevišķiem TWD un USD kontiem."
+    },
+    "6811446129": {
+      "title": "Perfect Pig",
+      "description": "Mājīga dzīvnieka audzēšanas spēle, kur barošana, pastaigas, sarunas un darbs veido sivēna raksturu. Pēc septiņām augšanas dienām izvēlieties pabeigt paaudzi vai turpināt kopā; kolekcijas un resursi tiek saglabāti nākamajai paaudzei.",
+      "highlight": "Izcēlums: Izpētiet piecus personības ceļus, spēlējot atbloķējiet 100 sivēnu kartītes un atkārtoti aplūkojiet vai kopīgojiet savāktās beigas."
+    },
+    "6820863958": {
+      "title": "Coffee Chat Note",
+      "description": "Privāta piezīmju grāmata karjeras sarunām, apvienojot gatavošanos tikšanās reizēm, kontaktus, sarunu piezīmes un turpmākās saziņas atgādinājumus, lai sakārtotu atziņas un nākamos soļus.",
+      "highlight": "Izcēlums: Saista attiecību kontekstu, sarunu atziņas un turpmākās darbības ar glabāšanu ierīcē, rezerves kopijām, atjaunošanu un 20 valodām."
+    },
+    "6822188590": {
+      "title": "SemiVerse: Chips Illustrated",
+      "description": "Vizuāls mācību ceļvedis pusvadītāju iesācējiem ar 24 ievadnodarbībām, interaktīvām procesu shēmām, uzņēmumu profiliem, vārdnīcu un testiem, kas skaidro mikroshēmas un to nozari.",
+      "highlight": "Izcēlums: Interaktīvās shēmās saista tehniskos jēdzienus ar nozares lomām, piedāvājot 20 valodas, bezsaistes nodarbības, mācību piezīmes un testu pārskatīšanu."
+    },
+    "6823824323": {
+      "title": "MileButler: Miles & Card Plans",
+      "description": "Salīdziniet publicētās balvu biļešu tabulas, jūdžu pirkšanas izmaksas un Taivānas kredītkaršu punktu pārskaitīšanas nosacījumus. Ņemiet vērā maršrutu, klasi un esošos atlikumus, lai novērtētu maiņai vajadzīgos punktus, tēriņus un laiku.",
+      "highlight": "Izcēlums: Apvieno aviokompāniju jūdzes un banku punktus vienā plānošanas rīkā ar paralēliem salīdzinājumiem un 20 valodām balvu mērķu izsekošanai."
+    },
+    "6824004640": {
+      "title": "Future Major Guide",
+      "description": "Izpētiet Taivānas un ASV universitātes un studiju virzienus ar interešu testiem, programmu mācību kartēm, saglabātām piezīmēm un paralēliem salīdzinājumiem, kas studentiem un ģimenēm palīdz plānot nākamos soļus.",
+      "highlight": "Izcēlums: Saista studiju jomas, kursu saturu un karjeras ceļus, izmantojot avotus ar datumiem un atbalstot 25 saskarnes valodas."
+    },
+    "6818310524": {
+      "title": "Paper Reading Desk",
+      "description": "Izveidojiet personīgu pētniecības bibliotēku no PDF, attēliem un skenējumiem. Glabājiet oriģinālus un piezīmes ierīcē ar lokālu teksta iegūšanu, noteikumos balstītu lasījuma sadalījumu un rindkopu tulkošanu atbalstītās sistēmās.",
+      "highlight": "Izcēlums: iPad lasiet dokumentus blakus piezīmēm, meklējiet iegūtajā tekstā, kopējiet citēšanas formātus un eksportējiet pilnas bibliotēkas kopijas vieglākai pētījumu pārskatīšanai."
+    },
+    "6830943408": {
+      "title": "FinAtlas: Finance & Careers",
+      "description": "Iepazīstiet finanšu nozari ar ievadnodarbībām tradicionālajā ķīniešu un angļu valodā, testiem, Taivānas iestāžu katalogu un informāciju par amatiem, prasmēm un kvalifikācijām.",
+      "highlight": "Izcēlums: Salīdziniet iestādes pēc avotiem ar datumiem un saglabājiet piezīmes, grāmatzīmes un progresu; izvēles Pro pievieno uzņēmumu kreditēšanas vingrinājumus ar izdomātiem gadījumiem."
+    },
+    "6830889178": {
+      "title": "Luxury Guide",
+      "description": "Iepazīstiet zīmolu un dibinātāju stāstus, klasisku dizainu, materiālus un meistarību ar 50 zīmolu profiliem, 30 klasisku produktu saimēm, 15 ievadnodarbībām, vārdnīcu un testiem.",
+      "highlight": "Izcēlums: Apvieno atsauces uz avotiem, paralēlus salīdzinājumus, saglabātas piezīmes un testu pārskatu 10 valodās, ar mācību ierakstiem ierīcē un bez nepieciešama konta."
+    }
+  }
+}

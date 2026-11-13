@@ -1,629 +1,261 @@
-const PAGE_CONTENT = {
-  zh: {
-    brand: "Victoria Cheng's App",
-    navApps: "Apps",
-    heroTitle: "獨立開發作品集",
-    heroBody:
-      "這裡收錄我獨立構思、設計與開發的 iOS 作品。每一個 app 都從真實需求出發，並在功能、視覺語言與使用情境之間，建立清楚而有記憶點的產品表達。",
-    sectionKicker: "Selected Works",
-    carouselKicker: "Portfolio Selection",
-    carouselTitle: "作品選輯",
-    sortNote: "依照目前下載受歡迎程度排序。",
-    storeLabel: "前往 App Store",
-    comingSoon: "下載連結整理中",
-    detailsHint: "獨立 iOS 作品",
-    stats: {
-      total: "收錄作品",
-      released: "已發佈",
-      pending: "審查中"
-    },
-    statuses: {
-      released: "已發佈",
-      pending: "正在等待審查"
-    },
-    metaSeparator: "・"
-  },
-  en: {
-    brand: "Victoria Cheng's App",
-    navApps: "Apps",
-    heroTitle: "Selected iOS Works",
-    heroBody:
-      "A bilingual portfolio of iOS apps I conceived, designed, and built independently. Each work begins with a real user need and evolves into a product with clear utility, visual intent, and a memorable point of view.",
-    sectionKicker: "Selected Works",
-    carouselKicker: "Portfolio Selection",
-    carouselTitle: "App Collection",
-    sortNote: "Sorted by current download popularity.",
-    storeLabel: "View on App Store",
-    comingSoon: "Download link coming soon",
-    detailsHint: "Independent iOS work",
-    stats: {
-      total: "Works featured",
-      released: "Published",
-      pending: "In review"
-    },
-    statuses: {
-      released: "Published",
-      pending: "In review"
-    },
-    metaSeparator: " · "
-  }
-};
-
-const APPS = [
-  {
-    status: "released",
-    version: "2.6.1",
-    icon: "assets/icons/compound-interest-calculator.png",
-    url: {
-      zh: "https://apps.apple.com/tw/app/id6756014104?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/id6756014104?l=en-US"
-    },
-    zh: {
-      title: "複利計算器-財務自由實現工具",
-      description:
-        "進階財務試算工具，整合複利、定期定額、貸款、退休與通膨情境，幫助使用者以更清楚、更貼近現實條件的方式思考長期金錢決策。",
-      highlight:
-        "亮點：將複雜財務邏輯轉譯為清楚、視覺化且更容易反覆使用的決策介面。"
-    },
-    en: {
-      title: "Investment Growth",
-      description:
-        "An advanced finance utility for compound growth, DCA, loans, retirement planning, and inflation-aware decisions, designed to make long-term planning easier to compare.",
-      highlight:
-        "Highlight: makes complex financial logic more visual, lucid, and approachable without losing decision depth."
-    }
-  },
-  {
-    status: "released",
-    version: "1.1",
-    icon: "assets/icons/larrys-mixology-lab.png",
-    url: {
-      zh: "https://apps.apple.com/tw/app/id6761377948?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/id6761377948?l=en-US"
-    },
-    zh: {
-      title: "賴瑞的調酒研究室",
-      description:
-        "以調酒研究室為背景的 18 禁戀愛遊戲，結合角色互動、情感敘事、場景氛圍與分支推進，讓曖昧、張力與想像力慢慢發酵。",
-      highlight:
-        "亮點：以成人向戀愛遊戲為定位，整合角色魅力、敘事張力與更鮮明的情境氛圍。"
-    },
-    en: {
-      title: "Larry's Mixology Lab",
-      description:
-        "An 18+ romance game set inside a mixology lab, blending character chemistry, emotional tension, atmospheric scenes, and branching progression.",
-      highlight:
-        "Highlight: brings character allure, narrative tension, and adult romantic mood into a memorable interactive experience."
-    }
-  },
-  {
-    status: "released",
-    version: "1.7.1",
-    icon: "assets/icons/easy-lucky-draw.png",
-    url: {
-      zh: "https://apps.apple.com/tw/app/id6755403297?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/id6755403297?l=en-US"
-    },
-    zh: {
-      title: "輕鬆抽獎",
-      description:
-        "乾淨、直覺、零廣告的抽獎工具，適用於活動、課堂、聚會與名單抽選情境，支援名單整理與即時抽選，讓短暫流程也能有節奏與完成度。",
-      highlight:
-        "亮點：以輕盈俐落的互動節奏，讓工具型 app 兼具實用性、可信度與一點舞台感。"
-    },
-    en: {
-      title: "Easy Lucky Draw",
-      description:
-        "A clean, zero-ad drawing tool for events, classrooms, parties, and list-based selections, with a simple flow that makes quick decisions feel smoother and more polished.",
-      highlight:
-        "Highlight: brings clarity, trust, and a small sense of ceremony to an everyday utility."
-    }
-  },
-  {
-    status: "released",
-    version: "2.0.1",
-    icon: "assets/icons/crypto-guide.png",
-    url: {
-      zh: "https://apps.apple.com/tw/app/id6761411130?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/id6761411130?l=en-US"
-    },
-    zh: {
-      title: "幣圈神器-加密貨幣&區塊鏈學習字典",
-      description:
-        "涵蓋區塊鏈入門與加密投資研究的雙語學習工具，結合名詞查詢、課程文章、測驗與學習路線，幫助使用者從基礎概念逐步建立研究能力。",
-      highlight:
-        "亮點：將陌生的金融新知轉譯為可搜尋、可收藏、也更容易持續閱讀的行動學習工具。"
-    },
-    en: {
-      title: "Crypto Guide: Bitcoin & Web3",
-      description:
-        "A bilingual learning app for blockchain basics and crypto investment research, combining glossary lookup, lessons, quizzes, and learning paths to build understanding step by step.",
-      highlight:
-        "Highlight: translates a complex financial frontier into a searchable, saveable, and approachable mobile reference."
-    }
-  },
-  {
-    status: "released",
-    version: "1.7.1",
-    icon: "assets/icons/did-you-take-your-vitamins-today.svg",
-    url: {
-      zh: "https://apps.apple.com/tw/app/id6761441866?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/id6761441866?l=en-US"
-    },
-    zh: {
-      title: "你今天維他命了嗎",
-      description:
-        "以每日保健品管理為核心，結合服用紀錄、歷史追蹤、知識整理與個人頁面，協助使用者把健康提醒整理成更穩定、更溫柔的生活習慣。",
-      highlight:
-        "亮點：以柔和清楚的互動語氣，讓日常保健追蹤更容易被理解、記住與持續。"
-    },
-    en: {
-      title: "Vitamin Today",
-      description:
-        "A wellness app for daily supplement routines, blending intake logs, history tracking, educational content, and profile flows into a kinder self-care experience.",
-      highlight:
-        "Highlight: makes everyday health tracking softer, clearer, and easier to return to."
-    }
-  },
-  {
-    status: "released",
-    version: "1.7.1",
-    icon: "assets/icons/leave-your-dream-behind.png",
-    url: {
-      zh: "https://apps.apple.com/tw/app/id6761692228?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/id6761692228?l=en-US"
-    },
-    zh: {
-      title: "把夢遺留下來",
-      description:
-        "療癒系夢境記錄 app，支援快速記夢、語音輸入、情緒整理、收藏回顧與提醒功能，讓醒來後快消散的畫面被更安靜、更有秩序地留下。",
-      highlight:
-        "亮點：將夢境書寫、情緒辨識與個人回顧整理成溫柔而可持續的日常儀式。"
-    },
-    en: {
-      title: "Dream Keepsake",
-      description:
-        "A gentle dream-journaling app for capturing fragile images after waking, with quick entry, voice input, mood reflection, favorites, and reminders.",
-      highlight:
-        "Highlight: organizes dream writing, emotional reflection, and recall into a quiet and sustainable ritual."
-    }
-  },
-  {
-    status: "released",
-    version: "2.1.1",
-    icon: "assets/icons/ai-time-management.png",
-    url: {
-      zh: "https://apps.apple.com/tw/app/id6754973616?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/id6754973616?l=en-US"
-    },
-    zh: {
-      title: "AI時間管理",
-      description:
-        "整合任務庫、每日排程、專注計時與進度回顧，透過裝置內的關鍵字規則與範本提供可編輯的任務拆解，協助把目標整理成可開始、可追蹤的日常行動。",
-      highlight:
-        "亮點：串起每日規劃、專注與回顧，資料保存在裝置上，支援常用流程與完整備份。"
-    },
-    en: {
-      title: "AI Time Management",
-      description:
-        "Bring tasks, daily schedules, focus timing, and progress review together. Editable task breakdowns use on-device keyword rules and templates to turn goals into practical daily actions.",
-      highlight:
-        "Highlight: connects planning, focus, and reflection with on-device storage, reusable workflows, and complete backups."
-    }
-  },
-  {
-    status: "released",
-    version: "2.1.1",
-    icon: "assets/icons/pr-diary.png",
-    url: {
-      zh: "https://apps.apple.com/tw/app/id6761694656?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/id6761694656?l=en-US"
-    },
-    zh: {
-      title: "公關日記",
-      description:
-        "結合產業介紹與個人紀錄的主題型 app，從台灣酒店文化出發，延伸到客人、小姐／男模與經紀的多角色日記，兼具知識整理與日常管理用途。",
-      highlight:
-        "亮點：將少見產業題材轉化為有故事感、資訊性與實用價值的行動作品。"
-    },
-    en: {
-      title: "PR Diary",
-      description:
-        "A themed app combining industry guidance with multi-role diaries for Taiwan's nightlife PR culture, supporting both cultural understanding and personal record-keeping.",
-      highlight:
-        "Highlight: turns a niche subject into an informative, atmospheric, and practical mobile product."
-    }
-  },
-  {
-    "status": "released",
-    "version": "1.2.1",
-    "icon": "assets/icons/build-it-yourself.jpg",
-    "url": {
-      "zh": "https://apps.apple.com/tw/app/id6818286088?l=zh-Hant-TW",
-      "en": "https://apps.apple.com/us/app/id6818286088?l=en-US"
-    },
-    "zh": {
-      "title": "自己來設計",
-      "description": "把空間預覽、材料選擇與預算整理放在一起，從客廳、臥室或工作區模板開始，調整地板、牆面、家具與燈光，整理能和家人或設計師討論的初步方案。",
-      "highlight": "亮點：結合空間搭配與預算明細，支援離線規劃，讓居家設計想法更容易具體呈現。"
-    },
-    "en": {
-      "title": "Build It Yourself: Room Design",
-      "description": "Plan a room with visual previews, material choices, and itemized budget estimates. Start from room templates and explore floors, walls, furniture, and lighting for early design discussions.",
-      "highlight": "Highlight: brings room styling and budget planning together, with offline tools that make home design ideas easier to explore."
-    }
-  },
-  {
-    "status": "released",
-    "version": "2.7.1",
-    "icon": "assets/icons/stock-mastery.jpg",
-    "url": {
-      "zh": "https://apps.apple.com/tw/app/id6815299678?l=zh-Hant-TW",
-      "en": "https://apps.apple.com/us/app/id6815299678?l=en-US"
-    },
-    "zh": {
-      "title": "股神養成：台美股模擬交易",
-      "description": "用虛擬資金練習台美股交易，結合台股盤後資料、美股每日收盤價與自訂價格模擬、下單筆記與持倉回顧，並提供金融名詞及風險觀念，協助新手循序學習。",
-      "highlight": "亮點：把模擬下單、交易理由與結果回顧放在同一個工作台，台幣與美元帳戶分開管理。"
-    },
-    "en": {
-      "title": "Stock Mastery: Paper Trading",
-      "description": "Practice with virtual cash using Taiwan end-of-day data and U.S. closing-price and custom-price simulations. Keep order notes, review holdings, and explore finance terms and risk concepts without placing real trades.",
-      "highlight": "Highlight: connects paper orders, trading notes, and portfolio reviews in one workspace, with separate TWD and USD accounts."
-    }
-  },
-  {
-    status: "released",
-    version: "1.5.1",
-    icon: "assets/icons/perfect-pig.jpg",
-    url: {
-      zh: "https://apps.apple.com/tw/app/id6811446129?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/id6811446129?l=en-US"
-    },
-    zh: {
-      title: "完美養豬",
-      description:
-        "透過餵食、散步、聊天與打工，慢慢塑造小豬個性的療癒養成遊戲。完成七天成長後，可以自行選擇結算或繼續陪伴，迎接下一代時保留收藏與資源。",
-      highlight:
-        "亮點：探索五種個性路線，透過遊戲條件收集 100 張小豬卡，收藏、重讀與分享不同的陪伴結局。"
-    },
-    en: {
-      title: "Perfect Pig",
-      description:
-        "A cozy pet-raising game where feeding, walks, chats, and work shape your pig's personality. After seven days of growth, choose to finish the generation or keep spending time together; collections and resources carry over.",
-      highlight:
-        "Highlight: explore five personality paths, unlock 100 pig cards through gameplay, and revisit or share the endings you collect."
-    }
-  },
-  {
-    status: "released",
-    version: "1.2.2",
-    icon: "assets/icons/coffee-chat-note.jpg",
-    url: {
-      zh: "https://apps.apple.com/tw/app/id6820863958?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/id6820863958?l=en-US"
-    },
-    zh: {
-      title: "Coffee Chat 筆記",
-      description:
-        "為求職與職場交流打造的私人手帳，整合會前準備、聯絡人整理、對話筆記與後續提醒，把每次交流的重點與下一步清楚留下。",
-      highlight:
-        "亮點：串起人脈背景、對話洞見與跟進行動，資料儲存在裝置上，支援備份還原與 20 種語言。"
-    },
-    en: {
-      title: "Coffee Chat Note",
-      description:
-        "A private notebook for career conversations, bringing together meeting preparation, contacts, conversation notes, and follow-up reminders to keep insights and next steps organized.",
-      highlight:
-        "Highlight: connects relationship context, conversation insights, and follow-up actions, with on-device storage, backup and restore, and support for 20 languages."
-    }
-  },
-  {
-    status: "released",
-    version: "1.2.1",
-    icon: "assets/icons/semiconductors-illustrated.jpg",
-    url: {
-      zh: "https://apps.apple.com/tw/app/id6822188590?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/id6822188590?l=en-US"
-    },
-    zh: {
-      title: "圖解半導體",
-      description:
-        "為半導體初學者打造的圖解學習工具，結合 24 堂入門課、互動製程示意、公司檔案、術語字典與小測驗，逐步理解晶片原理與產業分工。",
-      highlight:
-        "亮點：以互動圖解連結技術概念與產業脈絡，支援 20 種語言、離線教材，以及學習筆記與錯題複習。"
-    },
-    en: {
-      title: "SemiVerse: Chips Illustrated",
-      description:
-        "A visual learning guide for semiconductor beginners, combining 24 introductory lessons, interactive process diagrams, company profiles, a glossary, and quizzes to explain chips and the industry behind them.",
-      highlight:
-        "Highlight: connects technical concepts with industry roles through interactive diagrams, with 20 languages, offline lessons, study notes, and quiz review."
-    }
-  },
-  {
-    status: "released",
-    version: "1.0.2",
-    icon: "assets/icons/milebutler.jpg",
-    url: {
-      zh: "https://apps.apple.com/tw/app/id6823824323?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/id6823824323?l=en-US"
-    },
-    zh: {
-      title: "哩程管家：信用卡換機票試算",
-      description:
-        "整合航空獎勵機票票表、買哩程成本與台灣信用卡轉點條件，依航線、艙等及現有哩程，比較兌換所需的點數、消費金額與累積時間。",
-      highlight:
-        "亮點：把航空哩程與銀行點數放在一起試算，支援多方案並排比較與 20 種語言，協助規劃換票目標。"
-    },
-    en: {
-      title: "MileButler: Miles & Card Plans",
-      description:
-        "Compare published award charts, mile-purchase costs, and Taiwan credit-card transfer terms. Factor in your route, cabin, and existing balances to estimate the points, spending, and time needed for a redemption.",
-      highlight:
-        "Highlight: brings airline miles and bank points into one planning tool, with side-by-side comparisons and 20 languages to help track redemption goals."
-    }
-  },
-  {
-    status: "released",
-    version: "1.1.1",
-    icon: "assets/icons/future-major-guide.jpg",
-    url: {
-      zh: "https://apps.apple.com/tw/app/id6824004640?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/id6824004640?l=en-US"
-    },
-    zh: {
-      title: "我決定自己的未來-大學選系指南",
-      description:
-        "陪伴學生與家長探索台灣及美國的大學與科系，整合興趣測驗、校系學習地圖、收藏筆記與並排比較，把選校選系整理成清楚的下一步。",
-      highlight:
-        "亮點：將學習方向、修課內容與職涯資訊連結起來，資料標示年度與來源，支援 25 種介面語言。"
-    },
-    en: {
-      title: "Future Major Guide",
-      description:
-        "Explore universities and majors in Taiwan and the United States with interest quizzes, program learning maps, saved notes, and side-by-side comparisons that help students and families plan their next steps.",
-      highlight:
-        "Highlight: connects fields of study, coursework, and career paths using dated source information, with support for 25 interface languages."
-    }
-  },
-  {
-    status: "released",
-    version: "1.1.1",
-    icon: "assets/icons/paper-reading-desk.jpg",
-    url: {
-      zh: "https://apps.apple.com/tw/app/id6818310524?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/id6818310524?l=en-US"
-    },
-    zh: {
-      title: "研究生讀 Paper 神器",
-      description:
-        "匯入 PDF、圖片與掃描文件，建立保存在裝置上的個人文獻庫，結合文字擷取、閱讀拆解與研究筆記，並在支援的系統上提供逐段翻譯，協助整理論文與研究想法。",
-      highlight:
-        "亮點：在 iPad 並排閱讀原文與筆記，支援擷取文字搜尋、引用格式複製與完整文獻備份，讓閱讀紀錄更容易整理與回查。"
-    },
-    en: {
-      title: "Paper Reading Desk",
-      description:
-        "Build a personal research library from PDFs, images, and scans. Keep originals and notes on your device, with local text extraction, rule-based reading breakdowns, and paragraph translation on supported systems.",
-      highlight:
-        "Highlight: read documents beside your notes on iPad, search extracted text, copy citation formats, and export complete library backups for easier research review."
-    }
-  },
-  {
-    status: "released",
-    version: "1.0",
-    icon: "assets/icons/finatlas.jpg",
-    url: {
-      zh: "https://apps.apple.com/tw/app/id6830943408?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/id6830943408?l=en-US"
-    },
-    zh: {
-      title: "FinAtlas 金融產業與職涯",
-      description:
-        "金融產業與職涯學習指南，整合繁中與英文入門課程、測驗、台灣金融機構名錄及職務與證照資訊，協助探索金融工作的內容與所需技能。",
-      highlight:
-        "亮點：依機構類型查詢與比較附來源的資料，保存筆記、收藏與學習進度；選用 Pro 可透過虛構案例練習企業授信決策。"
-    },
-    en: {
-      title: "FinAtlas: Finance & Careers",
-      description:
-        "Explore the financial industry through introductory lessons in Traditional Chinese and English, quizzes, a Taiwan institution directory, and information on roles, skills, and qualifications.",
-      highlight:
-        "Highlight: compare institutions using dated sources and keep notes, bookmarks, and learning progress; optional Pro adds corporate credit practice with fictional cases."
-    }
-  },
-  {
-    status: "released",
-    version: "1.0",
-    icon: "assets/icons/luxury-guide.jpg",
-    url: {
-      zh: "https://apps.apple.com/tw/app/id6830889178?l=zh-Hant-TW",
-      en: "https://apps.apple.com/us/app/id6830889178?l=en-US"
-    },
-    zh: {
-      title: "名牌指南",
-      description:
-        "從品牌與創辦人的故事認識經典設計、材質與工藝，收錄 50 個品牌、30 個經典產品家族、15 堂入門課及詞彙與測驗，讓時尚知識更容易循序學習。",
-      highlight:
-        "亮點：結合附來源的品牌資料、並排比較、收藏筆記與錯題複習，提供 10 種語言；個人學習紀錄保存在裝置上，不需註冊帳號。"
-    },
-    en: {
-      title: "Luxury Guide",
-      description:
-        "Explore brand and founder stories, classic designs, materials, and craftsmanship through 50 brand profiles, 30 classic product families, 15 introductory lessons, a glossary, and quizzes.",
-      highlight:
-        "Highlight: connects sourced references, side-by-side comparisons, saved notes, and quiz review in 10 languages, with on-device learning records and no account required."
-    }
-  }
-];
-
-const template = document.querySelector("#appCardTemplate");
-const rail = document.querySelector("#appsRail");
-const toggle = document.querySelector("#langToggle");
-const heroStats = document.querySelector("#heroStats");
-const scrollPrev = document.querySelector("#scrollPrev");
-const scrollNext = document.querySelector("#scrollNext");
-
-const STORAGE_KEY = "victoria_apps_language";
-const DEFAULT_LANGUAGE = "zh";
-
-let language = getInitialLanguage();
-
-function getInitialLanguage() {
-  const savedLanguage = window.localStorage.getItem(STORAGE_KEY);
-  if (savedLanguage === "zh" || savedLanguage === "en") {
-    return savedLanguage;
-  }
-
-  return document.documentElement.lang.startsWith("zh") ? "zh" : DEFAULT_LANGUAGE;
-}
-
-function getPage() {
-  return PAGE_CONTENT[language];
-}
-
-function getAppCounts() {
-  return {
-    total: APPS.length,
-    released: APPS.filter((app) => app.status === "released").length,
-    pending: APPS.filter((app) => app.status === "pending").length
+// Website translations are validated at build time and loaded from this site's own files.
+(() => {
+  'use strict';
+  const config = window.PORTFOLIO_CONFIG;
+  if (!config) return;
+  const supported = new Map(config.locales.map(locale => [locale.code, locale]));
+  const template = document.querySelector('#appCardTemplate');
+  const rail = document.querySelector('#appsRail');
+  const heroStats = document.querySelector('#heroStats');
+  const opener = document.querySelector('#langToggle');
+  const dialog = document.querySelector('#language-dialog');
+  const search = document.querySelector('#language-search');
+  const options = dialog.querySelector('.language-options');
+  const loadStatus = dialog.querySelector('.language-load-status');
+  const notice = document.querySelector('#language-notice');
+  const previous = document.querySelector('#scrollPrev');
+  const next = document.querySelector('#scrollNext');
+  const storageKey = 'victoria_apps_language';
+  const cache = new Map([['zh-Hant', config.defaultMessages]]);
+  let current = 'zh-Hant';
+  let messages = config.defaultMessages;
+  let request = 0;
+  let retryLocale = null;
+  const t = key => messages.ui[key];
+  const normalizeSearch = value => String(value).normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase();
+  const resolveLocale = value => {
+    const tag = String(value || '').replace(/_/g, '-').toLowerCase();
+    const exact = config.locales.find(locale => locale.code.toLowerCase() === tag);
+    if (exact) return exact.code;
+    if (tag === 'zh' || tag.startsWith('zh-')) return /hant|tw|hk|mo/.test(tag) || tag === 'zh' ? 'zh-Hant' : 'zh-Hans';
+    const prefix = tag.split('-')[0];
+    return supported.has(prefix) ? prefix : ({ nb: 'no', nn: 'no', tl: 'fil', iw: 'he' })[prefix];
   };
-}
 
-function getLocalizedApp(app) {
-  return app[language];
-}
+  function renderStaticText() {
+    for (const node of document.querySelectorAll('[data-i18n]')) node.textContent = t(node.dataset.i18n);
+    for (const node of document.querySelectorAll('[data-i18n-label]')) node.setAttribute('aria-label', t(node.dataset.i18nLabel));
+    search.placeholder = t('searchLanguages');
+    document.title = `${t('heroTitle')} | Victoria Cheng Apps`;
+    document.querySelector('meta[name="description"]').content = t('heroBody');
+    document.querySelector('[data-current-language]').textContent = ({ 'zh-Hant': '繁中', 'zh-Hans': '简中' })[current] || current.toUpperCase();
+    opener.setAttribute('aria-label', `${t('language')} · ${supported.get(current).native}`);
+    opener.title = supported.get(current).native;
+    previous.textContent = document.documentElement.dir === 'rtl' ? '→' : '←';
+    next.textContent = document.documentElement.dir === 'rtl' ? '←' : '→';
+  }
 
-function getAppUrl(app) {
-  if (!app.url) return null;
-  if (typeof app.url === "string") return app.url;
-  return app.url[language] || app.url.en || app.url.zh || null;
-}
-
-function createMetaText(app, page) {
-  return ["iOS", app.version, page.statuses[app.status]].join(page.metaSeparator);
-}
-
-function renderStaticText(page) {
-  document.documentElement.lang = language === "zh" ? "zh-Hant" : "en";
-  document.title = language === "zh" ? "Victoria Cheng Apps | 我開發的 App 們" : "Victoria Cheng Apps | Apps I Built";
-  toggle.textContent = language === "zh" ? "EN" : "中文";
-  toggle.setAttribute("aria-label", language === "zh" ? "Switch to English" : "切換成中文");
-
-  document.querySelectorAll("[data-i18n]").forEach((node) => {
-    const key = node.dataset.i18n;
-    node.textContent = page[key];
-  });
-}
-
-function renderStats(page) {
-  const counts = getAppCounts();
-  const stats = [
-    { value: counts.total, label: page.stats.total },
-    { value: counts.released, label: page.stats.released },
-    { value: counts.pending, label: page.stats.pending }
-  ];
-
-  heroStats.innerHTML = "";
-  stats.forEach((stat) => {
-    const item = document.createElement("div");
-    item.className = "hero-stat";
-    item.innerHTML = `
-      <p class="hero-stat-value">${stat.value}</p>
-      <p class="hero-stat-label">${stat.label}</p>
-    `;
-    heroStats.appendChild(item);
-  });
-}
-
-function renderApps(page) {
-  rail.innerHTML = "";
-
-  APPS.forEach((app) => {
-    const localizedApp = getLocalizedApp(app);
-    const card = template.content.cloneNode(true);
-    const icon = card.querySelector(".app-icon");
-    const title = card.querySelector(".app-title");
-    const meta = card.querySelector(".app-meta");
-    const summary = card.querySelector(".app-summary");
-    const highlight = card.querySelector(".app-highlight");
-    const statusPill = card.querySelector(".status-pill");
-    const statusText = card.querySelector(".status-text");
-    const button = card.querySelector(".app-button");
-
-    icon.src = app.icon;
-    icon.alt = `${localizedApp.title} icon`;
-    title.textContent = localizedApp.title;
-    meta.textContent = createMetaText(app, page);
-    summary.textContent = localizedApp.description;
-    highlight.textContent = localizedApp.highlight;
-
-    statusPill.dataset.status = app.status;
-    statusText.textContent = page.statuses[app.status];
-
-    const appUrl = getAppUrl(app);
-    if (appUrl) {
-      button.href = appUrl;
-      button.textContent = page.storeLabel;
-      button.setAttribute("aria-label", `${page.storeLabel}: ${localizedApp.title}`);
-      button.setAttribute("title", localizedApp.title);
-      button.classList.remove("is-disabled");
-      button.removeAttribute("aria-disabled");
-    } else {
-      button.removeAttribute("href");
-      button.textContent = page.comingSoon;
-      button.setAttribute("aria-label", `${localizedApp.title}: ${page.comingSoon}`);
-      button.removeAttribute("title");
-      button.classList.add("is-disabled");
-      button.setAttribute("aria-disabled", "true");
+  function renderStats() {
+    const counts = {
+      total: config.apps.length,
+      released: config.apps.filter(app => app.status === 'released').length,
+      pending: config.apps.filter(app => app.status === 'pending').length,
+    };
+    heroStats.replaceChildren();
+    for (const [key, count] of Object.entries(counts)) {
+      const stat = document.createElement('div');
+      stat.className = 'hero-stat';
+      const value = document.createElement('p');
+      value.className = 'hero-stat-value';
+      value.textContent = String(count);
+      value.dir = 'ltr';
+      const label = document.createElement('p');
+      label.className = 'hero-stat-label';
+      label.textContent = t(`stats.${key}`);
+      stat.append(value, label);
+      heroStats.append(stat);
     }
+  }
 
-    rail.appendChild(card);
+  function renderApps() {
+    const cards = document.createDocumentFragment();
+    for (const app of config.apps) {
+      const copy = messages.apps[app.id];
+      const card = template.content.cloneNode(true);
+      card.querySelector('.app-card').dataset.appId = app.id;
+      const icon = card.querySelector('.app-icon');
+      icon.src = app.icon;
+      icon.alt = copy.title;
+      icon.width = 104;
+      icon.height = 104;
+      const title = card.querySelector('.app-title');
+      title.textContent = copy.title;
+      title.dir = 'auto';
+      card.querySelector('.app-summary').textContent = copy.description;
+      card.querySelector('.app-highlight').textContent = copy.highlight;
+      card.querySelector('.app-open-hint').textContent = t('detailsHint');
+      card.querySelector('.status-pill').dataset.status = app.status;
+      card.querySelector('.status-text').textContent = t(`statuses.${app.status}`);
+      const meta = card.querySelector('.app-meta');
+      for (const value of ['iOS', app.version]) {
+        const span = document.createElement('bdi');
+        span.dir = 'ltr';
+        span.textContent = value;
+        meta.append(span, document.createTextNode(t('metaSeparator')));
+      }
+      meta.append(document.createTextNode(t(`statuses.${app.status}`)));
+      const button = card.querySelector('.app-button');
+      const url = current.startsWith('zh') ? app.url.zh : app.url.en;
+      if (url) {
+        button.href = url;
+        button.textContent = t('storeLabel');
+        button.setAttribute('aria-label', `${t('storeLabel')}: ${copy.title}`);
+        button.title = copy.title;
+      } else {
+        button.textContent = t('comingSoon');
+        button.classList.add('is-disabled');
+        button.setAttribute('aria-disabled', 'true');
+      }
+      cards.append(card);
+    }
+    rail.replaceChildren(cards);
+  }
+
+  function updateCarouselControls() {
+    const max = Math.max(0, rail.scrollWidth - rail.clientWidth);
+    const distance = Math.abs(rail.scrollLeft);
+    previous.disabled = max <= 8 || distance <= 8;
+    next.disabled = max <= 8 || distance >= max - 8;
+  }
+
+  function apply(locale, payload) {
+    const oldPosition = Math.abs(rail.scrollLeft);
+    current = locale.code;
+    messages = payload;
+    document.documentElement.lang = current;
+    document.documentElement.dir = locale.dir;
+    document.documentElement.dataset.script = locale.script;
+    renderStaticText();
+    renderStats();
+    renderApps();
+    for (const button of options.children) button.setAttribute('aria-current', String(button.dataset.locale === current));
+    rail.scrollLeft = (locale.dir === 'rtl' ? -1 : 1) * Math.min(oldPosition, Math.max(0, rail.scrollWidth - rail.clientWidth));
+    updateCarouselControls();
+  }
+
+  function validatePayload(payload, code) {
+    const plain = value => typeof value === 'string' && value.trim() && !/[<>]/.test(value);
+    if (payload?.locale !== code || !payload.ui || !payload.apps || config.uiKeys.some(key => !plain(payload.ui[key])) || config.apps.some(app => ['title', 'description', 'highlight'].some(key => !plain(payload.apps[app.id]?.[key])))) throw new Error('Incomplete language file');
+  }
+
+  async function changeLanguage(code, { remember = false, updateURL = false } = {}) {
+    const locale = supported.get(code);
+    if (!locale) return false;
+    const serial = ++request;
+    retryLocale = code;
+    loadStatus.textContent = t('loading');
+    dialog.setAttribute('aria-busy', 'true');
+    notice.hidden = true;
+    try {
+      let payload = cache.get(code);
+      if (!payload) {
+        const response = await fetch(new URL(`locales/${locale.file}`, document.baseURI), { credentials: 'same-origin' });
+        if (!response.ok) throw new Error('Language file unavailable');
+        payload = await response.json();
+        validatePayload(payload, code);
+        cache.set(code, payload);
+      }
+      if (serial !== request) return false;
+      apply(locale, payload);
+      if (remember) try { localStorage.setItem(storageKey, code); } catch { /* Browsing still works when storage is unavailable. */ }
+      if (updateURL) {
+        const url = new URL(location.href);
+        url.searchParams.set('lang', code);
+        history.replaceState(null, '', url.pathname + url.search + url.hash);
+      }
+      loadStatus.textContent = '';
+      retryLocale = null;
+      return true;
+    } catch {
+      if (serial === request) {
+        loadStatus.textContent = t('loadError');
+        notice.hidden = false;
+      }
+      return false;
+    } finally {
+      if (serial === request) dialog.removeAttribute('aria-busy');
+    }
+  }
+
+  for (const locale of config.locales) {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.dataset.locale = locale.code;
+    button.dataset.search = normalizeSearch(`${locale.code} ${locale.native} ${locale.name} ${locale.zh}`);
+    const native = document.createElement('span');
+    native.className = 'language-native';
+    native.lang = locale.code;
+    native.dir = locale.dir;
+    native.textContent = locale.native;
+    const name = document.createElement('small');
+    name.lang = 'en';
+    name.dir = 'ltr';
+    name.textContent = locale.name;
+    const check = document.createElement('span');
+    check.className = 'language-check';
+    check.setAttribute('aria-hidden', 'true');
+    check.textContent = '✓';
+    button.append(native, name, check);
+    options.append(button);
+  }
+  function filterLanguages() {
+    const query = normalizeSearch(search.value.trim());
+    let count = 0;
+    for (const button of options.children) {
+      button.hidden = !button.dataset.search.includes(query);
+      if (!button.hidden) count++;
+    }
+    dialog.querySelector('[data-no-languages]').hidden = count > 0;
+  }
+  opener.hidden = false;
+  opener.addEventListener('click', () => {
+    search.value = '';
+    filterLanguages();
+    dialog.showModal();
+    search.focus();
   });
-}
+  dialog.querySelector('[data-language-close]').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('close', () => opener.focus());
+  dialog.addEventListener('click', async event => {
+    const button = event.target.closest('[data-locale]');
+    if (button && await changeLanguage(button.dataset.locale, { remember: true, updateURL: true })) dialog.close();
+    if (event.target === dialog) {
+      const rect = dialog.getBoundingClientRect();
+      if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close();
+    }
+  });
+  search.addEventListener('input', filterLanguages);
+  search.addEventListener('search', filterLanguages);
+  search.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      dialog.close();
+      return;
+    }
+    const matches = [...options.children].filter(button => !button.hidden);
+    if (event.key === 'Enter' && matches.length === 1) {
+      event.preventDefault();
+      matches[0].click();
+    }
+  });
+  notice.querySelector('button').addEventListener('click', async () => {
+    if (retryLocale && await changeLanguage(retryLocale, { remember: true, updateURL: true }) && dialog.open) dialog.close();
+  });
+  function scrollRail(direction) {
+    const sign = document.documentElement.dir === 'rtl' ? -1 : 1;
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    rail.scrollBy({ left: direction * sign * Math.max(Math.floor(rail.clientWidth * 0.82), 260), behavior: reducedMotion ? 'instant' : 'smooth' });
+  }
+  previous.addEventListener('click', () => scrollRail(-1));
+  next.addEventListener('click', () => scrollRail(1));
+  rail.addEventListener('scroll', updateCarouselControls, { passive: true });
+  window.addEventListener('resize', updateCarouselControls);
 
-function renderPage() {
-  const page = getPage();
-  renderStaticText(page);
-  renderStats(page);
-  renderApps(page);
-  window.localStorage.setItem(STORAGE_KEY, language);
-  updateCarouselControls();
-}
-
-function getScrollAmount() {
-  return Math.max(Math.floor(rail.clientWidth * 0.82), 260);
-}
-
-function updateCarouselControls() {
-  const maxScrollLeft = rail.scrollWidth - rail.clientWidth;
-  const isScrollable = maxScrollLeft > 8;
-  const nearStart = rail.scrollLeft <= 8;
-  const nearEnd = rail.scrollLeft >= maxScrollLeft - 8;
-
-  scrollPrev.disabled = !isScrollable || nearStart;
-  scrollNext.disabled = !isScrollable || nearEnd;
-}
-
-function scrollRail(direction) {
-  rail.scrollBy({ left: direction * getScrollAmount(), behavior: "smooth" });
-}
-
-toggle.addEventListener("click", () => {
-  language = language === "zh" ? "en" : "zh";
-  renderPage();
-});
-
-scrollPrev.addEventListener("click", () => {
-  scrollRail(-1);
-});
-
-scrollNext.addEventListener("click", () => {
-  scrollRail(1);
-});
-
-rail.addEventListener("scroll", updateCarouselControls, { passive: true });
-window.addEventListener("resize", updateCarouselControls);
-
-renderPage();
+  apply(supported.get('zh-Hant'), config.defaultMessages);
+  const param = resolveLocale(new URL(location.href).searchParams.get('lang'));
+  let stored;
+  try { stored = resolveLocale(localStorage.getItem(storageKey)); } catch { /* Use URL or browser language instead. */ }
+  const detected = (navigator.languages || [navigator.language]).map(resolveLocale).find(code => supported.has(code));
+  const initial = param || stored || detected || 'en';
+  changeLanguage(initial, { updateURL: !!param });
+})();
