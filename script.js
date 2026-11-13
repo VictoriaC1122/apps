@@ -432,6 +432,29 @@ const APPS = [
       highlight:
         "Highlight: compare institutions using dated sources and keep notes, bookmarks, and learning progress; optional Pro adds corporate credit practice with fictional cases."
     }
+  },
+  {
+    status: "released",
+    version: "1.0",
+    icon: "assets/icons/luxury-guide.jpg",
+    url: {
+      zh: "https://apps.apple.com/tw/app/id6830889178?l=zh-Hant-TW",
+      en: "https://apps.apple.com/us/app/id6830889178?l=en-US"
+    },
+    zh: {
+      title: "名牌指南",
+      description:
+        "從品牌與創辦人的故事認識經典設計、材質與工藝，收錄 50 個品牌、30 個經典產品家族、15 堂入門課及詞彙與測驗，讓時尚知識更容易循序學習。",
+      highlight:
+        "亮點：結合附來源的品牌資料、並排比較、收藏筆記與錯題複習，提供 10 種語言；個人學習紀錄保存在裝置上，不需註冊帳號。"
+    },
+    en: {
+      title: "Luxury Guide",
+      description:
+        "Explore brand and founder stories, classic designs, materials, and craftsmanship through 50 brand profiles, 30 classic product families, 15 introductory lessons, a glossary, and quizzes.",
+      highlight:
+        "Highlight: connects sourced references, side-by-side comparisons, saved notes, and quiz review in 10 languages, with on-device learning records and no account required."
+    }
   }
 ];
 
