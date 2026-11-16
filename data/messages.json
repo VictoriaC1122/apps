@@ -381,6 +381,20 @@
         "en": "Highlight: connects sourced references, side-by-side comparisons, saved notes, and quiz review in 10 languages, with on-device learning records and no account required.",
         "zh": "亮點：結合附來源的品牌資料、並排比較、收藏筆記與錯題複習，提供 10 種語言；個人學習紀錄保存在裝置上，不需註冊帳號。"
       }
+    },
+    "6830942101": {
+      "title": {
+        "en": "ADHD Compass",
+        "zh": "ADHD Compass"
+      },
+      "description": {
+        "en": "Organise tasks, focus timers, medication records and daily notes. Keep separate care records, appointments and visit questions, with on-device storage, export and restore.",
+        "zh": "整合任務、專注計時、用藥與每日紀錄，可為不同受照顧者分別整理觀察、預約及就診問題，資料保存在裝置上並支援匯出與還原。"
+      },
+      "highlight": {
+        "en": "Highlight: No account required, with ten interface languages. Keep personal and care records separate; Pro adds reusable routines, saved timer settings and extra trends.",
+        "zh": "亮點：不需帳號，支援 10 種介面語言；可分開整理個人與照護紀錄，Pro 提供可重用流程、計時設定及額外趨勢。"
+      }
     }
   }
 }

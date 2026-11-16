@@ -2,8 +2,8 @@
   {
     "id": "6756014104",
     "status": "released",
-    "version": "2.6.1",
-    "icon": "assets/icons/compound-interest-calculator.png",
+    "version": "2.6.2",
+    "icon": "assets/icons/compound-interest-calculator-2.6.2.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6756014104?l=zh-Hant-TW",
       "en": "https://apps.apple.com/us/app/id6756014104?l=en-US"
@@ -92,8 +92,8 @@
   {
     "id": "6815299678",
     "status": "released",
-    "version": "2.7.1",
-    "icon": "assets/icons/stock-mastery.jpg",
+    "version": "2.8.0",
+    "icon": "assets/icons/stock-mastery-2.8.0.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6815299678?l=zh-Hant-TW",
       "en": "https://apps.apple.com/us/app/id6815299678?l=en-US"
@@ -102,8 +102,8 @@
   {
     "id": "6811446129",
     "status": "released",
-    "version": "1.5.1",
-    "icon": "assets/icons/perfect-pig.jpg",
+    "version": "1.6.0",
+    "icon": "assets/icons/perfect-pig-1.6.0.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6811446129?l=zh-Hant-TW",
       "en": "https://apps.apple.com/us/app/id6811446129?l=en-US"
@@ -152,8 +152,8 @@
   {
     "id": "6818310524",
     "status": "released",
-    "version": "1.1.1",
-    "icon": "assets/icons/paper-reading-desk.jpg",
+    "version": "1.1.2",
+    "icon": "assets/icons/paper-reading-desk-1.1.2.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6818310524?l=zh-Hant-TW",
       "en": "https://apps.apple.com/us/app/id6818310524?l=en-US"
@@ -162,8 +162,8 @@
   {
     "id": "6830943408",
     "status": "released",
-    "version": "1.0",
-    "icon": "assets/icons/finatlas.jpg",
+    "version": "1.1",
+    "icon": "assets/icons/finatlas-1.1.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6830943408?l=zh-Hant-TW",
       "en": "https://apps.apple.com/us/app/id6830943408?l=en-US"
@@ -177,6 +177,16 @@
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6830889178?l=zh-Hant-TW",
       "en": "https://apps.apple.com/us/app/id6830889178?l=en-US"
+    }
+  },
+  {
+    "id": "6830942101",
+    "status": "released",
+    "version": "1.0.0",
+    "icon": "assets/icons/adhd-compass.jpg",
+    "url": {
+      "zh": "https://apps.apple.com/tw/app/id6830942101?l=zh-Hant-TW",
+      "en": "https://apps.apple.com/us/app/id6830942101?l=en-US"
     }
   }
 ]
