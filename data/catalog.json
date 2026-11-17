@@ -13,7 +13,7 @@
     "id": "6761377948",
     "status": "released",
     "version": "1.1",
-    "icon": "assets/icons/larrys-mixology-lab.png",
+    "icon": "assets/icons/larry-cocktail.bcd5f157c71d.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6761377948?l=zh-Hant-TW",
       "en": "https://apps.apple.com/us/app/id6761377948?l=en-US"
@@ -23,7 +23,7 @@
     "id": "6755403297",
     "status": "released",
     "version": "1.7.1",
-    "icon": "assets/icons/easy-lucky-draw.png",
+    "icon": "assets/icons/easy-draw.3fd5fd4e7c2e.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6755403297?l=zh-Hant-TW",
       "en": "https://apps.apple.com/us/app/id6755403297?l=en-US"
@@ -33,7 +33,7 @@
     "id": "6761411130",
     "status": "released",
     "version": "2.0.1",
-    "icon": "assets/icons/crypto-guide.png",
+    "icon": "assets/icons/crypto-dictionary.790208a4c967.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6761411130?l=zh-Hant-TW",
       "en": "https://apps.apple.com/us/app/id6761411130?l=en-US"
@@ -43,7 +43,7 @@
     "id": "6761441866",
     "status": "released",
     "version": "1.7.1",
-    "icon": "assets/icons/did-you-take-your-vitamins-today.svg",
+    "icon": "assets/icons/vitamins.ab51b6c603af.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6761441866?l=zh-Hant-TW",
       "en": "https://apps.apple.com/us/app/id6761441866?l=en-US"
@@ -53,7 +53,7 @@
     "id": "6761692228",
     "status": "released",
     "version": "1.7.1",
-    "icon": "assets/icons/leave-your-dream-behind.png",
+    "icon": "assets/icons/dream-journal.f661aa0ae4be.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6761692228?l=zh-Hant-TW",
       "en": "https://apps.apple.com/us/app/id6761692228?l=en-US"
@@ -63,7 +63,7 @@
     "id": "6754973616",
     "status": "released",
     "version": "2.1.1",
-    "icon": "assets/icons/ai-time-management.png",
+    "icon": "assets/icons/time-manager.ff87e189eff0.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6754973616?l=zh-Hant-TW",
       "en": "https://apps.apple.com/us/app/id6754973616?l=en-US"
@@ -73,7 +73,7 @@
     "id": "6761694656",
     "status": "released",
     "version": "2.1.1",
-    "icon": "assets/icons/pr-diary.png",
+    "icon": "assets/icons/pr-diary.23c4f8c32d8d.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6761694656?l=zh-Hant-TW",
       "en": "https://apps.apple.com/us/app/id6761694656?l=en-US"
@@ -82,8 +82,8 @@
   {
     "id": "6818286088",
     "status": "released",
-    "version": "1.2.1",
-    "icon": "assets/icons/build-it-yourself.jpg",
+    "version": "1.3.0",
+    "icon": "assets/icons/design-it.d78a5d136687.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6818286088?l=zh-Hant-TW",
       "en": "https://apps.apple.com/us/app/id6818286088?l=en-US"
@@ -112,8 +112,8 @@
   {
     "id": "6820863958",
     "status": "released",
-    "version": "1.2.2",
-    "icon": "assets/icons/coffee-chat-note.jpg",
+    "version": "1.2.3",
+    "icon": "assets/icons/coffee-chat.653aeb5dce7c.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6820863958?l=zh-Hant-TW",
       "en": "https://apps.apple.com/us/app/id6820863958?l=en-US"
@@ -122,8 +122,8 @@
   {
     "id": "6822188590",
     "status": "released",
-    "version": "1.2.1",
-    "icon": "assets/icons/semiconductors-illustrated.jpg",
+    "version": "1.2.2",
+    "icon": "assets/icons/semiconductors-illustrated.2a9d21f62625.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6822188590?l=zh-Hant-TW",
       "en": "https://apps.apple.com/us/app/id6822188590?l=en-US"
@@ -133,7 +133,7 @@
     "id": "6823824323",
     "status": "released",
     "version": "1.0.2",
-    "icon": "assets/icons/milebutler.jpg",
+    "icon": "assets/icons/milebutler.29498ee23bc3.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6823824323?l=zh-Hant-TW",
       "en": "https://apps.apple.com/us/app/id6823824323?l=en-US"
@@ -143,7 +143,7 @@
     "id": "6824004640",
     "status": "released",
     "version": "1.1.1",
-    "icon": "assets/icons/future-major-guide.jpg",
+    "icon": "assets/icons/future-major-guide.5f88541c3c47.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6824004640?l=zh-Hant-TW",
       "en": "https://apps.apple.com/us/app/id6824004640?l=en-US"
@@ -162,8 +162,8 @@
   {
     "id": "6830943408",
     "status": "released",
-    "version": "1.1",
-    "icon": "assets/icons/finatlas-1.1.jpg",
+    "version": "1.2",
+    "icon": "assets/icons/finatlas.e5ebffa81835.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6830943408?l=zh-Hant-TW",
       "en": "https://apps.apple.com/us/app/id6830943408?l=en-US"
@@ -182,8 +182,8 @@
   {
     "id": "6830942101",
     "status": "released",
-    "version": "1.0.0",
-    "icon": "assets/icons/adhd-compass.jpg",
+    "version": "1.1.0",
+    "icon": "assets/icons/adhd-compass.de4b4244b531.jpg",
     "url": {
       "zh": "https://apps.apple.com/tw/app/id6830942101?l=zh-Hant-TW",
       "en": "https://apps.apple.com/us/app/id6830942101?l=en-US"
