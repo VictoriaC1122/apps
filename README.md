@@ -27,12 +27,14 @@ Each language contains 32 interface messages and all 19 app titles, descriptions
 
 ## Notes
 
+- The 2026-11-17 refresh verifies all 19 apps in Taiwan and the US, with no new releases. Stock Mastery: Paper Trading updates from 2.8.0 to 2.9.0 with its latest official icon; the other 18 apps are unchanged. Per-app versions and source URLs are in `data/catalog-verification-2026-11-17.json`; original Apple responses are preserved in the FireSparkle repository.
+
 - The 2026-11-16 refresh adds ADHD Compass 1.0.0 (6830942101), bringing the portfolio to 19 apps. It updates Investment Growth to 2.6.2, Stock Mastery to 2.8.0, Perfect Pig to 1.6.0, Paper Reading Desk to 1.1.2 and FinAtlas to 1.1. Taiwan and US author catalogs and individual ID checks agree. Results are saved in `data/catalog-verification-2026-11-16.json`; the original responses are in the FireSparkle repository’s `data/apple-lookup-2026-11-16-{tw,us}.json`. ADHD Compass copy describes the public task, timer and record features; in-app screening answers are not advertised as available.
 
 - The 2026-11-14 refresh rechecked all 18 app IDs and the developer catalogs in Taiwan and the US, plus author search and standalone Mac listings. There are no new releases, version changes or material metadata changes since the complete 2026-11-13 21:53 catalog. The per-app results and source URLs are saved in `data/catalog-verification-2026-11-14.json`.
 
 - All nineteen featured apps are published and have confirmed App Store links, with Taiwan links for Chinese and US links for other website languages.
-- Versions and store titles were checked on 2026-11-16 using Apple's Lookup API for developer `1851202446` (Yung Wen Cheng), in both Taiwan and the US.
+- Versions and store titles were checked on 2026-11-17 using Apple's Lookup API for developer `1851202446` (Yung Wen Cheng), in both Taiwan and the US.
 - The 2026-11-13 evening Lookup catalogs listed the same eighteen apps. That refresh added `Luxury Guide` / `名牌指南` (6830889178) at 1.0, including its official icon and bilingual description. Its App Store categories are Education and Lifestyle.
 - All nineteen current versions match both storefronts. The earlier 2026-11-13 refresh added `FinAtlas: Finance & Careers` / `FinAtlas 金融產業與職涯` (6830943408); the subsequent evening refresh added Luxury Guide without changes to the previous seventeen apps.
 - `圖解半導體` now uses its official US App Store title, `SemiVerse: Chips Illustrated`, in English. `Larry's Mixology Lab` and `Easy Lucky Draw` remain translated portfolio titles because their US listings use Chinese names.
