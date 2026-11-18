@@ -31,7 +31,12 @@
     "railLabel": "アプリ紹介",
     "previous": "前のアプリ",
     "next": "次のアプリ",
-    "retry": "もう一度試す"
+    "retry": "もう一度試す",
+    "steamAvailable": "Steamで発売中",
+    "steamBuy": "Steamで購入",
+    "steamWishlist": "ウィッシュリストに追加",
+    "steamTitle": "Larry's Cocktail Lab",
+    "steamDescription": "バーを舞台にした恋愛ゲーム。会話の選択で物語が分岐し、セーブデータから別の展開も楽しめます。"
   },
   "apps": {
     "6756014104": {

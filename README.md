@@ -19,13 +19,15 @@ Run `npm run build` and `npm test`, then preview with `npm run preview` at `http
 
 The language chooser searches by native, English or Chinese name and supports the keyboard. Language priority is `?lang=`, a saved `victoria_apps_language` preference, browser language, then English. Existing `zh` preferences continue to mean Traditional Chinese. Language selection updates the URL so it can be shared and is saved locally when storage is available. No translation service is called; only the selected language file is fetched from this site.
 
-Each language contains 32 interface messages and all 19 app titles, descriptions and highlights (89 fields total). Arabic, Persian, Hebrew and Urdu use RTL layout, including carousel controls. A failed or incomplete language download leaves the current content visible and offers retry; an older response cannot overwrite a later selection. Traditional Chinese is bundled as an immediate fallback. Website language availability is separate from each app’s supported languages. Chinese links use the existing Taiwan storefront; other languages use the confirmed US links.
+Each language contains 37 interface messages and all 19 app titles, descriptions and highlights (94 fields total). Arabic, Persian, Hebrew and Urdu use RTL layout, including carousel controls. A failed or incomplete language download leaves the current content visible and offers retry; an older response cannot overwrite a later selection. Traditional Chinese is bundled as an immediate fallback. Website language availability is separate from each app’s supported languages. Chinese links use the existing Taiwan storefront; other languages use the confirmed US links.
 
 ## Verification
 
 `npm test` verifies 50 complete language files, app IDs, content hashes, template text keys and local links. Browser checks cover the language dialog, search and keyboard selection, URL and saved preference, mobile layout, RTL carousel navigation, delayed responses and failed downloads with retry.
 
 ## Notes
+
+- The 2026-11-19 update features Larry’s Cocktail Lab on Steam above the original portfolio introduction. The feature uses the official 1920×1080 screenshot, direct purchase and wishlist links, platform labels and a Steam navigation link. Five Steam messages reuse FireSparkle’s existing translations in all 50 languages; existing app copy, versions, icons and popularity order are unchanged. Source evidence is recorded in `data/steam-feature-2026-11-19.json`.
 
 - The 2026-11-18 refresh rechecks the Taiwan and US author catalogs, search, all 19 IDs and standalone Mac listings. No new app is listed. It updates Build It Yourself to 1.3.0, Coffee Chat Note to 1.2.3, SemiVerse to 1.2.2, FinAtlas to 1.2 and ADHD Compass to 1.1.0. All 19 official 512px icons were downloaded and compared: 14 portfolio icons are replaced, including older local artwork, using content-hashed filenames. Every active icon now exactly matches the official download. The existing 50 complete language dictionaries are preserved. Sources and hashes are recorded in `data/catalog-verification-2026-11-18.json` and `data/app-icons-2026-11-18.json`; raw Apple responses are in the FireSparkle repository.
 

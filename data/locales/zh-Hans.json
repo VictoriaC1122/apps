@@ -31,7 +31,12 @@
     "railLabel": "作品展示",
     "previous": "上一组作品",
     "next": "下一组作品",
-    "retry": "重试"
+    "retry": "重试",
+    "steamAvailable": "Steam 已正式上架",
+    "steamBuy": "在 Steam 购买",
+    "steamWishlist": "加入愿望单",
+    "steamTitle": "赖瑞的调酒研究室",
+    "steamDescription": "以酒吧为背景的文字恋爱游戏。对话选项会影响故事走向，可用存档回到不同分支。"
   },
   "apps": {
     "6756014104": {

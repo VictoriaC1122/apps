@@ -31,7 +31,12 @@
     "railLabel": "Uygulama vitrini",
     "previous": "Önceki uygulamalar",
     "next": "Sonraki uygulamalar",
-    "retry": "Tekrar dene"
+    "retry": "Tekrar dene",
+    "steamAvailable": "Şimdi Steam’de",
+    "steamBuy": "Steam’den satın alın",
+    "steamWishlist": "İstek listesine ekle",
+    "steamTitle": "Larry's Cocktail Lab",
+    "steamDescription": "Bir barda geçen romantik oyun. Diyalog seçimleri hikâyeyi farklı dallara ayırır; kayıtlı oyunlarla bu dalları yeniden ziyaret edebilirsiniz."
   },
   "apps": {
     "6756014104": {

@@ -31,7 +31,12 @@
     "railLabel": "Programėlių pristatymas",
     "previous": "Ankstesnės programėlės",
     "next": "Kitos programėlės",
-    "retry": "Bandyti dar kartą"
+    "retry": "Bandyti dar kartą",
+    "steamAvailable": "Jau galima įsigyti „Steam“",
+    "steamBuy": "Įsigyti „Steam“",
+    "steamWishlist": "Pridėti į pageidavimų sąrašą",
+    "steamTitle": "Larry's Cocktail Lab",
+    "steamDescription": "Romantinis žaidimas, vykstantis bare. Dialogo pasirinkimai veda į skirtingas siužeto šakas, kurias galite pakartoti įkėlę išsaugotą žaidimą."
   },
   "apps": {
     "6756014104": {

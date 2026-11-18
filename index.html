@@ -3,11 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Victoria Cheng Apps</title>
+    <title>賴瑞的調酒研究室 · Steam | Victoria Cheng Apps</title>
     <meta
       name="description"
-      content="Explore Victoria Cheng’s independently designed and developed iOS apps. This portfolio is available in 50 languages."
+      content="Larry’s Cocktail Lab is available now on Steam for Windows, macOS and Linux. Buy the game, add it to your wishlist, and explore Victoria Cheng’s iOS apps."
     />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="賴瑞的調酒研究室 · Steam | Victoria Cheng Apps" />
+    <meta property="og:description" content="Steam 已正式上架。走進酒吧，以對話選擇推進戀愛故事與不同分支。支援 Windows、macOS、Linux。" />
+    <meta property="og:url" content="https://victoriac1122.github.io/apps/" />
+    <meta property="og:image" content="https://victoriac1122.github.io/apps/assets/steam/larry-gameplay.d38919e4ad06.jpg" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,7 +29,7 @@
       gtag("js", new Date());
       gtag("config", "G-24EDR39P1M");
     </script>
-    <link rel="stylesheet" href="styles.css?v=b0cbe3c64bb8" />
+    <link rel="stylesheet" href="styles.css?v=29c68b31dada" />
   </head>
   <body>
     <a class="skip-link" href="#appsRail" data-i18n="skipLink">跳到作品</a>
@@ -30,6 +38,7 @@
         <nav class="topbar" aria-label="主要導覽" data-i18n-label="navLabel">
           <a class="brand" href="#top" dir="ltr" data-i18n="brand">Victoria Cheng Apps</a>
           <div class="topnav-links">
+            <a href="#steam" dir="ltr">Steam</a>
             <a href="#appsRail" data-i18n="navApps">作品</a>
           </div>
           <div class="topbar-actions">
@@ -41,11 +50,25 @@
         </nav>
       </header>
 
-      <main>
+      <main id="top">
         <div id="language-notice" class="language-notice" role="status" hidden><span data-i18n="loadError">暫時無法載入這個語言，請再試一次。</span> <button type="button" data-i18n="retry">再試一次</button></div>
-        <section class="hero-block" id="top">
+        <section class="steam-feature" id="steam" aria-labelledby="steam-feature-title">
+          <div class="steam-feature-copy">
+            <p class="steam-feature-status" data-i18n="steamAvailable">Steam 已正式上架</p>
+            <h1 id="steam-feature-title" data-i18n="steamTitle">賴瑞的調酒研究室</h1>
+            <div class="steam-feature-actions">
+              <a class="steam-feature-buy" data-steam-action="buy" href="https://store.steampowered.com/app/5466570/" data-i18n="steamBuy">在 Steam 購買</a>
+              <a class="steam-feature-wishlist" data-steam-action="wishlist" href="https://store.steampowered.com/app/5466570/" data-i18n="steamWishlist">加入願望清單</a>
+            </div>
+            <p class="steam-feature-platforms" dir="ltr">Windows / macOS / Linux</p>
+            <p class="steam-feature-description" data-i18n="steamDescription">以酒吧為背景的文字戀愛遊戲。對話選項會影響故事走向，可用存檔回到不同分支。</p>
+          </div>
+          <a class="steam-feature-art" data-steam-action="buy" href="https://store.steampowered.com/app/5466570/" aria-label="在 Steam 購買" data-i18n-label="steamBuy"><img id="steam-feature-image" src="assets/steam/larry-gameplay.d38919e4ad06.jpg" width="1920" height="1080" alt="賴瑞的調酒研究室" fetchpriority="high"></a>
+        </section>
+
+        <section class="hero-block">
           <p class="section-kicker" data-i18n="sectionKicker">精選作品</p>
-          <h1 class="page-title" data-i18n="heroTitle">獨立開發作品集</h1>
+          <h2 class="page-title" data-i18n="heroTitle">獨立開發作品集</h2>
           <div class="title-underline"></div>
           <p class="hero-text" data-i18n="heroBody">
             這裡收錄我獨立構思、設計與開發的 iOS 作品。每一個 app 都從真實需求出發，並在功能、視覺語言與使用情境之間，建立清楚而有記憶點的產品表達。
@@ -108,7 +131,7 @@
       <p data-no-languages data-i18n="noLanguages" hidden>找不到符合的語言，請試試其他名稱。</p>
       <p class="language-help" data-i18n="languageHelp">這裡切換的是網站語言；App 或遊戲支援的語言，請以 App Store 說明為準。</p>
     </dialog>
-    <script src="i18n-config.js?v=bcf9574d1d35"></script>
-    <script src="script.js?v=3872bc74bda0"></script>
+    <script src="i18n-config.js?v=8689643ba072"></script>
+    <script src="script.js?v=3cb26721fc09"></script>
   </body>
 </html>

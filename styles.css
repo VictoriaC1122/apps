@@ -846,3 +846,26 @@ html[dir=rtl] .title-underline { background: linear-gradient(270deg, var(--accen
   .language-options { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .language-dialog h2 { font-size: 20px; }
 }
+
+/* Featured Steam release; the existing nineteen-app catalog keeps its order. */
+.steam-feature { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); align-items: center; gap: 30px; padding: 32px; margin-bottom: 60px; border-radius: 22px; background: radial-gradient(ellipse at 85% 20%, #503124, transparent 70%), #211a17; color: #e3d7c9; }
+.steam-feature-copy { min-width: 0; }
+.steam-feature-status { margin: 0 0 18px; color: #e4c895; font-size: 14px; line-height: 1.6; }
+.steam-feature h1 { margin: 0; color: #fff6e9; font-family: var(--portfolio-font); font-size: clamp(28px, 3.1vw, 42px); line-height: 1.3; overflow-wrap: anywhere; }
+.steam-feature-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 18px; }
+.steam-feature-actions a { display: inline-flex; justify-content: center; align-items: center; min-height: 48px; max-width: 100%; padding: 12px 18px; border: 1px solid #a18a70; border-radius: 6px; font-size: 16px; line-height: 1.5; text-align: center; overflow-wrap: anywhere; }
+.steam-feature-actions .steam-feature-buy { color: #211a17; background: #e4c895; border-color: #e4c895; font-weight: 600; }
+.steam-feature-buy:hover { background: #f4dbad; }
+.steam-feature-wishlist { color: #fff6e9; }
+.steam-feature-wishlist:hover { border-color: #e4c895; }
+.steam-feature :focus-visible { outline: 2px solid #f4dbad; outline-offset: 4px; }
+.steam-feature-platforms { margin: 0 0 14px; color: #d3c1aa; font-size: 14px; line-height: 1.6; }
+.steam-feature-description { margin: 0; color: #e3d7c9; font-size: 16px; line-height: 1.8; }
+.steam-feature-art { display: block; min-width: 0; overflow: hidden; border: 1px solid #9c856d66; border-radius: 10px; }
+.steam-feature-art img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; }
+@media (max-width: 900px) { .steam-feature { grid-template-columns: 1fr; padding: 26px; gap: 24px; } }
+@media (max-width: 560px) { .steam-feature { padding: 22px 18px; border-radius: 16px; margin-bottom: 40px; } .steam-feature-actions a { flex: 1 1 150px; } }
+
+@media (max-width: 760px) { .topnav-links { gap: 8px 16px; flex-wrap: wrap; min-width: 0; } .topnav-links a { min-width: 0; overflow-wrap: anywhere; } }
+
+html[data-script=arabic] .steam-feature h1, html[data-script=hebrew] .steam-feature h1, html[data-script=indic] .steam-feature h1, html[data-script=thai] .steam-feature h1 { line-height: 1.4; }

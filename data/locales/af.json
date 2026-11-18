@@ -31,7 +31,12 @@
     "railLabel": "Toepassingsuitstalling",
     "previous": "Vorige toepassings",
     "next": "Volgende toepassings",
-    "retry": "Probeer weer"
+    "retry": "Probeer weer",
+    "steamAvailable": "Nou beskikbaar op Steam",
+    "steamBuy": "Koop op Steam",
+    "steamWishlist": "Voeg by wenslys",
+    "steamTitle": "Larry's Cocktail Lab",
+    "steamDescription": "’n Romantiese speletjie in ’n kroeg. Gesprekskeuses lei na verskillende vertakkings van die verhaal wat jy met gestoorde speletjies kan herbesoek."
   },
   "apps": {
     "6756014104": {

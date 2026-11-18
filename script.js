@@ -35,9 +35,10 @@
   function renderStaticText() {
     for (const node of document.querySelectorAll('[data-i18n]')) node.textContent = t(node.dataset.i18n);
     for (const node of document.querySelectorAll('[data-i18n-label]')) node.setAttribute('aria-label', t(node.dataset.i18nLabel));
+    document.querySelector('#steam-feature-image').alt = t('steamTitle');
     search.placeholder = t('searchLanguages');
-    document.title = `${t('heroTitle')} | Victoria Cheng Apps`;
-    document.querySelector('meta[name="description"]').content = t('heroBody');
+    document.title = `${t('steamTitle')} · Steam | Victoria Cheng Apps`;
+    document.querySelector('meta[name="description"]').content = `${t('steamAvailable')}. ${t('steamDescription')}`;
     document.querySelector('[data-current-language]').textContent = ({ 'zh-Hant': '繁中', 'zh-Hans': '简中' })[current] || current.toUpperCase();
     opener.setAttribute('aria-label', `${t('language')} · ${supported.get(current).native}`);
     opener.title = supported.get(current).native;

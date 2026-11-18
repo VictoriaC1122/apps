@@ -31,7 +31,12 @@
     "railLabel": "앱 소개",
     "previous": "이전 앱",
     "next": "다음 앱",
-    "retry": "다시 시도"
+    "retry": "다시 시도",
+    "steamAvailable": "Steam에서 출시되었습니다",
+    "steamBuy": "Steam에서 구매",
+    "steamWishlist": "찜 목록에 추가",
+    "steamTitle": "Larry's Cocktail Lab",
+    "steamDescription": "바를 배경으로 한 로맨스 게임입니다. 대화 선택에 따라 이야기가 달라지며, 저장한 게임으로 다른 전개를 다시 살펴볼 수 있습니다."
   },
   "apps": {
     "6756014104": {

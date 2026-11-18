@@ -31,7 +31,12 @@
     "railLabel": "Rakenduste väljapanek",
     "previous": "Eelmised rakendused",
     "next": "Järgmised rakendused",
-    "retry": "Proovi uuesti"
+    "retry": "Proovi uuesti",
+    "steamAvailable": "Nüüd saadaval platvormil Steam",
+    "steamBuy": "Osta platvormilt Steam",
+    "steamWishlist": "Lisa soovinimekirja",
+    "steamTitle": "Larry's Cocktail Lab",
+    "steamDescription": "Romantiline mäng baaris. Dialoogivalikud viivad eri loo harudeni, kuhu saad salvestatud mängude abil tagasi pöörduda."
   },
   "apps": {
     "6756014104": {

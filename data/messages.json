@@ -127,6 +127,26 @@
     "retry": {
       "en": "Try again",
       "zh": "再試一次"
+    },
+    "steamAvailable": {
+      "zh": "Steam 已正式上架",
+      "en": "Available now on Steam"
+    },
+    "steamBuy": {
+      "zh": "在 Steam 購買",
+      "en": "Buy on Steam"
+    },
+    "steamWishlist": {
+      "zh": "加入願望清單",
+      "en": "Add to wishlist"
+    },
+    "steamTitle": {
+      "zh": "賴瑞的調酒研究室",
+      "en": "Larry's Cocktail Lab"
+    },
+    "steamDescription": {
+      "zh": "以酒吧為背景的文字戀愛遊戲。對話選項會影響故事走向，可用存檔回到不同分支。",
+      "en": "A romance game set in a bar. Dialogue choices lead to different story branches, which you can revisit using saved games."
     }
   },
   "apps": {

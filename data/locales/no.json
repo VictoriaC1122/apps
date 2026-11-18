@@ -31,7 +31,12 @@
     "railLabel": "Apputstilling",
     "previous": "Forrige apper",
     "next": "Neste apper",
-    "retry": "Prøv igjen"
+    "retry": "Prøv igjen",
+    "steamAvailable": "Nå tilgjengelig på Steam",
+    "steamBuy": "Kjøp på Steam",
+    "steamWishlist": "Legg til på ønskelisten",
+    "steamTitle": "Larry's Cocktail Lab",
+    "steamDescription": "Et romantisk spill i en bar. Dialogvalg leder til ulike grener i historien, som du kan besøke igjen via lagrede spill."
   },
   "apps": {
     "6756014104": {

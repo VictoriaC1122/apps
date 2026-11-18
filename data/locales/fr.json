@@ -31,7 +31,12 @@
     "railLabel": "Présentation des apps",
     "previous": "Apps précédentes",
     "next": "Apps suivantes",
-    "retry": "Réessayer"
+    "retry": "Réessayer",
+    "steamAvailable": "Disponible dès maintenant sur Steam",
+    "steamBuy": "Acheter sur Steam",
+    "steamWishlist": "Ajouter à la liste de souhaits",
+    "steamTitle": "Larry's Cocktail Lab",
+    "steamDescription": "Un jeu romantique dans un bar. Les choix de dialogue ouvrent différentes branches du récit, que les sauvegardes permettent de revisiter."
   },
   "apps": {
     "6756014104": {

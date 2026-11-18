@@ -31,7 +31,12 @@
     "railLabel": "Sovellusesittely",
     "previous": "Edelliset sovellukset",
     "next": "Seuraavat sovellukset",
-    "retry": "Yritä uudelleen"
+    "retry": "Yritä uudelleen",
+    "steamAvailable": "Nyt saatavilla Steam-palvelussa",
+    "steamBuy": "Osta Steam-palvelusta",
+    "steamWishlist": "Lisää toivelistalle",
+    "steamTitle": "Larry's Cocktail Lab",
+    "steamDescription": "Baarissa tapahtuva romanttinen peli. Keskusteluvalinnat avaavat tarinan eri haaroja, joihin voi palata tallennusten avulla."
   },
   "apps": {
     "6756014104": {

@@ -31,7 +31,12 @@
     "railLabel": "Prezentarea aplicațiilor",
     "previous": "Aplicațiile anterioare",
     "next": "Aplicațiile următoare",
-    "retry": "Încearcă din nou"
+    "retry": "Încearcă din nou",
+    "steamAvailable": "Disponibil acum pe Steam",
+    "steamBuy": "Cumpără pe Steam",
+    "steamWishlist": "Adaugă în lista de dorințe",
+    "steamTitle": "Larry's Cocktail Lab",
+    "steamDescription": "Un joc romantic într-un bar. Alegerile de dialog deschid ramuri diferite ale poveștii, pe care le poți revizita prin salvări."
   },
   "apps": {
     "6756014104": {

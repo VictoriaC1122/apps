@@ -31,7 +31,12 @@
     "railLabel": "Maonyesho ya programu",
     "previous": "Programu zilizotangulia",
     "next": "Programu zinazofuata",
-    "retry": "Jaribu tena"
+    "retry": "Jaribu tena",
+    "steamAvailable": "Inapatikana sasa kwenye Steam",
+    "steamBuy": "Nunua kwenye Steam",
+    "steamWishlist": "Ongeza kwenye orodha ya matamanio",
+    "steamTitle": "Larry's Cocktail Lab",
+    "steamDescription": "Mchezo wa mapenzi unaofanyika kwenye baa. Chaguo za mazungumzo hupeleka hadithi katika matawi tofauti unayoweza kurudia kwa mafaili ya mchezo yaliyohifadhiwa."
   },
   "apps": {
     "6756014104": {

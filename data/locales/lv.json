@@ -31,7 +31,12 @@
     "railLabel": "Lietotņu demonstrācija",
     "previous": "Iepriekšējās lietotnes",
     "next": "Nākamās lietotnes",
-    "retry": "Mēģināt vēlreiz"
+    "retry": "Mēģināt vēlreiz",
+    "steamAvailable": "Tagad pieejama platformā Steam",
+    "steamBuy": "Iegādāties platformā Steam",
+    "steamWishlist": "Pievienot vēlmju sarakstam",
+    "steamTitle": "Larry's Cocktail Lab",
+    "steamDescription": "Romantiska spēle bārā. Dialoga izvēles ved uz dažādiem sižeta atzariem, kurus varat apmeklēt atkārtoti, izmantojot saglabātās spēles."
   },
   "apps": {
     "6756014104": {

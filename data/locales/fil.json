@@ -31,7 +31,12 @@
     "railLabel": "Pagtatanghal ng mga app",
     "previous": "Mga naunang app",
     "next": "Mga susunod na app",
-    "retry": "Subukang muli"
+    "retry": "Subukang muli",
+    "steamAvailable": "Available na sa Steam",
+    "steamBuy": "Bumili sa Steam",
+    "steamWishlist": "Idagdag sa wishlist",
+    "steamTitle": "Larry's Cocktail Lab",
+    "steamDescription": "Larong romansa na nagaganap sa bar. Ang mga pagpili sa usapan ay humahantong sa iba't ibang sangay ng kuwento na maaaring balikan sa naka-save na laro."
   },
   "apps": {
     "6756014104": {

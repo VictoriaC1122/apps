@@ -31,7 +31,12 @@
     "railLabel": "Galeri aplikasi",
     "previous": "Aplikasi sebelumnya",
     "next": "Aplikasi berikutnya",
-    "retry": "Coba lagi"
+    "retry": "Coba lagi",
+    "steamAvailable": "Kini tersedia di Steam",
+    "steamBuy": "Beli di Steam",
+    "steamWishlist": "Tambahkan ke daftar keinginan",
+    "steamTitle": "Larry's Cocktail Lab",
+    "steamDescription": "Gim romansa berlatar bar. Pilihan dialog membawa cerita ke cabang berbeda yang dapat dikunjungi kembali melalui gim tersimpan."
   },
   "apps": {
     "6756014104": {

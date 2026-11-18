@@ -31,7 +31,12 @@
     "railLabel": "Prikaz aplikacija",
     "previous": "Prethodne aplikacije",
     "next": "Sljedeće aplikacije",
-    "retry": "Pokušaj ponovno"
+    "retry": "Pokušaj ponovno",
+    "steamAvailable": "Sada dostupno na platformi Steam",
+    "steamBuy": "Kupite na platformi Steam",
+    "steamWishlist": "Dodaj na popis želja",
+    "steamTitle": "Larry's Cocktail Lab",
+    "steamDescription": "Romantična igra smještena u bar. Odabiri u razgovoru vode do različitih grana priče kojima se možete vratiti putem spremljenih igara."
   },
   "apps": {
     "6756014104": {

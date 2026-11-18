@@ -31,7 +31,12 @@
     "railLabel": "Pameran aplikasi",
     "previous": "Aplikasi sebelumnya",
     "next": "Aplikasi seterusnya",
-    "retry": "Cuba lagi"
+    "retry": "Cuba lagi",
+    "steamAvailable": "Kini tersedia di Steam",
+    "steamBuy": "Beli di Steam",
+    "steamWishlist": "Tambah ke senarai hajat",
+    "steamTitle": "Larry's Cocktail Lab",
+    "steamDescription": "Permainan romantik berlatarbelakangkan bar. Pilihan dialog menghasilkan cabang cerita berbeza yang boleh diterokai semula melalui permainan tersimpan."
   },
   "apps": {
     "6756014104": {

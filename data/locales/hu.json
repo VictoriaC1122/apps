@@ -31,7 +31,12 @@
     "railLabel": "Alkalmazásbemutató",
     "previous": "Előző alkalmazások",
     "next": "Következő alkalmazások",
-    "retry": "Újrapróbálkozás"
+    "retry": "Újrapróbálkozás",
+    "steamAvailable": "Már elérhető a Steam áruházban",
+    "steamBuy": "Vásárlás a Steam áruházban",
+    "steamWishlist": "Hozzáadás a kívánságlistához",
+    "steamTitle": "Larry's Cocktail Lab",
+    "steamDescription": "Egy bárban játszódó romantikus játék. A párbeszédválasztások eltérő történetágakhoz vezetnek, amelyekhez mentésekkel térhetsz vissza."
   },
   "apps": {
     "6756014104": {
