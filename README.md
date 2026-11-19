@@ -12,7 +12,7 @@ App showcase site for Victoria Cheng, available in the same 50 website languages
 - `script.js`: on-demand language loading, card rendering, language search, preferences and carousel controls.
 - `scripts/build.mjs`: validates every translation, generates content-hashed locale files, `i18n-config.js` and `index.html`.
 - `assets/icons/`: local app icons from Xcode asset catalogs and official App Store artwork.
-- `data/steam-title-images-2026-11-20.json`: the eight shipped game title images and their actual game titles; the build exposes this mapping as `config.steamMedia`.
+- `data/steam-title-images-2026-11-20.json`: the eight shipped game titles and current Steam feature artwork; the build exposes this locale mapping as `config.steamMedia`.
 
 Run `npm run build` and `npm test`, then preview with `npm run preview` at `http://127.0.0.1:4174/`. The build needs no dependencies. Commit the generated site files along with the source; GitHub Pages publishes the repository root. `node scripts/build.mjs --preview` can temporarily omit incomplete languages during development. `npm test` rejects partial preview builds; always run the full build before publishing.
 
@@ -28,7 +28,9 @@ Each language contains 37 interface messages and all 19 app titles, descriptions
 
 ## Notes
 
-- The 2026-11-20 alignment uses the game’s actual title in Traditional Chinese, English, Japanese, Korean, Simplified Chinese, Thai, German and Spanish, and `Larry's Mixology Lab` for the other 42 website languages. Both the Steam feature and Larry’s app card follow this naming rule. Switching website language selects the matching game title image, with English images for unsupported game languages; alt text follows the displayed title. The app description reuses FireSparkle’s existing localized bar-story description. The Steam description, app highlights, other 18 app entries, catalog order, versions, links and icons are preserved.
+- The 2026-11-20 artwork refresh uses the original Larry bartending character art (`10_larry_profile.png`) as the Steam feature image. Its 1672×941 PNG is copied unchanged to `assets/steam/art/larry-mixology.2c729fb1826a.png` (SHA-256 `2c729fb1826a02bf547ba346f2c3e710066da90e9d017158589cdce7d418a110`). This is game artwork, not a gameplay screenshot. All eight media entries share the image while retaining their verified game titles; other website languages still use the official English title. Existing `height: auto` and `object-fit: contain` display the full artwork proportionally. The heading, gold purchase button, app content, versions and links are unchanged.
+
+- The 2026-11-20 alignment uses the game’s actual title in Traditional Chinese, English, Japanese, Korean, Simplified Chinese, Thai, German and Spanish, and `Larry's Mixology Lab` for the other 42 website languages. Both the Steam feature and Larry’s app card follow this naming rule. The feature now uses the same language-neutral game artwork for every website language; alt text follows the displayed title. The earlier eight-language title-screen captures remain available as source assets. The app description reuses FireSparkle’s existing localized bar-story description. The Steam description, app highlights, other 18 app entries, catalog order, versions, links and icons are preserved.
 
 - The 2026-11-19 update features Larry’s Mixology Lab on Steam above the original portfolio introduction. The feature uses the official 1920×1080 screenshot, direct purchase and wishlist links, platform labels and a Steam navigation link. Five Steam messages reuse FireSparkle’s existing translations in all 50 languages; existing app copy, versions, icons and popularity order are unchanged. Source evidence is recorded in `data/steam-feature-2026-11-19.json`.
 
