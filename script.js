@@ -35,7 +35,12 @@
   function renderStaticText() {
     for (const node of document.querySelectorAll('[data-i18n]')) node.textContent = t(node.dataset.i18n);
     for (const node of document.querySelectorAll('[data-i18n-label]')) node.setAttribute('aria-label', t(node.dataset.i18nLabel));
-    document.querySelector('#steam-feature-image').alt = t('steamTitle');
+    const steamImage = document.querySelector('#steam-feature-image');
+    const steamMedia = config.steamMedia[current] || config.steamMedia.en;
+    if (steamImage.getAttribute('src') !== steamMedia.src) steamImage.src = steamMedia.src;
+    steamImage.width = steamMedia.width || 1920;
+    steamImage.height = steamMedia.height || 1080;
+    steamImage.alt = t('steamTitle');
     search.placeholder = t('searchLanguages');
     document.title = `${t('steamTitle')} · Steam | Victoria Cheng Apps`;
     document.querySelector('meta[name="description"]').content = `${t('steamAvailable')}. ${t('steamDescription')}`;

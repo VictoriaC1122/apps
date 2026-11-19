@@ -1,0 +1,61 @@
+{
+  "capturedOn": "2026-11-20",
+  "locales": {
+    "zh-Hant": {
+      "src": "assets/steam/captures/zh-Hant/title.008f377dbc16.jpg",
+      "title": "賴瑞的調酒研究室",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "008f377dbc16430d685df2bffab0a3b22f1ab6ae6519e85faa70f6cdcac6e6b9"
+    },
+    "en": {
+      "src": "assets/steam/captures/en/title.dcf73a376a2c.jpg",
+      "title": "Larry's Mixology Lab",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "dcf73a376a2c6cd80a5e321e67917316aea10e74d88bc3290643f01430dcc38e"
+    },
+    "ja": {
+      "src": "assets/steam/captures/ja/title.dc4abb3da745.jpg",
+      "title": "ラリーのカクテル研究室",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "dc4abb3da7459d4f999b76dd81cf8655c9ff1c4a7a40c745c369cf170c786739"
+    },
+    "ko": {
+      "src": "assets/steam/captures/ko/title.18eb3ad999f7.jpg",
+      "title": "래리의 칵테일 연구실",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "18eb3ad999f7ddf200a059e99eba13254eac86b1e004407e2345c5880d36fa3e"
+    },
+    "zh-Hans": {
+      "src": "assets/steam/captures/zh-Hans/title.5762c5723e82.jpg",
+      "title": "赖瑞的调酒研究室",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "5762c5723e828490819ef1f52597b18f32f3a35af49d9648c6867d943d204038"
+    },
+    "th": {
+      "src": "assets/steam/captures/th/title.4524980a8a74.jpg",
+      "title": "ห้องแล็บค็อกเทลของแลร์รี่",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "4524980a8a749a52f63c488c9a49e5b4ee34ff65e551bf904be608c3baebd3aa"
+    },
+    "de": {
+      "src": "assets/steam/captures/de/title.bf655aa35b16.jpg",
+      "title": "Larry's Mixology Lab",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "bf655aa35b16c83ee7d1fe1189100dc7d3b4e5c9025ea8a3b41ebddd82987299"
+    },
+    "es": {
+      "src": "assets/steam/captures/es/title.554459edd1ff.jpg",
+      "title": "Larry's Mixology Lab",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "554459edd1ff95ec0ceb3d15f7aa29c166c85eb86064e66c185f4f17403dccd2"
+    }
+  }
+}

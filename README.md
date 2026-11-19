@@ -7,11 +7,12 @@ App showcase site for Victoria Cheng, available in the same 50 website languages
 - `data/catalog.json`: the 19 app IDs, order, versions, icons and confirmed store links.
 - `data/messages.json`: Traditional Chinese and English interface text, app names, descriptions and highlights.
 - `data/languages.json`: the same 50 locale codes, native names and writing directions as FireSparkle.Studio.
-- `data/locales/<code>.json`: complete translations for the other 48 languages. Product names retain their English portfolio names, except Simplified Chinese uses the Chinese names.
+- `data/locales/<code>.json`: complete translations for the other 48 languages. Product names retain their English portfolio names, except Simplified Chinese uses the Chinese names. Larry’s title follows the eight shipped game languages; all other website languages use the official English title, `Larry's Mixology Lab`.
 - `src/index.html`: page and language-dialog template; `styles.css` preserves the portfolio design with language-aware typography and RTL layout.
 - `script.js`: on-demand language loading, card rendering, language search, preferences and carousel controls.
 - `scripts/build.mjs`: validates every translation, generates content-hashed locale files, `i18n-config.js` and `index.html`.
 - `assets/icons/`: local app icons from Xcode asset catalogs and official App Store artwork.
+- `data/steam-title-images-2026-11-20.json`: the eight shipped game title images and their actual game titles; the build exposes this mapping as `config.steamMedia`.
 
 Run `npm run build` and `npm test`, then preview with `npm run preview` at `http://127.0.0.1:4174/`. The build needs no dependencies. Commit the generated site files along with the source; GitHub Pages publishes the repository root. `node scripts/build.mjs --preview` can temporarily omit incomplete languages during development. `npm test` rejects partial preview builds; always run the full build before publishing.
 
@@ -27,7 +28,9 @@ Each language contains 37 interface messages and all 19 app titles, descriptions
 
 ## Notes
 
-- The 2026-11-19 update features Larry’s Cocktail Lab on Steam above the original portfolio introduction. The feature uses the official 1920×1080 screenshot, direct purchase and wishlist links, platform labels and a Steam navigation link. Five Steam messages reuse FireSparkle’s existing translations in all 50 languages; existing app copy, versions, icons and popularity order are unchanged. Source evidence is recorded in `data/steam-feature-2026-11-19.json`.
+- The 2026-11-20 alignment uses the game’s actual title in Traditional Chinese, English, Japanese, Korean, Simplified Chinese, Thai, German and Spanish, and `Larry's Mixology Lab` for the other 42 website languages. Both the Steam feature and Larry’s app card follow this naming rule. Switching website language selects the matching game title image, with English images for unsupported game languages; alt text follows the displayed title. The app description reuses FireSparkle’s existing localized bar-story description. The Steam description, app highlights, other 18 app entries, catalog order, versions, links and icons are preserved.
+
+- The 2026-11-19 update features Larry’s Mixology Lab on Steam above the original portfolio introduction. The feature uses the official 1920×1080 screenshot, direct purchase and wishlist links, platform labels and a Steam navigation link. Five Steam messages reuse FireSparkle’s existing translations in all 50 languages; existing app copy, versions, icons and popularity order are unchanged. Source evidence is recorded in `data/steam-feature-2026-11-19.json`.
 
 - The 2026-11-18 refresh rechecks the Taiwan and US author catalogs, search, all 19 IDs and standalone Mac listings. No new app is listed. It updates Build It Yourself to 1.3.0, Coffee Chat Note to 1.2.3, SemiVerse to 1.2.2, FinAtlas to 1.2 and ADHD Compass to 1.1.0. All 19 official 512px icons were downloaded and compared: 14 portfolio icons are replaced, including older local artwork, using content-hashed filenames. Every active icon now exactly matches the official download. The existing 50 complete language dictionaries are preserved. Sources and hashes are recorded in `data/catalog-verification-2026-11-18.json` and `data/app-icons-2026-11-18.json`; raw Apple responses are in the FireSparkle repository.
 
@@ -41,6 +44,6 @@ Each language contains 37 interface messages and all 19 app titles, descriptions
 - Versions and store titles were checked on 2026-11-18 using Apple's Lookup API for developer `1851202446` (Yung Wen Cheng), in both Taiwan and the US.
 - The 2026-11-13 evening Lookup catalogs listed the same eighteen apps. That refresh added `Luxury Guide` / `名牌指南` (6830889178) at 1.0, including its official icon and bilingual description. Its App Store categories are Education and Lifestyle.
 - All nineteen current versions match both storefronts. The earlier 2026-11-13 refresh added `FinAtlas: Finance & Careers` / `FinAtlas 金融產業與職涯` (6830943408); the subsequent evening refresh added Luxury Guide without changes to the previous seventeen apps.
-- `圖解半導體` now uses its official US App Store title, `SemiVerse: Chips Illustrated`, in English. `Larry's Mixology Lab` and `Easy Lucky Draw` remain translated portfolio titles because their US listings use Chinese names.
+- `圖解半導體` now uses its official US App Store title, `SemiVerse: Chips Illustrated`, in English. Larry’s title follows the shipped game terminology described above; `Easy Lucky Draw` remains a translated portfolio title because its US listing uses a Chinese name.
 - Descriptions reflect Coffee Chat's 20 interface languages, Future Major Guide's 25 interface languages, AI Time Management's on-device rules and templates, and Perfect Pig's option to continue companionship after seven days of growth.
 - Sources: [Taiwan catalog](https://itunes.apple.com/lookup?id=1851202446&entity=software&country=tw&limit=200), [US catalog](https://itunes.apple.com/lookup?id=1851202446&entity=software&country=us&limit=200), [developer page](https://apps.apple.com/tw/developer/yung-wen-cheng/id1851202446).
