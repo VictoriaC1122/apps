@@ -1,73 +1,76 @@
 {
   "locales": {
     "zh-Hant": {
-      "src": "assets/steam/art/larry-mixology.2c729fb1826a.png",
+      "src": "assets/steam/art/steam-header.4449a19d2f56.png",
       "title": "賴瑞的調酒研究室",
-      "width": 1672,
-      "height": 941,
-      "sha256": "2c729fb1826a02bf547ba346f2c3e710066da90e9d017158589cdce7d418a110"
+      "width": 920,
+      "height": 430,
+      "sha256": "4449a19d2f5635f1a6b7c2893a4c3ba55e2555731b87b037536df7167ffd502f"
     },
     "en": {
-      "src": "assets/steam/art/larry-mixology.2c729fb1826a.png",
+      "src": "assets/steam/art/steam-header.4449a19d2f56.png",
       "title": "Larry's Mixology Lab",
-      "width": 1672,
-      "height": 941,
-      "sha256": "2c729fb1826a02bf547ba346f2c3e710066da90e9d017158589cdce7d418a110"
+      "width": 920,
+      "height": 430,
+      "sha256": "4449a19d2f5635f1a6b7c2893a4c3ba55e2555731b87b037536df7167ffd502f"
     },
     "ja": {
-      "src": "assets/steam/art/larry-mixology.2c729fb1826a.png",
+      "src": "assets/steam/art/steam-header.4449a19d2f56.png",
       "title": "ラリーのカクテル研究室",
-      "width": 1672,
-      "height": 941,
-      "sha256": "2c729fb1826a02bf547ba346f2c3e710066da90e9d017158589cdce7d418a110"
+      "width": 920,
+      "height": 430,
+      "sha256": "4449a19d2f5635f1a6b7c2893a4c3ba55e2555731b87b037536df7167ffd502f"
     },
     "ko": {
-      "src": "assets/steam/art/larry-mixology.2c729fb1826a.png",
+      "src": "assets/steam/art/steam-header.4449a19d2f56.png",
       "title": "래리의 칵테일 연구실",
-      "width": 1672,
-      "height": 941,
-      "sha256": "2c729fb1826a02bf547ba346f2c3e710066da90e9d017158589cdce7d418a110"
+      "width": 920,
+      "height": 430,
+      "sha256": "4449a19d2f5635f1a6b7c2893a4c3ba55e2555731b87b037536df7167ffd502f"
     },
     "zh-Hans": {
-      "src": "assets/steam/art/larry-mixology.2c729fb1826a.png",
+      "src": "assets/steam/art/steam-header.4449a19d2f56.png",
       "title": "赖瑞的调酒研究室",
-      "width": 1672,
-      "height": 941,
-      "sha256": "2c729fb1826a02bf547ba346f2c3e710066da90e9d017158589cdce7d418a110"
+      "width": 920,
+      "height": 430,
+      "sha256": "4449a19d2f5635f1a6b7c2893a4c3ba55e2555731b87b037536df7167ffd502f"
     },
     "th": {
-      "src": "assets/steam/art/larry-mixology.2c729fb1826a.png",
+      "src": "assets/steam/art/steam-header.4449a19d2f56.png",
       "title": "ห้องแล็บค็อกเทลของแลร์รี่",
-      "width": 1672,
-      "height": 941,
-      "sha256": "2c729fb1826a02bf547ba346f2c3e710066da90e9d017158589cdce7d418a110"
+      "width": 920,
+      "height": 430,
+      "sha256": "4449a19d2f5635f1a6b7c2893a4c3ba55e2555731b87b037536df7167ffd502f"
     },
     "de": {
-      "src": "assets/steam/art/larry-mixology.2c729fb1826a.png",
+      "src": "assets/steam/art/steam-header.4449a19d2f56.png",
       "title": "Larry's Mixology Lab",
-      "width": 1672,
-      "height": 941,
-      "sha256": "2c729fb1826a02bf547ba346f2c3e710066da90e9d017158589cdce7d418a110"
+      "width": 920,
+      "height": 430,
+      "sha256": "4449a19d2f5635f1a6b7c2893a4c3ba55e2555731b87b037536df7167ffd502f"
     },
     "es": {
-      "src": "assets/steam/art/larry-mixology.2c729fb1826a.png",
+      "src": "assets/steam/art/steam-header.4449a19d2f56.png",
       "title": "Larry's Mixology Lab",
-      "width": 1672,
-      "height": 941,
-      "sha256": "2c729fb1826a02bf547ba346f2c3e710066da90e9d017158589cdce7d418a110"
+      "width": 920,
+      "height": 430,
+      "sha256": "4449a19d2f5635f1a6b7c2893a4c3ba55e2555731b87b037536df7167ffd502f"
     }
   },
   "updatedOn": "2026-11-20",
-  "mediaType": "game-character-artwork",
+  "mediaType": "steam-store-key-art",
   "sourceArtwork": {
-    "path": "/Users/chengyungwen/Desktop/Larry's Bar Game/steam/content/game/assets/media/db/pic/character-cg/10_larry_profile.png",
-    "sha256": "2c729fb1826a02bf547ba346f2c3e710066da90e9d017158589cdce7d418a110",
-    "bytes": 2593204,
-    "width": 1672,
-    "height": 941
+    "path": "/Users/chengyungwen/Desktop/Larry's Bar Game/steam/store-assets/header_capsule.png",
+    "width": 920,
+    "height": 430,
+    "sha256": "4449a19d2f5635f1a6b7c2893a4c3ba55e2555731b87b037536df7167ffd502f",
+    "bytes": 807344,
+    "publicPath": "/assets/steam/art/steam-header.4449a19d2f56.png",
+    "officialHeader": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5466570/4245830d7a68ce99cecd04aa4de1dad7d23177bb/header.jpg?t=1794944808",
+    "officialHeaderSha256": "ee44741dbb020291f83a3d8d0d4288e5da1ab819c2af292b45fd99dba55b975b"
   },
   "artworkNote": {
-    "en": "Original character artwork included in the game, copied byte-for-byte without cropping, editing or regeneration. This is game artwork, not a gameplay screenshot.",
-    "zh": "遊戲內原有角色美術，原始檔案逐位元複製，未裁切、修改或重新生成；此圖為遊戲美術，不是實機遊玩截圖。"
+    "zh": "Steam 商店主視覺高解析原稿；三角色、遊戲標誌與官方商店 header 圖構圖一致，完整等比顯示。",
+    "en": "Original high-resolution Steam store header artwork, with the same three characters and title logos as the official store header. Displayed in full at its original aspect ratio."
   }
 }

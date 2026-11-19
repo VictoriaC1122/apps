@@ -28,6 +28,8 @@ Each language contains 37 interface messages and all 19 app titles, descriptions
 
 ## Notes
 
+- The latest 2026-11-20 hero and Open Graph image use the original 920×430 Steam header artwork, matching the official store’s three characters and game logos. All eight game-language entries share this official key art and retain their existing localized titles.
+
 - The 2026-11-20 artwork refresh uses the original Larry bartending character art (`10_larry_profile.png`) as the Steam feature image. Its 1672×941 PNG is copied unchanged to `assets/steam/art/larry-mixology.2c729fb1826a.png` (SHA-256 `2c729fb1826a02bf547ba346f2c3e710066da90e9d017158589cdce7d418a110`). This is game artwork, not a gameplay screenshot. All eight media entries share the image while retaining their verified game titles; other website languages still use the official English title. Existing `height: auto` and `object-fit: contain` display the full artwork proportionally. The heading, gold purchase button, app content, versions and links are unchanged.
 
 - The 2026-11-20 alignment uses the game’s actual title in Traditional Chinese, English, Japanese, Korean, Simplified Chinese, Thai, German and Spanish, and `Larry's Mixology Lab` for the other 42 website languages. Both the Steam feature and Larry’s app card follow this naming rule. The feature now uses the same language-neutral game artwork for every website language; alt text follows the displayed title. The earlier eight-language title-screen captures remain available as source assets. The app description reuses FireSparkle’s existing localized bar-story description. The Steam description, app highlights, other 18 app entries, catalog order, versions, links and icons are preserved.
